@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ActionSheetContentView" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FV3-Zz-gCv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Химчистка одежды" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ha7-5Y-TDJ" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="17" width="148" height="20"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="dryCleaning.serviceType.dryCleaningClothes"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark" translatesAutoresizingMaskIntoConstraints="NO" id="KOH-LF-7bw">
+                            <rect key="frame" x="336" y="17" width="20" height="20"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9uu-ao-gi5" userLabel="Divide View">
+                            <rect key="frame" x="15" y="49" width="345" height="1"/>
+                            <color key="backgroundColor" red="0.50980392156862742" green="0.50196078431372548" blue="0.50980392156862742" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="9Jv-qj-3dH"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ha7-5Y-TDJ" secondAttribute="bottom" constant="13" id="9XY-jd-adz"/>
+                        <constraint firstItem="ha7-5Y-TDJ" firstAttribute="leading" secondItem="FV3-Zz-gCv" secondAttribute="leading" constant="15" id="KEQ-sp-ZDd"/>
+                        <constraint firstAttribute="trailing" secondItem="9uu-ao-gi5" secondAttribute="trailing" constant="15" id="KyV-oy-PIa"/>
+                        <constraint firstItem="KOH-LF-7bw" firstAttribute="centerY" secondItem="ha7-5Y-TDJ" secondAttribute="centerY" id="YYh-Aj-psn"/>
+                        <constraint firstItem="ha7-5Y-TDJ" firstAttribute="top" secondItem="FV3-Zz-gCv" secondAttribute="top" constant="17" id="ZAw-Cz-kq0"/>
+                        <constraint firstAttribute="height" constant="50" id="aJl-yU-NoO"/>
+                        <constraint firstAttribute="bottom" secondItem="9uu-ao-gi5" secondAttribute="bottom" id="bYp-QW-hpb"/>
+                        <constraint firstAttribute="trailing" secondItem="KOH-LF-7bw" secondAttribute="trailing" constant="19" id="qcY-lg-xr1"/>
+                        <constraint firstItem="9uu-ao-gi5" firstAttribute="leading" secondItem="FV3-Zz-gCv" secondAttribute="leading" constant="15" id="sA5-HY-OP0"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="RvE-N8-aXk" appends="YES" id="3un-Gj-d4X"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="FV3-Zz-gCv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3TW-36-8TT"/>
+                <constraint firstAttribute="bottom" secondItem="FV3-Zz-gCv" secondAttribute="bottom" id="IIP-Ec-NXU"/>
+                <constraint firstItem="FV3-Zz-gCv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ix5-RA-KDW"/>
+                <constraint firstAttribute="trailing" secondItem="FV3-Zz-gCv" secondAttribute="trailing" id="hmp-kh-Ba0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="checkmarkImageView" destination="KOH-LF-7bw" id="hM7-Rx-KM3"/>
+                <outlet property="titleLabel" destination="ha7-5Y-TDJ" id="AnP-Q1-3OG"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-365.625"/>
+        </view>
+        <tapGestureRecognizer id="RvE-N8-aXk">
+            <connections>
+                <action selector="viewDidSelect:" destination="iN0-l3-epB" id="qEU-Wq-i1x"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="check-mark" width="20" height="20"/>
+    </resources>
+</document>

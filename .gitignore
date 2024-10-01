@@ -1,0 +1,44 @@
+# Xcode
+.DS_Store
+xcuserdata
+*.xccheckout
+*.xcscmblueprint
+
+# Swift Package Manager
+.build/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Swift Package Manager
+.build/
+
+# User-specific files
+xcuserdata/
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+
+# Xcode's auto-generated scheme files
+xcshareddata/
+
+# Build products
+build/
+DerivedData/
+
+# Simulators
+*.app
+
+# macOS
+.DS_Store
+
+# Xcode
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+# Package
+.packages/
+Package.resolved

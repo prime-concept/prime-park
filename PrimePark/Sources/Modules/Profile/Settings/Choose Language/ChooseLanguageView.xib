@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mzI-Rq-pW7" userLabel="Choose Language View" customClass="ChooseLanguageView" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="523"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hide_view_rectangle_button" translatesAutoresizingMaskIntoConstraints="NO" id="3cY-El-4Sr">
+                    <rect key="frame" x="189" y="54" width="36" height="4"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите язык" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqc-Tb-PsI" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="149.5" y="66" width="115.5" height="19"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="pfofile.settings.language.choose"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sLb-1c-tM4" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="99" width="414" height="139"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NxN-xY-5Iz" userLabel="Mirabel View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <subviews>
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark" translatesAutoresizingMaskIntoConstraints="NO" id="kNc-0A-fTe">
+                                    <rect key="frame" x="375" y="12" width="20" height="20"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ru-flag" translatesAutoresizingMaskIntoConstraints="NO" id="NWz-eN-9uv">
+                                    <rect key="frame" x="8" y="12" width="16" height="20"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qd1-1F-PZS" userLabel="Divide View">
+                                    <rect key="frame" x="0.0" y="43" width="414" height="1"/>
+                                    <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="hBd-sL-gfF"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Русский" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CL9-4V-UeK" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                    <rect key="frame" x="32" y="13.5" width="58.5" height="17"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstItem="Qd1-1F-PZS" firstAttribute="top" secondItem="kNc-0A-fTe" secondAttribute="bottom" constant="11" id="4Hn-k9-WME"/>
+                                <constraint firstItem="kNc-0A-fTe" firstAttribute="bottom" secondItem="NWz-eN-9uv" secondAttribute="bottom" id="DYV-vd-yVw"/>
+                                <constraint firstItem="CL9-4V-UeK" firstAttribute="leading" secondItem="NWz-eN-9uv" secondAttribute="trailing" constant="8" symbolic="YES" id="KlQ-Fr-4gv"/>
+                                <constraint firstAttribute="bottom" secondItem="Qd1-1F-PZS" secondAttribute="bottom" id="Kod-dI-q3y"/>
+                                <constraint firstItem="kNc-0A-fTe" firstAttribute="centerY" secondItem="CL9-4V-UeK" secondAttribute="centerY" id="Kqu-NP-MxL"/>
+                                <constraint firstAttribute="trailing" secondItem="Qd1-1F-PZS" secondAttribute="trailing" id="UcY-1N-Uis"/>
+                                <constraint firstItem="Qd1-1F-PZS" firstAttribute="leading" secondItem="NxN-xY-5Iz" secondAttribute="leading" id="aQN-gq-oRS"/>
+                                <constraint firstItem="NWz-eN-9uv" firstAttribute="leading" secondItem="NxN-xY-5Iz" secondAttribute="leadingMargin" id="c7V-x2-SIT"/>
+                                <constraint firstItem="kNc-0A-fTe" firstAttribute="top" secondItem="NWz-eN-9uv" secondAttribute="top" id="k5g-dz-jOE"/>
+                                <constraint firstAttribute="trailing" secondItem="kNc-0A-fTe" secondAttribute="trailing" constant="19" id="x6N-bk-zeQ"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="S36-Ol-nSI" appends="YES" id="qtO-tO-Udd"/>
+                            </connections>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1so-iP-InA" userLabel="Victory View">
+                            <rect key="frame" x="0.0" y="44" width="414" height="45"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="au-flag" translatesAutoresizingMaskIntoConstraints="NO" id="Qyg-Fp-d7B">
+                                    <rect key="frame" x="8" y="16" width="16" height="13"/>
+                                </imageView>
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark" translatesAutoresizingMaskIntoConstraints="NO" id="prY-gG-pIP">
+                                    <rect key="frame" x="375" y="12.5" width="20" height="20"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sb-Jl-gi1" userLabel="Divide View">
+                                    <rect key="frame" x="0.0" y="44" width="414" height="1"/>
+                                    <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="59i-V6-5zh"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTB-Kf-7Kx" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                    <rect key="frame" x="34" y="14" width="49" height="17"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="prY-gG-pIP" secondAttribute="trailing" constant="19" id="16A-7b-ycF"/>
+                                <constraint firstItem="9sb-Jl-gi1" firstAttribute="top" secondItem="Qyg-Fp-d7B" secondAttribute="bottom" constant="15" id="6hI-uS-qTW"/>
+                                <constraint firstItem="prY-gG-pIP" firstAttribute="centerY" secondItem="1so-iP-InA" secondAttribute="centerY" id="7Tg-br-Hpt"/>
+                                <constraint firstItem="PTB-Kf-7Kx" firstAttribute="leading" secondItem="Qyg-Fp-d7B" secondAttribute="trailing" constant="10" id="EG6-tD-gSM"/>
+                                <constraint firstItem="Qyg-Fp-d7B" firstAttribute="leading" secondItem="1so-iP-InA" secondAttribute="leading" constant="8" id="GJ0-wc-z0L"/>
+                                <constraint firstItem="9sb-Jl-gi1" firstAttribute="leading" secondItem="1so-iP-InA" secondAttribute="leading" id="HkH-rM-TQt"/>
+                                <constraint firstItem="PTB-Kf-7Kx" firstAttribute="top" secondItem="1so-iP-InA" secondAttribute="top" constant="14" id="I4w-3W-gOS"/>
+                                <constraint firstAttribute="bottom" secondItem="9sb-Jl-gi1" secondAttribute="bottom" id="JMl-fh-iLe"/>
+                                <constraint firstAttribute="trailing" secondItem="9sb-Jl-gi1" secondAttribute="trailing" id="MlD-JR-gEd"/>
+                                <constraint firstItem="9sb-Jl-gi1" firstAttribute="top" secondItem="prY-gG-pIP" secondAttribute="bottom" constant="11.5" id="RJj-Gj-Rs4"/>
+                                <constraint firstItem="PTB-Kf-7Kx" firstAttribute="centerY" secondItem="1so-iP-InA" secondAttribute="centerY" id="xBd-8g-zkB"/>
+                                <constraint firstItem="Qyg-Fp-d7B" firstAttribute="centerY" secondItem="1so-iP-InA" secondAttribute="centerY" id="yPE-xA-9Wf"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="ZFa-FJ-Elv" appends="YES" id="MJL-Xw-dDt"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="1so-iP-InA" firstAttribute="top" secondItem="NxN-xY-5Iz" secondAttribute="bottom" id="6Sb-zG-fYg"/>
+                        <constraint firstItem="1so-iP-InA" firstAttribute="top" secondItem="NxN-xY-5Iz" secondAttribute="bottom" id="Ckn-X3-ngg"/>
+                        <constraint firstAttribute="trailing" secondItem="1so-iP-InA" secondAttribute="trailing" id="G9W-pP-srz"/>
+                        <constraint firstItem="1so-iP-InA" firstAttribute="leading" secondItem="sLb-1c-tM4" secondAttribute="leading" id="TpP-pb-IRh"/>
+                        <constraint firstAttribute="bottom" secondItem="1so-iP-InA" secondAttribute="bottom" constant="50" id="UhL-Ye-kRW"/>
+                        <constraint firstItem="NxN-xY-5Iz" firstAttribute="top" secondItem="sLb-1c-tM4" secondAttribute="top" id="bJE-Q2-TUb"/>
+                        <constraint firstItem="1so-iP-InA" firstAttribute="top" secondItem="sLb-1c-tM4" secondAttribute="top" constant="44" id="ocG-LY-Cxe"/>
+                        <constraint firstItem="1so-iP-InA" firstAttribute="leading" secondItem="NxN-xY-5Iz" secondAttribute="leading" id="pRW-V1-d8W"/>
+                        <constraint firstItem="1so-iP-InA" firstAttribute="trailing" secondItem="NxN-xY-5Iz" secondAttribute="trailing" id="sZ2-9B-cCy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCC-TL-8Y1" userLabel="Divide View">
+                    <rect key="frame" x="0.0" y="99" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="4OV-Ab-w9S"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="OTf-m1-wX5"/>
+            <color key="backgroundColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mCC-TL-8Y1" secondAttribute="trailing" id="1cU-00-L52"/>
+                <constraint firstItem="sLb-1c-tM4" firstAttribute="leading" secondItem="OTf-m1-wX5" secondAttribute="leading" id="IQq-Do-rky"/>
+                <constraint firstItem="3cY-El-4Sr" firstAttribute="centerX" secondItem="mzI-Rq-pW7" secondAttribute="centerX" id="Jie-M2-ftz"/>
+                <constraint firstItem="OTf-m1-wX5" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="sLb-1c-tM4" secondAttribute="bottom" constant="20" id="O4Y-jJ-Gcf"/>
+                <constraint firstItem="Kqc-Tb-PsI" firstAttribute="top" secondItem="OTf-m1-wX5" secondAttribute="top" constant="22" id="S4u-qi-uFT"/>
+                <constraint firstItem="3cY-El-4Sr" firstAttribute="top" secondItem="OTf-m1-wX5" secondAttribute="top" constant="10" id="Vgm-EK-2Oy"/>
+                <constraint firstItem="sLb-1c-tM4" firstAttribute="top" secondItem="Kqc-Tb-PsI" secondAttribute="bottom" constant="14" id="bM4-8Z-nkm"/>
+                <constraint firstItem="mCC-TL-8Y1" firstAttribute="top" secondItem="Kqc-Tb-PsI" secondAttribute="bottom" constant="14" id="fTf-56-70Z"/>
+                <constraint firstItem="sLb-1c-tM4" firstAttribute="trailing" secondItem="OTf-m1-wX5" secondAttribute="trailing" id="kjR-nK-egz"/>
+                <constraint firstItem="Kqc-Tb-PsI" firstAttribute="centerX" secondItem="mzI-Rq-pW7" secondAttribute="centerX" id="moR-l2-2on"/>
+                <constraint firstItem="mCC-TL-8Y1" firstAttribute="leading" secondItem="mzI-Rq-pW7" secondAttribute="leading" id="zZR-Di-kPA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="enCheckBox" destination="prY-gG-pIP" id="Nld-W2-38m"/>
+                <outlet property="enLanguageLabel" destination="PTB-Kf-7Kx" id="Pv2-4u-oCI"/>
+                <outlet property="ruCheckBox" destination="kNc-0A-fTe" id="QBp-nf-jEI"/>
+                <outlet property="rusLanguageLabel" destination="CL9-4V-UeK" id="k2b-qo-1wY"/>
+                <outlet property="title" destination="Kqc-Tb-PsI" id="gxn-fv-B9H"/>
+            </connections>
+            <point key="canvasLocation" x="24.637681159420293" y="256.13839285714283"/>
+        </view>
+        <tapGestureRecognizer id="S36-Ol-nSI">
+            <connections>
+                <action selector="tapRussian:" destination="mzI-Rq-pW7" id="gZI-SC-HeI"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="ZFa-FJ-Elv">
+            <connections>
+                <action selector="tapEnglish:" destination="mzI-Rq-pW7" id="23c-Kz-nIS"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <designables>
+        <designable name="CL9-4V-UeK">
+            <size key="intrinsicContentSize" width="58.5" height="17.5"/>
+        </designable>
+        <designable name="Kqc-Tb-PsI">
+            <size key="intrinsicContentSize" width="115.5" height="19"/>
+        </designable>
+        <designable name="PTB-Kf-7Kx">
+            <size key="intrinsicContentSize" width="49" height="17.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="au-flag" width="16" height="13"/>
+        <image name="check-mark" width="20" height="20"/>
+        <image name="hide_view_rectangle_button" width="36" height="4"/>
+        <image name="ru-flag" width="16" height="12"/>
+    </resources>
+</document>

@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Light.ttf">
+            <string>Ubuntu-Light</string>
+        </array>
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileView" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Koi-mm-mxK" userLabel="Navigation Bar View">
+                    <rect key="frame" x="0.0" y="44" width="414" height="68"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_gold" translatesAutoresizingMaskIntoConstraints="NO" id="aIY-PD-JRk">
+                            <rect key="frame" x="27" y="29" width="27" height="27"/>
+                            <color key="tintColor" red="0.70196078429999997" green="0.59607843140000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUL-it-uSp" userLabel="Choose Apartment View">
+                            <rect key="frame" x="64" y="33.5" width="67" height="18.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 - 340E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pr-Rj-736">
+                                    <rect key="frame" x="1" y="1" width="53" height="16.5"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="8rV-gc-NVN">
+                                    <rect key="frame" x="59" y="6.5" width="7" height="5"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="8rV-gc-NVN" secondAttribute="trailing" constant="1" id="2iM-3d-8vr"/>
+                                <constraint firstItem="8rV-gc-NVN" firstAttribute="centerY" secondItem="9pr-Rj-736" secondAttribute="centerY" id="50c-Ah-frj"/>
+                                <constraint firstItem="8rV-gc-NVN" firstAttribute="leading" secondItem="9pr-Rj-736" secondAttribute="trailing" constant="5" id="Cfb-0G-Vf3"/>
+                                <constraint firstItem="9pr-Rj-736" firstAttribute="leading" secondItem="WUL-it-uSp" secondAttribute="leading" constant="1" id="MCg-o1-cva"/>
+                                <constraint firstAttribute="bottom" secondItem="9pr-Rj-736" secondAttribute="bottom" constant="1" id="Zuz-PU-9AP"/>
+                                <constraint firstItem="9pr-Rj-736" firstAttribute="top" secondItem="WUL-it-uSp" secondAttribute="top" constant="1" id="ycJ-9a-02E"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="ugq-ge-oo4" appends="YES" id="4kT-sI-Jg0"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="aIY-PD-JRk" firstAttribute="leading" secondItem="Koi-mm-mxK" secondAttribute="leading" constant="27" id="3xq-B4-bhm"/>
+                        <constraint firstAttribute="height" constant="68" id="45A-s2-ZVd"/>
+                        <constraint firstItem="WUL-it-uSp" firstAttribute="centerY" secondItem="aIY-PD-JRk" secondAttribute="centerY" id="Cws-pV-2BT"/>
+                        <constraint firstItem="aIY-PD-JRk" firstAttribute="top" secondItem="Koi-mm-mxK" secondAttribute="top" constant="29" id="PzP-i4-pHH"/>
+                        <constraint firstItem="WUL-it-uSp" firstAttribute="leading" secondItem="aIY-PD-JRk" secondAttribute="trailing" constant="10" id="bTM-NJ-ijE"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gno-4b-c0s" userLabel="Segmented Control View">
+                    <rect key="frame" x="0.0" y="112" width="414" height="47"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5C-yS-JvU" customClass="PrimeSegmentControl" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="5" width="384" height="37"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="37" id="bDv-uX-Hsp"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="segmentTitles" value="PrimePark,Prime"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomShadow" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="u5C-yS-JvU" firstAttribute="leading" secondItem="Gno-4b-c0s" secondAttribute="leading" constant="15" id="jG2-mY-TxH"/>
+                        <constraint firstAttribute="bottom" secondItem="u5C-yS-JvU" secondAttribute="bottom" constant="5" id="knM-Zj-zrB"/>
+                        <constraint firstAttribute="trailing" secondItem="u5C-yS-JvU" secondAttribute="trailing" constant="15" id="tOl-46-hnB"/>
+                        <constraint firstItem="u5C-yS-JvU" firstAttribute="top" secondItem="Gno-4b-c0s" secondAttribute="top" constant="5" id="zu5-2a-F1M"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1IU-5b-Gcu" userLabel="User Info View">
+                    <rect key="frame" x="0.0" y="159" width="414" height="134"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Иванов Иван Иванович" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gl-7J-vyr">
+                            <rect key="frame" x="114" y="35" width="176" height="19"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Житель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaX-Ap-9j5" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="114" y="65" width="44.5" height="14"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="12"/>
+                            <color key="textColor" red="0.50980392156862742" green="0.50196078431372548" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.statusInApartment"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V4G-Ae-d2V" customClass="RoundedImageView" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="25" width="84" height="84"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="84" id="J6O-OQ-kXQ"/>
+                                <constraint firstAttribute="height" constant="84" id="fzd-zH-tjp"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffE-hz-jxf">
+                            <rect key="frame" x="75" y="81" width="23" height="24"/>
+                            <state key="normal" image="add_image"/>
+                            <connections>
+                                <action selector="addPhoto:" destination="iN0-l3-epB" eventType="touchUpInside" id="2dx-fj-h3H"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="ffE-hz-jxf" firstAttribute="leading" secondItem="1IU-5b-Gcu" secondAttribute="leading" constant="75" id="Hnh-Dx-qav"/>
+                        <constraint firstItem="VaX-Ap-9j5" firstAttribute="top" secondItem="3gl-7J-vyr" secondAttribute="bottom" constant="11" id="UJa-l9-feH"/>
+                        <constraint firstItem="3gl-7J-vyr" firstAttribute="top" secondItem="1IU-5b-Gcu" secondAttribute="top" constant="35" id="WLa-UO-hbH"/>
+                        <constraint firstItem="V4G-Ae-d2V" firstAttribute="top" secondItem="1IU-5b-Gcu" secondAttribute="top" constant="25" id="fgk-68-OGh"/>
+                        <constraint firstItem="VaX-Ap-9j5" firstAttribute="leading" secondItem="V4G-Ae-d2V" secondAttribute="trailing" constant="15" id="mn9-32-VOv"/>
+                        <constraint firstItem="ffE-hz-jxf" firstAttribute="top" secondItem="1IU-5b-Gcu" secondAttribute="top" constant="81" id="pYI-g1-geW"/>
+                        <constraint firstAttribute="bottom" secondItem="V4G-Ae-d2V" secondAttribute="bottom" constant="25" id="tN9-Wb-DBx"/>
+                        <constraint firstItem="3gl-7J-vyr" firstAttribute="leading" secondItem="VaX-Ap-9j5" secondAttribute="leading" id="uy1-2L-AJv"/>
+                        <constraint firstItem="V4G-Ae-d2V" firstAttribute="leading" secondItem="1IU-5b-Gcu" secondAttribute="leading" constant="15" id="xMk-bi-9Lx"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7S-re-OlC" userLabel="Other Info View">
+                    <rect key="frame" x="0.0" y="293" width="414" height="549"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BP-Xv-cfY">
+                            <rect key="frame" x="15" y="0.0" width="384" height="549"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="z9V-SR-Q7Z">
+                                    <rect key="frame" x="0.0" y="0.0" width="384" height="522"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PUv-PD-ktV" userLabel="Phone View" customClass="LayerBackgroundView" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="1" width="368" height="65"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_phone" translatesAutoresizingMaskIntoConstraints="NO" id="kTP-LK-6KE">
+                                                    <rect key="frame" x="15" y="15" width="34" height="35"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телефон" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzY-Dt-ie4" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="64" y="14" width="58.5" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.phone.title"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+7 999 99-92" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VX-HA-mnh">
+                                                    <rect key="frame" x="64" y="34.5" width="72" height="14"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <gestureRecognizers/>
+                                            <constraints>
+                                                <constraint firstItem="rzY-Dt-ie4" firstAttribute="leading" secondItem="kTP-LK-6KE" secondAttribute="trailing" constant="15" id="N16-h9-pQ0"/>
+                                                <constraint firstItem="kTP-LK-6KE" firstAttribute="leading" secondItem="PUv-PD-ktV" secondAttribute="leading" constant="15" id="NnN-Ir-0Xp"/>
+                                                <constraint firstAttribute="bottom" secondItem="kTP-LK-6KE" secondAttribute="bottom" constant="15" id="Nyp-zF-EU1"/>
+                                                <constraint firstItem="rzY-Dt-ie4" firstAttribute="top" secondItem="PUv-PD-ktV" secondAttribute="top" constant="14" id="WcS-Fi-MoU"/>
+                                                <constraint firstItem="kTP-LK-6KE" firstAttribute="top" secondItem="PUv-PD-ktV" secondAttribute="top" constant="15" id="XdU-s6-7ja"/>
+                                                <constraint firstItem="0VX-HA-mnh" firstAttribute="top" secondItem="rzY-Dt-ie4" secondAttribute="bottom" constant="4" id="bF6-oU-R5Z"/>
+                                                <constraint firstItem="0VX-HA-mnh" firstAttribute="leading" secondItem="kTP-LK-6KE" secondAttribute="trailing" constant="15" id="oa7-jW-YWg"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomShadow" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="Zsp-He-qeO" appends="YES" id="bYt-cw-09p"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t6l-TS-Pfb" userLabel="Email View" customClass="LayerBackgroundView" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="76" width="368" height="65"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_email" translatesAutoresizingMaskIntoConstraints="NO" id="hIM-y4-m7h">
+                                                    <rect key="frame" x="15" y="15" width="34" height="35"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8z-H6-4P8">
+                                                    <rect key="frame" x="64" y="14" width="40" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ivanov.ivan@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8m-f0-Uji">
+                                                    <rect key="frame" x="64" y="34.5" width="124.5" height="14"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <gestureRecognizers/>
+                                            <constraints>
+                                                <constraint firstItem="hIM-y4-m7h" firstAttribute="top" secondItem="t6l-TS-Pfb" secondAttribute="top" constant="15" id="CcW-Ve-f7S"/>
+                                                <constraint firstItem="I8z-H6-4P8" firstAttribute="leading" secondItem="hIM-y4-m7h" secondAttribute="trailing" constant="15" id="DIU-rm-oGq"/>
+                                                <constraint firstItem="hIM-y4-m7h" firstAttribute="leading" secondItem="t6l-TS-Pfb" secondAttribute="leading" constant="15" id="I41-5I-TOD"/>
+                                                <constraint firstItem="U8m-f0-Uji" firstAttribute="top" secondItem="I8z-H6-4P8" secondAttribute="bottom" constant="4" id="Wvb-zH-3wx"/>
+                                                <constraint firstItem="U8m-f0-Uji" firstAttribute="leading" secondItem="hIM-y4-m7h" secondAttribute="trailing" constant="15" id="b0L-hn-UQm"/>
+                                                <constraint firstAttribute="bottom" secondItem="hIM-y4-m7h" secondAttribute="bottom" constant="15" id="sgU-j3-Nso"/>
+                                                <constraint firstItem="I8z-H6-4P8" firstAttribute="top" secondItem="t6l-TS-Pfb" secondAttribute="top" constant="14" id="vHt-Z4-E1G"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomShadow" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="gbR-Nq-STm" appends="YES" id="d4Y-53-Bc1"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qqI-PD-sxl" userLabel="Apartment View" customClass="LayerBackgroundView" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="151" width="368" height="65"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_apartment" translatesAutoresizingMaskIntoConstraints="NO" id="V4e-Tk-4Vc">
+                                                    <rect key="frame" x="15" y="15" width="34" height="35"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Квартиры" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bej-uR-HNe" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="64" y="14" width="65.5" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.apartment.title"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подробная информация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVZ-0q-pqg" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="64" y="34.5" width="138.5" height="14"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.apartment.subtitle"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <gestureRecognizers/>
+                                            <constraints>
+                                                <constraint firstItem="V4e-Tk-4Vc" firstAttribute="leading" secondItem="qqI-PD-sxl" secondAttribute="leading" constant="15" id="AHy-Wr-WaV"/>
+                                                <constraint firstAttribute="bottom" secondItem="V4e-Tk-4Vc" secondAttribute="bottom" constant="15" id="AgU-BA-Bda"/>
+                                                <constraint firstItem="wVZ-0q-pqg" firstAttribute="leading" secondItem="V4e-Tk-4Vc" secondAttribute="trailing" constant="15" id="JO0-kb-bC9"/>
+                                                <constraint firstItem="bej-uR-HNe" firstAttribute="leading" secondItem="V4e-Tk-4Vc" secondAttribute="trailing" constant="15" id="UDg-mO-XHq"/>
+                                                <constraint firstItem="V4e-Tk-4Vc" firstAttribute="top" secondItem="qqI-PD-sxl" secondAttribute="top" constant="15" id="X0e-zO-2B2"/>
+                                                <constraint firstItem="bej-uR-HNe" firstAttribute="top" secondItem="qqI-PD-sxl" secondAttribute="top" constant="14" id="aa7-rh-hdo"/>
+                                                <constraint firstItem="wVZ-0q-pqg" firstAttribute="top" secondItem="bej-uR-HNe" secondAttribute="bottom" constant="4" id="nId-S8-cXn"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomShadow" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="YYa-Fe-xvh" appends="YES" id="hRV-Az-2EW"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNv-OI-qE0" userLabel="Settings View" customClass="LayerBackgroundView" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="226" width="368" height="65"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_passes" translatesAutoresizingMaskIntoConstraints="NO" id="3ds-9D-I9W">
+                                                    <rect key="frame" x="15" y="15" width="34" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="6c2-2T-bjI"/>
+                                                        <constraint firstAttribute="width" constant="34" id="wkl-mZ-MRF"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Настройки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkK-ug-USA" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="64" y="14" width="71.5" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.pass.title"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Настройки приложения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAl-H0-kCm" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="64" y="34.5" width="134.5" height="14"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.passList.title"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <gestureRecognizers/>
+                                            <constraints>
+                                                <constraint firstItem="3ds-9D-I9W" firstAttribute="top" secondItem="hNv-OI-qE0" secondAttribute="top" constant="15" id="8Vu-vs-Kne"/>
+                                                <constraint firstItem="hkK-ug-USA" firstAttribute="top" secondItem="hNv-OI-qE0" secondAttribute="top" constant="14" id="Cst-3K-Vru"/>
+                                                <constraint firstItem="SAl-H0-kCm" firstAttribute="leading" secondItem="3ds-9D-I9W" secondAttribute="trailing" constant="15" id="LZo-le-HmV"/>
+                                                <constraint firstItem="hkK-ug-USA" firstAttribute="leading" secondItem="3ds-9D-I9W" secondAttribute="trailing" constant="15" id="Lf1-fH-0nj"/>
+                                                <constraint firstItem="SAl-H0-kCm" firstAttribute="top" secondItem="hkK-ug-USA" secondAttribute="bottom" constant="4" id="YCH-Zt-uh9"/>
+                                                <constraint firstAttribute="bottom" secondItem="3ds-9D-I9W" secondAttribute="bottom" constant="15" id="d19-hS-G76"/>
+                                                <constraint firstItem="3ds-9D-I9W" firstAttribute="leading" secondItem="hNv-OI-qE0" secondAttribute="leading" constant="15" id="hBm-OU-tFj"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomShadow" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="Z4d-tV-2CL" appends="YES" id="0d3-Nn-vwQ"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q8j-sg-HvC" userLabel="Residents View" customClass="LayerBackgroundView" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="301" width="368" height="65"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_residents" translatesAutoresizingMaskIntoConstraints="NO" id="bjh-Ny-e4o">
+                                                    <rect key="frame" x="15" y="15" width="34" height="35"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Резиденты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocr-YU-glY" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="64" y="14" width="72" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.residents.title"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Константин К." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7H-YX-lR3">
+                                                    <rect key="frame" x="64" y="34.5" width="81" height="14"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOj-SH-Cm7" userLabel="Amount Of Residents View" customClass="RoundedView" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="151" y="23.5" width="26" height="18"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vt8-3a-0Vn">
+                                                            <rect key="frame" x="6" y="2" width="14" height="14"/>
+                                                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="12"/>
+                                                            <color key="textColor" red="0.16862887139999999" green="0.1686248779" blue="0.16862756009999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.70196078429999997" green="0.59607843140000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Vt8-3a-0Vn" firstAttribute="top" secondItem="kOj-SH-Cm7" secondAttribute="top" constant="2" id="EdI-jR-2ev"/>
+                                                        <constraint firstItem="Vt8-3a-0Vn" firstAttribute="leading" secondItem="kOj-SH-Cm7" secondAttribute="leading" constant="6" id="NbQ-nf-goI"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Vt8-3a-0Vn" secondAttribute="bottom" constant="2" id="QfI-Gz-zeV"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Vt8-3a-0Vn" secondAttribute="trailing" constant="6" id="XOA-f6-Tkz"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="9"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <gestureRecognizers/>
+                                            <constraints>
+                                                <constraint firstItem="bjh-Ny-e4o" firstAttribute="top" secondItem="Q8j-sg-HvC" secondAttribute="top" constant="15" id="FzV-em-eaG"/>
+                                                <constraint firstItem="Ocr-YU-glY" firstAttribute="leading" secondItem="bjh-Ny-e4o" secondAttribute="trailing" constant="15" id="UK0-hA-9HN"/>
+                                                <constraint firstItem="bjh-Ny-e4o" firstAttribute="leading" secondItem="Q8j-sg-HvC" secondAttribute="leading" constant="15" id="VDP-jn-0Ow"/>
+                                                <constraint firstItem="Ocr-YU-glY" firstAttribute="top" secondItem="Q8j-sg-HvC" secondAttribute="top" constant="14" id="cBH-xC-CdP"/>
+                                                <constraint firstAttribute="bottom" secondItem="bjh-Ny-e4o" secondAttribute="bottom" constant="15" id="iju-oV-4ah"/>
+                                                <constraint firstItem="kOj-SH-Cm7" firstAttribute="leading" secondItem="Q7H-YX-lR3" secondAttribute="trailing" constant="6" id="nJu-ew-ZNc"/>
+                                                <constraint firstItem="kOj-SH-Cm7" firstAttribute="bottom" secondItem="Q7H-YX-lR3" secondAttribute="bottom" constant="-7" id="od4-Gp-ftr"/>
+                                                <constraint firstItem="Q7H-YX-lR3" firstAttribute="leading" secondItem="bjh-Ny-e4o" secondAttribute="trailing" constant="15" id="uvx-4n-qvA"/>
+                                                <constraint firstItem="Q7H-YX-lR3" firstAttribute="top" secondItem="Ocr-YU-glY" secondAttribute="bottom" constant="4" id="xO8-Ue-Xb9"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomShadow" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="wtf-4U-efw" appends="YES" id="ARH-bw-Llt"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G33-al-U3c" userLabel="Law Info View" customClass="LayerBackgroundView" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="376" width="368" height="65"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_law_info" translatesAutoresizingMaskIntoConstraints="NO" id="pne-da-xfR">
+                                                    <rect key="frame" x="15" y="15" width="34" height="35"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Юридическая информация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBc-cQ-xqf" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="64" y="14" width="179.5" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.lawInfo.title"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Соглашения, об УК, о ЖК" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Z8-P3-9yJ" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="64" y="34.5" width="146" height="14"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.lawInfo.first.subtitle"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <gestureRecognizers/>
+                                            <constraints>
+                                                <constraint firstItem="pBc-cQ-xqf" firstAttribute="top" secondItem="G33-al-U3c" secondAttribute="top" constant="14" id="0dX-WB-jUc"/>
+                                                <constraint firstItem="pne-da-xfR" firstAttribute="top" secondItem="G33-al-U3c" secondAttribute="top" constant="15" id="CQt-wg-gTx"/>
+                                                <constraint firstItem="2Z8-P3-9yJ" firstAttribute="top" secondItem="pBc-cQ-xqf" secondAttribute="bottom" constant="4" id="MJ3-ub-YKu"/>
+                                                <constraint firstAttribute="bottom" secondItem="pne-da-xfR" secondAttribute="bottom" constant="15" id="SQg-sV-H5e"/>
+                                                <constraint firstItem="pne-da-xfR" firstAttribute="leading" secondItem="G33-al-U3c" secondAttribute="leading" constant="15" id="Sc8-ZS-lN2"/>
+                                                <constraint firstItem="pBc-cQ-xqf" firstAttribute="leading" secondItem="pne-da-xfR" secondAttribute="trailing" constant="15" id="gTO-zu-cMB"/>
+                                                <constraint firstItem="2Z8-P3-9yJ" firstAttribute="leading" secondItem="pne-da-xfR" secondAttribute="trailing" constant="15" id="l3H-qP-tTy"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomShadow" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="bBV-N9-BY9" appends="YES" id="MRC-8k-QPO"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9V-oP-fHa" userLabel="Settings View" customClass="LayerBackgroundView" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="451" width="368" height="65"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_settings" translatesAutoresizingMaskIntoConstraints="NO" id="Whe-qD-HIs">
+                                                    <rect key="frame" x="15" y="15" width="34" height="35"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Настройки" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sC-XD-RbL" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="64" y="14" width="71.5" height="16.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.settings.title"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Настройки приложения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cds-LL-Qnc" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="64" y="34.5" width="134.5" height="14"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.settings.subtitle"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <gestureRecognizers/>
+                                            <constraints>
+                                                <constraint firstItem="cds-LL-Qnc" firstAttribute="leading" secondItem="Whe-qD-HIs" secondAttribute="trailing" constant="15" id="Grq-WO-aUG"/>
+                                                <constraint firstItem="Whe-qD-HIs" firstAttribute="top" secondItem="U9V-oP-fHa" secondAttribute="top" constant="15" id="Lbb-Zv-w9C"/>
+                                                <constraint firstAttribute="bottom" secondItem="Whe-qD-HIs" secondAttribute="bottom" constant="15" id="NxO-CD-euH"/>
+                                                <constraint firstItem="Whe-qD-HIs" firstAttribute="leading" secondItem="U9V-oP-fHa" secondAttribute="leading" constant="15" id="Trl-mT-Gph"/>
+                                                <constraint firstItem="cds-LL-Qnc" firstAttribute="top" secondItem="3sC-XD-RbL" secondAttribute="bottom" constant="4" id="lt6-Vo-o7X"/>
+                                                <constraint firstItem="3sC-XD-RbL" firstAttribute="top" secondItem="U9V-oP-fHa" secondAttribute="top" constant="14" id="qHN-aU-cSS"/>
+                                                <constraint firstItem="3sC-XD-RbL" firstAttribute="leading" secondItem="Whe-qD-HIs" secondAttribute="trailing" constant="15" id="zhF-bj-HhW"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="15"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isBottomShadow" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="oXu-1h-2Zb" appends="YES" id="iub-rj-qMl"/>
+                                            </connections>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <edgeInsets key="layoutMargins" top="1" left="8" bottom="6" right="8"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="z9V-SR-Q7Z" firstAttribute="leading" secondItem="2BP-Xv-cfY" secondAttribute="leading" id="0fy-cI-1RO"/>
+                                <constraint firstItem="z9V-SR-Q7Z" firstAttribute="top" secondItem="2BP-Xv-cfY" secondAttribute="top" id="Q2k-Sq-2JC"/>
+                                <constraint firstAttribute="bottom" secondItem="z9V-SR-Q7Z" secondAttribute="bottom" id="Sp3-g1-9cJ"/>
+                                <constraint firstItem="z9V-SR-Q7Z" firstAttribute="width" secondItem="2BP-Xv-cfY" secondAttribute="width" id="WyQ-d7-TyQ"/>
+                                <constraint firstAttribute="trailing" secondItem="z9V-SR-Q7Z" secondAttribute="trailing" id="eux-Aa-ehz"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="2BP-Xv-cfY" firstAttribute="top" secondItem="d7S-re-OlC" secondAttribute="top" id="5E1-vh-UjA"/>
+                        <constraint firstAttribute="bottom" secondItem="2BP-Xv-cfY" secondAttribute="bottom" id="NlP-oB-PBa"/>
+                        <constraint firstItem="2BP-Xv-cfY" firstAttribute="leading" secondItem="d7S-re-OlC" secondAttribute="leading" constant="15" id="iHQ-Ch-Adn"/>
+                        <constraint firstAttribute="trailing" secondItem="2BP-Xv-cfY" secondAttribute="trailing" constant="15" id="omf-8h-0DG"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4w-hd-tgH">
+                    <rect key="frame" x="0.0" y="159" width="414" height="703"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="prime-park-background-image" translatesAutoresizingMaskIntoConstraints="NO" id="eul-0J-zt3">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="335"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info_prime_logo" translatesAutoresizingMaskIntoConstraints="NO" id="B4T-yW-G44">
+                            <rect key="frame" x="35" y="90" width="73" height="20"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваши заботы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWx-XV-nYu">
+                            <rect key="frame" x="35" y="135" width="217" height="41"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu Light" pointSize="35"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88Y-J2-Un5">
+                            <rect key="frame" x="37" y="242" width="327" height="451"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <attributedString key="attributedText">
+                                <fragment>
+                                    <string key="content">Наша задача – понять Вас и сделать так, чтобы в Вашей жизни осталось место только для приятных моментов. Наши ассистенты предложат Вам нестандартные решения любой поставленной задачи.
+
+</string>
+                                    <attributes>
+                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" metaFont="system" size="17"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment>
+                                    <string key="content">Мы сопровождаем Вас 24 часа
+в сутки, 7 дней в неделю.</string>
+                                    <attributes>
+                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" metaFont="systemBold" size="17"/>
+                                        <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment>
+                                    <string key="content">
+Ваш персональный ассистент – часть отлаженного механизма клуба PRIME, признанного лидера в предоставлении консьерж-услуг. </string>
+                                    <attributes>
+                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" metaFont="system" size="17"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="— наша миссия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BP3-ij-36S">
+                            <rect key="frame" x="35" y="181" width="259" height="41"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="35"/>
+                            <color key="textColor" red="0.70196078429999997" green="0.59607843140000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="BP3-ij-36S" firstAttribute="top" secondItem="WWx-XV-nYu" secondAttribute="bottom" constant="5" id="11l-Cw-vnW"/>
+                        <constraint firstItem="WWx-XV-nYu" firstAttribute="top" secondItem="B4T-yW-G44" secondAttribute="bottom" constant="25" id="2fq-rt-OnW"/>
+                        <constraint firstItem="BP3-ij-36S" firstAttribute="leading" secondItem="T4w-hd-tgH" secondAttribute="leading" constant="35" id="3rg-as-8Wb"/>
+                        <constraint firstAttribute="trailing" secondItem="88Y-J2-Un5" secondAttribute="trailing" constant="50" id="I2v-zX-3Ky"/>
+                        <constraint firstItem="B4T-yW-G44" firstAttribute="top" secondItem="T4w-hd-tgH" secondAttribute="top" constant="90" id="WWz-LE-LTU"/>
+                        <constraint firstItem="B4T-yW-G44" firstAttribute="leading" secondItem="T4w-hd-tgH" secondAttribute="leading" constant="35" id="cRl-qO-wFJ"/>
+                        <constraint firstItem="88Y-J2-Un5" firstAttribute="top" secondItem="BP3-ij-36S" secondAttribute="bottom" constant="20" id="lOa-e1-5lh"/>
+                        <constraint firstAttribute="bottom" secondItem="88Y-J2-Un5" secondAttribute="bottom" constant="10" id="nyl-aw-CQ9"/>
+                        <constraint firstItem="88Y-J2-Un5" firstAttribute="leading" secondItem="T4w-hd-tgH" secondAttribute="leading" constant="37" id="p1u-lQ-y01"/>
+                        <constraint firstItem="WWx-XV-nYu" firstAttribute="leading" secondItem="T4w-hd-tgH" secondAttribute="leading" constant="35" id="qOV-ut-4h3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="D4c-6J-4KG"/>
+            <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="T4w-hd-tgH" firstAttribute="top" secondItem="Gno-4b-c0s" secondAttribute="bottom" id="0Ch-V0-oMQ"/>
+                <constraint firstItem="T4w-hd-tgH" firstAttribute="leading" secondItem="D4c-6J-4KG" secondAttribute="leading" id="1pt-q1-11h"/>
+                <constraint firstItem="d7S-re-OlC" firstAttribute="top" secondItem="1IU-5b-Gcu" secondAttribute="bottom" id="35a-2A-pnV"/>
+                <constraint firstItem="D4c-6J-4KG" firstAttribute="trailing" secondItem="d7S-re-OlC" secondAttribute="trailing" id="ASk-KM-3vx"/>
+                <constraint firstAttribute="trailing" secondItem="Koi-mm-mxK" secondAttribute="trailing" id="Ere-E9-4mK"/>
+                <constraint firstItem="d7S-re-OlC" firstAttribute="leading" secondItem="D4c-6J-4KG" secondAttribute="leading" id="G8F-MV-Z2Q"/>
+                <constraint firstItem="Gno-4b-c0s" firstAttribute="top" secondItem="Koi-mm-mxK" secondAttribute="bottom" id="Lry-BK-4sG"/>
+                <constraint firstItem="D4c-6J-4KG" firstAttribute="trailing" secondItem="T4w-hd-tgH" secondAttribute="trailing" id="bco-eh-21K"/>
+                <constraint firstItem="Gno-4b-c0s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dE0-D4-Bzr"/>
+                <constraint firstItem="D4c-6J-4KG" firstAttribute="bottom" secondItem="d7S-re-OlC" secondAttribute="bottom" constant="20" id="eS1-eQ-FCx"/>
+                <constraint firstItem="D4c-6J-4KG" firstAttribute="top" secondItem="Koi-mm-mxK" secondAttribute="top" id="mf8-t4-57F"/>
+                <constraint firstItem="1IU-5b-Gcu" firstAttribute="top" secondItem="Gno-4b-c0s" secondAttribute="bottom" id="rEI-Bq-scs"/>
+                <constraint firstItem="Koi-mm-mxK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tIe-nf-wq4"/>
+                <constraint firstItem="1IU-5b-Gcu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wx2-rM-TiL"/>
+                <constraint firstAttribute="trailing" secondItem="Gno-4b-c0s" secondAttribute="trailing" id="xDp-wG-UpY"/>
+                <constraint firstAttribute="trailing" secondItem="1IU-5b-Gcu" secondAttribute="trailing" id="y9i-V7-buf"/>
+                <constraint firstItem="D4c-6J-4KG" firstAttribute="bottom" secondItem="T4w-hd-tgH" secondAttribute="bottom" id="yWV-L3-Pan"/>
+            </constraints>
+            <connections>
+                <outlet property="amountOfResidentsLabel" destination="Vt8-3a-0Vn" id="Pb1-cR-lVN"/>
+                <outlet property="amountOfResidentsView" destination="kOj-SH-Cm7" id="Wjm-ZW-qXS"/>
+                <outlet property="apartmentNumberLabel" destination="9pr-Rj-736" id="jOw-GQ-uOQ"/>
+                <outlet property="backgroundImage" destination="eul-0J-zt3" id="I76-xq-fVd"/>
+                <outlet property="emailLabel" destination="U8m-f0-Uji" id="qdH-6Q-HJ8"/>
+                <outlet property="logoImageView" destination="aIY-PD-JRk" id="88y-zI-cnf"/>
+                <outlet property="nameLabel" destination="3gl-7J-vyr" id="QKL-05-apj"/>
+                <outlet property="phoneLabel" destination="0VX-HA-mnh" id="4go-K8-peV"/>
+                <outlet property="primeParkSegmentedControl" destination="u5C-yS-JvU" id="Jxq-Mt-PNb"/>
+                <outlet property="primeView" destination="T4w-hd-tgH" id="DC3-oE-L3P"/>
+                <outlet property="residentLabel" destination="Q7H-YX-lR3" id="stH-Jd-G4f"/>
+                <outlet property="roundedProfileImageView" destination="V4G-Ae-d2V" id="gaG-0n-6Se"/>
+                <outlet property="secondaryInfoView" destination="d7S-re-OlC" id="5gI-Dm-fRv"/>
+                <outlet property="statusLabel" destination="VaX-Ap-9j5" id="ymA-nZ-z7L"/>
+                <outlet property="userInfoView" destination="1IU-5b-Gcu" id="UwE-a4-0zE"/>
+                <outletCollection property="habitantAccess" destination="Q8j-sg-HvC" collectionClass="NSMutableArray" id="Gh1-N8-QxH"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="152.67857142857142"/>
+        </view>
+        <tapGestureRecognizer id="Z4d-tV-2CL" userLabel="tapPasses">
+            <connections>
+                <action selector="showPasses:" destination="iN0-l3-epB" id="0Tc-3I-NxX"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="ugq-ge-oo4">
+            <connections>
+                <action selector="changeApartment:" destination="iN0-l3-epB" id="8FA-5K-duX"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="Zsp-He-qeO">
+            <connections>
+                <action selector="showPhone:" destination="iN0-l3-epB" id="ao5-s0-H2q"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="gbR-Nq-STm">
+            <connections>
+                <action selector="showEmail:" destination="iN0-l3-epB" id="hF2-1x-0wd"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="YYa-Fe-xvh">
+            <connections>
+                <action selector="showApartments:" destination="iN0-l3-epB" id="xrf-7D-o9c"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="wtf-4U-efw">
+            <connections>
+                <action selector="showResidents:" destination="iN0-l3-epB" id="sol-TE-ZAG"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="bBV-N9-BY9">
+            <connections>
+                <action selector="showLawInfo:" destination="iN0-l3-epB" id="040-Vh-rKX"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="oXu-1h-2Zb">
+            <connections>
+                <action selector="showSettings:" destination="iN0-l3-epB" id="WqB-an-geL"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <designables>
+        <designable name="2Z8-P3-9yJ">
+            <size key="intrinsicContentSize" width="146" height="14"/>
+        </designable>
+        <designable name="3sC-XD-RbL">
+            <size key="intrinsicContentSize" width="71.5" height="16.5"/>
+        </designable>
+        <designable name="Ocr-YU-glY">
+            <size key="intrinsicContentSize" width="72" height="16.5"/>
+        </designable>
+        <designable name="SAl-H0-kCm">
+            <size key="intrinsicContentSize" width="134.5" height="14"/>
+        </designable>
+        <designable name="VaX-Ap-9j5">
+            <size key="intrinsicContentSize" width="44.5" height="14"/>
+        </designable>
+        <designable name="bej-uR-HNe">
+            <size key="intrinsicContentSize" width="65.5" height="16.5"/>
+        </designable>
+        <designable name="cds-LL-Qnc">
+            <size key="intrinsicContentSize" width="134.5" height="14"/>
+        </designable>
+        <designable name="hkK-ug-USA">
+            <size key="intrinsicContentSize" width="71.5" height="16.5"/>
+        </designable>
+        <designable name="pBc-cQ-xqf">
+            <size key="intrinsicContentSize" width="179.5" height="16.5"/>
+        </designable>
+        <designable name="rzY-Dt-ie4">
+            <size key="intrinsicContentSize" width="58.5" height="16.5"/>
+        </designable>
+        <designable name="wVZ-0q-pqg">
+            <size key="intrinsicContentSize" width="138.5" height="14"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="add_image" width="23" height="24"/>
+        <image name="down_arrow" width="7" height="5"/>
+        <image name="info_prime_logo" width="73" height="20"/>
+        <image name="logo_gold" width="27" height="27"/>
+        <image name="prime-park-background-image" width="375" height="335"/>
+        <image name="profile_apartment" width="34" height="34.5"/>
+        <image name="profile_email" width="34" height="34"/>
+        <image name="profile_law_info" width="34" height="34"/>
+        <image name="profile_passes" width="80" height="80"/>
+        <image name="profile_phone" width="34" height="34"/>
+        <image name="profile_residents" width="34" height="34"/>
+        <image name="profile_settings" width="34" height="34"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

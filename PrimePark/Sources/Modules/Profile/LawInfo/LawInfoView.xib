@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="42N-uv-nFT" userLabel="Law Info View" customClass="LawInfoView" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Юридическая информация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdt-lV-jD1" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="101" y="67" width="212" height="18"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                    <color key="textColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.lawInfo.title"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdM-1h-nxM" userLabel="Divide View">
+                    <rect key="frame" x="0.0" y="100" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="mcc-eW-q7F"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Соглашения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GsL-ZI-z4c" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="15" y="116" width="119.5" height="22.5"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="20"/>
+                    <color key="textColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.lawInfo.first.subtitle"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJW-dg-Zp9" userLabel="First Rule View">
+                    <rect key="frame" x="0.0" y="156.5" width="414" height="32"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="813-Qf-q0B" userLabel="Divide View">
+                            <rect key="frame" x="15" y="0.0" width="384" height="1"/>
+                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="X6M-5A-oZO"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htk-jQ-2oG" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="0.0" width="128" height="30"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <state key="normal" title="Правило первое">
+                                <color key="titleColor" red="0.70196078429999997" green="0.59607843140000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.lawInfo.first.subtitle.first"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="showHideRule:" destination="42N-uv-nFT" eventType="touchUpInside" id="zf4-vq-0vC"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arror_down" translatesAutoresizingMaskIntoConstraints="NO" id="tCJ-Fg-GtC">
+                            <rect key="frame" x="148" y="12.5" width="7" height="5.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="7" id="2X2-m5-dRi"/>
+                            </constraints>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Длинный текст" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KqQ-XS-sQA" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="43" width="384" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="passInfo.rules.first.description"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="813-Qf-q0B" secondAttribute="trailing" constant="15" id="0rD-Cx-EnT"/>
+                        <constraint firstAttribute="trailing" secondItem="KqQ-XS-sQA" secondAttribute="trailing" constant="15" id="3WE-HZ-wfx"/>
+                        <constraint firstItem="813-Qf-q0B" firstAttribute="leading" secondItem="LJW-dg-Zp9" secondAttribute="leading" constant="15" id="3vY-0d-T9F"/>
+                        <constraint firstItem="htk-jQ-2oG" firstAttribute="leading" secondItem="LJW-dg-Zp9" secondAttribute="leading" constant="15" id="Gbp-L8-Pbn"/>
+                        <constraint firstItem="htk-jQ-2oG" firstAttribute="top" secondItem="LJW-dg-Zp9" secondAttribute="top" id="UK2-KL-Iip"/>
+                        <constraint firstItem="813-Qf-q0B" firstAttribute="top" secondItem="LJW-dg-Zp9" secondAttribute="top" id="Xcz-cQ-MIV"/>
+                        <constraint firstItem="KqQ-XS-sQA" firstAttribute="leading" secondItem="LJW-dg-Zp9" secondAttribute="leading" constant="15" id="esu-8X-sm6"/>
+                        <constraint firstItem="tCJ-Fg-GtC" firstAttribute="leading" secondItem="htk-jQ-2oG" secondAttribute="trailing" constant="5" id="fL5-Nb-zRu"/>
+                        <constraint firstItem="tCJ-Fg-GtC" firstAttribute="centerY" secondItem="htk-jQ-2oG" secondAttribute="centerY" id="oJd-RF-6E2"/>
+                        <constraint firstItem="KqQ-XS-sQA" firstAttribute="top" secondItem="htk-jQ-2oG" secondAttribute="bottom" constant="13" id="vTD-bd-qLd"/>
+                        <constraint firstAttribute="height" constant="32" id="xCc-QT-0Qc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vct-iw-AUB" userLabel="Second Rule View">
+                    <rect key="frame" x="0.0" y="188.5" width="414" height="32"/>
+                    <subviews>
+                        <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHp-fv-O2t" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="0.0" width="127" height="30"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <state key="normal" title="Правило второе">
+                                <color key="titleColor" red="0.70196078429999997" green="0.59607843140000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.lawInfo.first.subtitle.second"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="showHideRule:" destination="42N-uv-nFT" eventType="touchUpInside" id="UUq-IQ-dfA"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arror_down" translatesAutoresizingMaskIntoConstraints="NO" id="4R8-xF-Raw">
+                            <rect key="frame" x="147" y="12.5" width="7" height="5.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="7" id="mGI-d3-cNZ"/>
+                            </constraints>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Длинный текст" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFc-3k-5nS" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="43" width="384" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="passInfo.rules.second.description"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKh-5B-u84" userLabel="Divide View">
+                            <rect key="frame" x="15" y="0.0" width="384" height="1"/>
+                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="VBL-xb-KRr"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="EKh-5B-u84" firstAttribute="top" secondItem="vct-iw-AUB" secondAttribute="top" id="1nR-h7-xVO"/>
+                        <constraint firstItem="4R8-xF-Raw" firstAttribute="centerY" secondItem="IHp-fv-O2t" secondAttribute="centerY" id="HeX-2g-Vla"/>
+                        <constraint firstItem="IHp-fv-O2t" firstAttribute="leading" secondItem="vct-iw-AUB" secondAttribute="leading" constant="15" id="JsW-mP-o1J"/>
+                        <constraint firstAttribute="trailing" secondItem="PFc-3k-5nS" secondAttribute="trailing" constant="15" id="PVf-qS-Fd7"/>
+                        <constraint firstItem="4R8-xF-Raw" firstAttribute="leading" secondItem="IHp-fv-O2t" secondAttribute="trailing" constant="5" id="SJ4-Z9-Kks"/>
+                        <constraint firstItem="EKh-5B-u84" firstAttribute="leading" secondItem="vct-iw-AUB" secondAttribute="leading" constant="15" id="aRX-Kl-os9"/>
+                        <constraint firstItem="PFc-3k-5nS" firstAttribute="top" secondItem="IHp-fv-O2t" secondAttribute="bottom" constant="13" id="dVT-il-9GS"/>
+                        <constraint firstAttribute="height" constant="32" id="eQ3-jM-NLP"/>
+                        <constraint firstItem="IHp-fv-O2t" firstAttribute="top" secondItem="vct-iw-AUB" secondAttribute="top" id="mGY-mC-CnJ"/>
+                        <constraint firstAttribute="trailing" secondItem="EKh-5B-u84" secondAttribute="trailing" constant="15" id="ye5-ey-kD4"/>
+                        <constraint firstItem="PFc-3k-5nS" firstAttribute="leading" secondItem="vct-iw-AUB" secondAttribute="leading" constant="15" id="zXF-2x-jek"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RF7-aZ-o4s" userLabel="Third Rule View">
+                    <rect key="frame" x="0.0" y="220.5" width="414" height="32"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9mz-tX-Gbq" userLabel="Divide View">
+                            <rect key="frame" x="15" y="0.0" width="384" height="1"/>
+                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="JW5-uu-qAR"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qT-bf-d0N" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="0.0" width="124" height="30"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <state key="normal" title="Правило третье">
+                                <color key="titleColor" red="0.70196078429999997" green="0.59607843140000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.lawInfo.first.subtitle.third"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="showHideRule:" destination="42N-uv-nFT" eventType="touchUpInside" id="1bA-6Y-ff3"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arror_down" translatesAutoresizingMaskIntoConstraints="NO" id="j5X-PK-LV9">
+                            <rect key="frame" x="144" y="12.5" width="7" height="5.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="7" id="0cg-ZZ-UQc"/>
+                            </constraints>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" alpha="0.85000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Длинный текст" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e95-yG-aHl" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="43" width="384" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="passInfo.rules.third.description"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="9mz-tX-Gbq" firstAttribute="leading" secondItem="RF7-aZ-o4s" secondAttribute="leading" constant="15" id="3YT-Lz-OL8"/>
+                        <constraint firstAttribute="trailing" secondItem="e95-yG-aHl" secondAttribute="trailing" constant="15" id="6vD-7j-FS0"/>
+                        <constraint firstItem="j5X-PK-LV9" firstAttribute="centerY" secondItem="4qT-bf-d0N" secondAttribute="centerY" id="Bjk-4c-A4Q"/>
+                        <constraint firstItem="4qT-bf-d0N" firstAttribute="leading" secondItem="RF7-aZ-o4s" secondAttribute="leading" constant="15" id="CLu-k2-63Z"/>
+                        <constraint firstItem="e95-yG-aHl" firstAttribute="top" secondItem="4qT-bf-d0N" secondAttribute="bottom" constant="13" id="F1r-C9-TZa"/>
+                        <constraint firstItem="e95-yG-aHl" firstAttribute="leading" secondItem="RF7-aZ-o4s" secondAttribute="leading" constant="15" id="Z9v-IF-YFe"/>
+                        <constraint firstItem="j5X-PK-LV9" firstAttribute="leading" secondItem="4qT-bf-d0N" secondAttribute="trailing" constant="5" id="abS-7O-KVX"/>
+                        <constraint firstItem="9mz-tX-Gbq" firstAttribute="top" secondItem="RF7-aZ-o4s" secondAttribute="top" id="cql-n8-fOs"/>
+                        <constraint firstItem="4qT-bf-d0N" firstAttribute="top" secondItem="RF7-aZ-o4s" secondAttribute="top" id="kFj-cU-7ja"/>
+                        <constraint firstAttribute="height" constant="32" id="sm0-5r-0IW"/>
+                        <constraint firstAttribute="trailing" secondItem="9mz-tX-Gbq" secondAttribute="trailing" constant="15" id="vf1-B5-LdR"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uW-Mz-yfJ" userLabel="Fourth Rule View">
+                    <rect key="frame" x="0.0" y="252.5" width="414" height="32"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bdk-3A-eOy" userLabel="Divide View">
+                            <rect key="frame" x="15" y="0.0" width="384" height="1"/>
+                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="AiJ-hh-n69"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NL4-Ht-7y1" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="0.0" width="152" height="30"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <state key="normal" title="Правило четвертое">
+                                <color key="titleColor" red="0.70196078429999997" green="0.59607843140000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.lawInfo.first.subtitle.fourth"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="showHideRule:" destination="42N-uv-nFT" eventType="touchUpInside" id="ZPb-x8-LoX"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arror_down" translatesAutoresizingMaskIntoConstraints="NO" id="VWT-JR-wTd">
+                            <rect key="frame" x="172" y="12.5" width="7" height="5.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="7" id="4EY-WG-Z58"/>
+                            </constraints>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Длинный текст" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgn-OY-g5s" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="43" width="384" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="passInfo.rules.fourth.description"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Bdk-3A-eOy" firstAttribute="top" secondItem="4uW-Mz-yfJ" secondAttribute="top" id="4qf-Dj-LOC"/>
+                        <constraint firstAttribute="trailing" secondItem="Bdk-3A-eOy" secondAttribute="trailing" constant="15" id="5WM-Qm-O0p"/>
+                        <constraint firstAttribute="trailing" secondItem="hgn-OY-g5s" secondAttribute="trailing" constant="15" id="M8V-5b-t45"/>
+                        <constraint firstItem="VWT-JR-wTd" firstAttribute="leading" secondItem="NL4-Ht-7y1" secondAttribute="trailing" constant="5" id="N0d-Q9-A24"/>
+                        <constraint firstItem="Bdk-3A-eOy" firstAttribute="leading" secondItem="4uW-Mz-yfJ" secondAttribute="leading" constant="15" id="Un0-r7-O35"/>
+                        <constraint firstAttribute="height" constant="32" id="VpF-S6-LsU"/>
+                        <constraint firstItem="hgn-OY-g5s" firstAttribute="top" secondItem="NL4-Ht-7y1" secondAttribute="bottom" constant="13" id="Yey-ll-FT6"/>
+                        <constraint firstItem="VWT-JR-wTd" firstAttribute="centerY" secondItem="NL4-Ht-7y1" secondAttribute="centerY" id="aOS-Ob-eT2"/>
+                        <constraint firstItem="NL4-Ht-7y1" firstAttribute="top" secondItem="4uW-Mz-yfJ" secondAttribute="top" id="at2-k8-gC5"/>
+                        <constraint firstItem="NL4-Ht-7y1" firstAttribute="leading" secondItem="4uW-Mz-yfJ" secondAttribute="leading" constant="15" id="nfN-7t-Otg"/>
+                        <constraint firstItem="hgn-OY-g5s" firstAttribute="leading" secondItem="4uW-Mz-yfJ" secondAttribute="leading" constant="15" id="z4Z-lx-pjN"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Об управляющей компании" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgX-dK-0fq" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="15" y="332.5" width="271" height="22.5"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="20"/>
+                    <color key="textColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.lawInfo.second.subtitle"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B4Q-fs-y3X" userLabel="First Rate View">
+                    <rect key="frame" x="0.0" y="373" width="414" height="32"/>
+                    <subviews>
+                        <button opaque="NO" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cud-zb-vsr" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="0.0" width="113" height="30"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <state key="normal" title="Тариф первый">
+                                <color key="titleColor" red="0.70196078429999997" green="0.59607843140000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.lawInfo.second.subtitle.first"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="showHideRate:" destination="42N-uv-nFT" eventType="touchUpInside" id="6AO-m2-DhM"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wIA-rB-DPh" userLabel="Divide View">
+                            <rect key="frame" x="15" y="0.0" width="384" height="1"/>
+                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="4iO-Yw-TVw"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arror_down" translatesAutoresizingMaskIntoConstraints="NO" id="uL4-u7-qT9">
+                            <rect key="frame" x="133" y="12.5" width="7" height="5.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="7" id="mRo-O8-sgJ"/>
+                            </constraints>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Длинный текст" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDw-N9-1ni" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="43" width="384" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="passInfo.rates.first.description"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="YDw-N9-1ni" firstAttribute="leading" secondItem="B4Q-fs-y3X" secondAttribute="leading" constant="15" id="0Bd-LB-H6Z"/>
+                        <constraint firstItem="wIA-rB-DPh" firstAttribute="top" secondItem="B4Q-fs-y3X" secondAttribute="top" id="1gD-fX-aYz"/>
+                        <constraint firstItem="uL4-u7-qT9" firstAttribute="centerY" secondItem="cud-zb-vsr" secondAttribute="centerY" id="5Sy-4n-PQG"/>
+                        <constraint firstAttribute="trailing" secondItem="YDw-N9-1ni" secondAttribute="trailing" constant="15" id="7la-ED-fI0"/>
+                        <constraint firstAttribute="height" constant="32" id="NPL-D4-oim"/>
+                        <constraint firstItem="wIA-rB-DPh" firstAttribute="leading" secondItem="B4Q-fs-y3X" secondAttribute="leading" constant="15" id="Q2h-bt-Hvo"/>
+                        <constraint firstAttribute="trailing" secondItem="wIA-rB-DPh" secondAttribute="trailing" constant="15" id="Qik-91-29d"/>
+                        <constraint firstItem="uL4-u7-qT9" firstAttribute="leading" secondItem="cud-zb-vsr" secondAttribute="trailing" constant="5" id="ZpF-y1-iMX"/>
+                        <constraint firstItem="cud-zb-vsr" firstAttribute="leading" secondItem="B4Q-fs-y3X" secondAttribute="leading" constant="15" id="p9M-D7-cVc"/>
+                        <constraint firstItem="YDw-N9-1ni" firstAttribute="top" secondItem="cud-zb-vsr" secondAttribute="bottom" constant="13" id="pzm-h5-Pix"/>
+                        <constraint firstItem="cud-zb-vsr" firstAttribute="top" secondItem="B4Q-fs-y3X" secondAttribute="top" id="tUi-yf-JY2"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecP-A2-nGL" userLabel="Second Rate View">
+                    <rect key="frame" x="0.0" y="405" width="414" height="32"/>
+                    <subviews>
+                        <button opaque="NO" tag="202" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIB-KE-b3d" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="0.0" width="108" height="30"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <state key="normal" title="Тариф второй">
+                                <color key="titleColor" red="0.70196078429999997" green="0.59607843140000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.lawInfo.second.subtitle.second"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="showHideRate:" destination="42N-uv-nFT" eventType="touchUpInside" id="J18-Sw-z61"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAV-9H-ckJ" userLabel="Divide View">
+                            <rect key="frame" x="15" y="0.0" width="384" height="1"/>
+                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="1lZ-pI-mkw"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arror_down" translatesAutoresizingMaskIntoConstraints="NO" id="x57-jT-eVe">
+                            <rect key="frame" x="128" y="12.5" width="7" height="5.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="7" id="Qqe-Sg-ejX"/>
+                            </constraints>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Длинный текст" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qe8-3J-k88" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="43" width="384" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="passInfo.rates.second.description"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="PAV-9H-ckJ" firstAttribute="leading" secondItem="ecP-A2-nGL" secondAttribute="leading" constant="15" id="4DT-bJ-h2Y"/>
+                        <constraint firstItem="qe8-3J-k88" firstAttribute="leading" secondItem="ecP-A2-nGL" secondAttribute="leading" constant="15" id="82b-MV-9ea"/>
+                        <constraint firstItem="x57-jT-eVe" firstAttribute="centerY" secondItem="aIB-KE-b3d" secondAttribute="centerY" id="FkV-ng-vAk"/>
+                        <constraint firstAttribute="trailing" secondItem="PAV-9H-ckJ" secondAttribute="trailing" constant="15" id="Hz9-ve-orL"/>
+                        <constraint firstItem="aIB-KE-b3d" firstAttribute="leading" secondItem="ecP-A2-nGL" secondAttribute="leading" constant="15" id="TPL-Nb-nZy"/>
+                        <constraint firstItem="PAV-9H-ckJ" firstAttribute="top" secondItem="ecP-A2-nGL" secondAttribute="top" id="UZf-Kg-WIE"/>
+                        <constraint firstAttribute="trailing" secondItem="qe8-3J-k88" secondAttribute="trailing" constant="15" id="UcS-CW-FWE"/>
+                        <constraint firstItem="x57-jT-eVe" firstAttribute="leading" secondItem="aIB-KE-b3d" secondAttribute="trailing" constant="5" id="hqM-2d-ZOi"/>
+                        <constraint firstAttribute="height" constant="32" id="km0-Ky-2kK"/>
+                        <constraint firstItem="qe8-3J-k88" firstAttribute="top" secondItem="aIB-KE-b3d" secondAttribute="bottom" constant="13" id="osE-z4-wUo"/>
+                        <constraint firstItem="aIB-KE-b3d" firstAttribute="top" secondItem="ecP-A2-nGL" secondAttribute="top" id="yQA-7N-PGd"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hide_view_rectangle_button" translatesAutoresizingMaskIntoConstraints="NO" id="keU-yZ-pgS">
+                    <rect key="frame" x="189" y="54" width="36" height="4"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ybn-nM-N35" userLabel="Third Rate View">
+                    <rect key="frame" x="0.0" y="437" width="414" height="32"/>
+                    <subviews>
+                        <button opaque="NO" tag="203" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWQ-ie-Ef5" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="0.0" width="107" height="30"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <state key="normal" title="Тариф третий">
+                                <color key="titleColor" red="0.70196078429999997" green="0.59607843140000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="profile.info.lawInfo.second.subtitle.third"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="showHideRate:" destination="42N-uv-nFT" eventType="touchUpInside" id="ohe-5u-ck4"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5l-1G-aCO" userLabel="Divide View">
+                            <rect key="frame" x="15" y="0.0" width="384" height="1"/>
+                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="8zy-ka-Ga9"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arror_down" translatesAutoresizingMaskIntoConstraints="NO" id="Rpo-OM-LoY">
+                            <rect key="frame" x="127" y="12.5" width="7" height="5.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="7" id="9fc-rd-Cn5"/>
+                            </constraints>
+                        </imageView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Длинный текст" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSh-8D-Nna" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="43" width="384" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="passInfo.rates.second.description"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="M5l-1G-aCO" firstAttribute="top" secondItem="Ybn-nM-N35" secondAttribute="top" id="7EU-fV-PdZ"/>
+                        <constraint firstItem="M5l-1G-aCO" firstAttribute="leading" secondItem="Ybn-nM-N35" secondAttribute="leading" constant="15" id="GCy-xf-ubN"/>
+                        <constraint firstAttribute="height" constant="32" id="IYN-Mi-W5R"/>
+                        <constraint firstItem="qWQ-ie-Ef5" firstAttribute="top" secondItem="Ybn-nM-N35" secondAttribute="top" id="Nk5-Ew-r8q"/>
+                        <constraint firstAttribute="trailing" secondItem="M5l-1G-aCO" secondAttribute="trailing" constant="15" id="Pbn-Nt-N5J"/>
+                        <constraint firstItem="lSh-8D-Nna" firstAttribute="leading" secondItem="Ybn-nM-N35" secondAttribute="leading" constant="15" id="WVX-Jh-cyI"/>
+                        <constraint firstAttribute="trailing" secondItem="lSh-8D-Nna" secondAttribute="trailing" constant="15" id="Xqd-eu-7Rz"/>
+                        <constraint firstItem="lSh-8D-Nna" firstAttribute="top" secondItem="qWQ-ie-Ef5" secondAttribute="bottom" constant="13" id="eX3-Mc-DvW"/>
+                        <constraint firstItem="Rpo-OM-LoY" firstAttribute="leading" secondItem="qWQ-ie-Ef5" secondAttribute="trailing" constant="5" id="gI7-kX-MEn"/>
+                        <constraint firstItem="qWQ-ie-Ef5" firstAttribute="leading" secondItem="Ybn-nM-N35" secondAttribute="leading" constant="15" id="htd-VX-juV"/>
+                        <constraint firstItem="Rpo-OM-LoY" firstAttribute="centerY" secondItem="qWQ-ie-Ef5" secondAttribute="centerY" id="lpg-sU-fFC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="C4i-Xs-65e"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="GsL-ZI-z4c" firstAttribute="top" secondItem="rdM-1h-nxM" secondAttribute="bottom" constant="15" id="1WT-2y-2PO"/>
+                <constraint firstItem="Fdt-lV-jD1" firstAttribute="centerX" secondItem="42N-uv-nFT" secondAttribute="centerX" id="4Gl-Gi-tpK"/>
+                <constraint firstItem="rdM-1h-nxM" firstAttribute="leading" secondItem="C4i-Xs-65e" secondAttribute="leading" id="7Xb-dE-D77"/>
+                <constraint firstItem="EgX-dK-0fq" firstAttribute="leading" secondItem="42N-uv-nFT" secondAttribute="leading" constant="15" id="9Ss-PK-e94"/>
+                <constraint firstItem="B4Q-fs-y3X" firstAttribute="leading" secondItem="42N-uv-nFT" secondAttribute="leading" id="Bcg-Pb-Lc1"/>
+                <constraint firstItem="C4i-Xs-65e" firstAttribute="trailing" secondItem="ecP-A2-nGL" secondAttribute="trailing" id="Bps-cP-9tK"/>
+                <constraint firstItem="Ybn-nM-N35" firstAttribute="leading" secondItem="C4i-Xs-65e" secondAttribute="leading" id="CsZ-8i-nVd"/>
+                <constraint firstItem="Ybn-nM-N35" firstAttribute="trailing" secondItem="C4i-Xs-65e" secondAttribute="trailing" id="D0x-L6-ghi"/>
+                <constraint firstItem="C4i-Xs-65e" firstAttribute="trailing" secondItem="rdM-1h-nxM" secondAttribute="trailing" id="FXm-md-QeY"/>
+                <constraint firstItem="vct-iw-AUB" firstAttribute="trailing" secondItem="C4i-Xs-65e" secondAttribute="trailing" id="IDw-pM-Dpy"/>
+                <constraint firstItem="Ybn-nM-N35" firstAttribute="top" secondItem="ecP-A2-nGL" secondAttribute="bottom" id="Kpc-iw-vHL"/>
+                <constraint firstItem="C4i-Xs-65e" firstAttribute="trailing" secondItem="B4Q-fs-y3X" secondAttribute="trailing" id="LFC-bh-zye"/>
+                <constraint firstItem="LJW-dg-Zp9" firstAttribute="leading" secondItem="C4i-Xs-65e" secondAttribute="leading" id="LGc-CZ-QnG"/>
+                <constraint firstItem="B4Q-fs-y3X" firstAttribute="top" secondItem="EgX-dK-0fq" secondAttribute="bottom" constant="18" id="LaQ-6p-BPh"/>
+                <constraint firstItem="RF7-aZ-o4s" firstAttribute="leading" secondItem="C4i-Xs-65e" secondAttribute="leading" id="VNQ-gI-OpG"/>
+                <constraint firstItem="LJW-dg-Zp9" firstAttribute="top" secondItem="GsL-ZI-z4c" secondAttribute="bottom" constant="18" id="WGH-5i-VOw"/>
+                <constraint firstItem="EgX-dK-0fq" firstAttribute="top" secondItem="4uW-Mz-yfJ" secondAttribute="bottom" constant="48" id="WS9-5V-85v"/>
+                <constraint firstItem="vct-iw-AUB" firstAttribute="leading" secondItem="C4i-Xs-65e" secondAttribute="leading" id="XhS-bH-16r"/>
+                <constraint firstItem="ecP-A2-nGL" firstAttribute="top" secondItem="B4Q-fs-y3X" secondAttribute="bottom" id="ZsP-mz-U96"/>
+                <constraint firstItem="C4i-Xs-65e" firstAttribute="trailing" secondItem="LJW-dg-Zp9" secondAttribute="trailing" id="c1k-8c-Zur"/>
+                <constraint firstItem="keU-yZ-pgS" firstAttribute="top" secondItem="C4i-Xs-65e" secondAttribute="top" constant="10" id="cgh-1S-bm8"/>
+                <constraint firstItem="4uW-Mz-yfJ" firstAttribute="top" secondItem="RF7-aZ-o4s" secondAttribute="bottom" id="dp8-pj-Z7c"/>
+                <constraint firstItem="keU-yZ-pgS" firstAttribute="centerX" secondItem="42N-uv-nFT" secondAttribute="centerX" id="ei2-mV-bGu"/>
+                <constraint firstItem="Fdt-lV-jD1" firstAttribute="top" secondItem="C4i-Xs-65e" secondAttribute="top" constant="23" id="ft5-hf-s5q"/>
+                <constraint firstItem="GsL-ZI-z4c" firstAttribute="leading" secondItem="C4i-Xs-65e" secondAttribute="leading" constant="15" id="hmF-lT-zrV"/>
+                <constraint firstItem="rdM-1h-nxM" firstAttribute="top" secondItem="Fdt-lV-jD1" secondAttribute="bottom" constant="15" id="k0a-ey-LMw"/>
+                <constraint firstItem="ecP-A2-nGL" firstAttribute="leading" secondItem="C4i-Xs-65e" secondAttribute="leading" id="mnC-Nt-tj5"/>
+                <constraint firstItem="4uW-Mz-yfJ" firstAttribute="leading" secondItem="C4i-Xs-65e" secondAttribute="leading" id="nKb-Lq-rae"/>
+                <constraint firstItem="4uW-Mz-yfJ" firstAttribute="trailing" secondItem="C4i-Xs-65e" secondAttribute="trailing" id="nmn-cm-XFg"/>
+                <constraint firstItem="vct-iw-AUB" firstAttribute="top" secondItem="LJW-dg-Zp9" secondAttribute="bottom" id="pXT-mO-Znr"/>
+                <constraint firstItem="RF7-aZ-o4s" firstAttribute="trailing" secondItem="C4i-Xs-65e" secondAttribute="trailing" id="tIf-Q2-P4o"/>
+                <constraint firstItem="RF7-aZ-o4s" firstAttribute="top" secondItem="vct-iw-AUB" secondAttribute="bottom" id="zip-jJ-3To"/>
+            </constraints>
+            <connections>
+                <outletCollection property="ruleButtons" destination="htk-jQ-2oG" collectionClass="NSMutableArray" id="9IH-ta-T1U"/>
+                <outletCollection property="ruleButtons" destination="IHp-fv-O2t" collectionClass="NSMutableArray" id="ld5-G3-wLZ"/>
+                <outletCollection property="ruleButtons" destination="4qT-bf-d0N" collectionClass="NSMutableArray" id="9sk-IZ-3V3"/>
+                <outletCollection property="ruleButtons" destination="NL4-Ht-7y1" collectionClass="NSMutableArray" id="4jW-iv-9zO"/>
+                <outletCollection property="ruleArrows" destination="tCJ-Fg-GtC" collectionClass="NSMutableArray" id="P2H-Il-UO7"/>
+                <outletCollection property="ruleArrows" destination="4R8-xF-Raw" collectionClass="NSMutableArray" id="0hC-Vj-ATS"/>
+                <outletCollection property="ruleArrows" destination="j5X-PK-LV9" collectionClass="NSMutableArray" id="5Ro-XN-eKU"/>
+                <outletCollection property="ruleArrows" destination="VWT-JR-wTd" collectionClass="NSMutableArray" id="Dsi-zy-4Rq"/>
+                <outletCollection property="ruleText" destination="KqQ-XS-sQA" collectionClass="NSMutableArray" id="wpI-WX-WUE"/>
+                <outletCollection property="ruleText" destination="PFc-3k-5nS" collectionClass="NSMutableArray" id="Hoe-RR-89j"/>
+                <outletCollection property="ruleText" destination="e95-yG-aHl" collectionClass="NSMutableArray" id="RAN-kS-KIg"/>
+                <outletCollection property="ruleText" destination="hgn-OY-g5s" collectionClass="NSMutableArray" id="4eY-fb-NPP"/>
+                <outletCollection property="ruleViewConstraints" destination="xCc-QT-0Qc" collectionClass="NSMutableArray" id="hy2-2i-mkM"/>
+                <outletCollection property="ruleViewConstraints" destination="eQ3-jM-NLP" collectionClass="NSMutableArray" id="82w-32-D75"/>
+                <outletCollection property="ruleViewConstraints" destination="sm0-5r-0IW" collectionClass="NSMutableArray" id="arT-D1-OMF"/>
+                <outletCollection property="ruleViewConstraints" destination="VpF-S6-LsU" collectionClass="NSMutableArray" id="ziI-zX-ymN"/>
+                <outletCollection property="rateButtons" destination="cud-zb-vsr" collectionClass="NSMutableArray" id="4Xe-VS-Rzk"/>
+                <outletCollection property="rateButtons" destination="aIB-KE-b3d" collectionClass="NSMutableArray" id="EfL-2R-6CL"/>
+                <outletCollection property="rateArrows" destination="uL4-u7-qT9" collectionClass="NSMutableArray" id="h0C-Dt-lxT"/>
+                <outletCollection property="rateArrows" destination="x57-jT-eVe" collectionClass="NSMutableArray" id="Ugx-HY-DGV"/>
+                <outletCollection property="rateText" destination="YDw-N9-1ni" collectionClass="NSMutableArray" id="nUd-PE-7yQ"/>
+                <outletCollection property="rateText" destination="qe8-3J-k88" collectionClass="NSMutableArray" id="5gF-2o-vG5"/>
+                <outletCollection property="rateViewConstraints" destination="NPL-D4-oim" collectionClass="NSMutableArray" id="i9f-en-zvK"/>
+                <outletCollection property="rateViewConstraints" destination="km0-Ky-2kK" collectionClass="NSMutableArray" id="rhY-2E-EEs"/>
+                <outletCollection property="rateButtons" destination="qWQ-ie-Ef5" collectionClass="NSMutableArray" id="kbl-Tz-oeK"/>
+                <outletCollection property="rateArrows" destination="Rpo-OM-LoY" collectionClass="NSMutableArray" id="bTS-li-2py"/>
+                <outletCollection property="rateText" destination="lSh-8D-Nna" collectionClass="NSMutableArray" id="Js4-GI-IhK"/>
+                <outletCollection property="rateViewConstraints" destination="IYN-Mi-W5R" collectionClass="NSMutableArray" id="k59-WL-WtQ"/>
+            </connections>
+            <point key="canvasLocation" x="-262.31884057971018" y="120.53571428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arror_down" width="7" height="5.5"/>
+        <image name="hide_view_rectangle_button" width="36" height="4"/>
+    </resources>
+</document>

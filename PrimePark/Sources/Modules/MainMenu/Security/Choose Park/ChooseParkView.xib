@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChooseParkView" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hide_view_rectangle_button" translatesAutoresizingMaskIntoConstraints="NO" id="78L-2I-ePb">
+                    <rect key="frame" x="189" y="54" width="36" height="4"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите парк" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAA-Jc-CCo">
+                    <rect key="frame" x="149" y="66" width="116" height="18"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAU-t2-1nU" userLabel="Divide View">
+                    <rect key="frame" x="0.0" y="98" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="L0K-6Q-3Rj"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31E-CC-YG3">
+                    <rect key="frame" x="0.0" y="99" width="414" height="665"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oG2-MK-84V" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="528"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXa-N8-gAl" userLabel="Mirabel View">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Мирабель Парк" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5e-su-0Yy" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="13.5" width="112" height="17"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark" translatesAutoresizingMaskIntoConstraints="NO" id="LDY-AO-hIE">
+                                            <rect key="frame" x="375" y="12" width="20" height="20"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vte-q2-gJf" userLabel="Divide View">
+                                            <rect key="frame" x="0.0" y="43" width="414" height="1"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="Y5V-SP-TcQ"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstItem="X5e-su-0Yy" firstAttribute="leading" secondItem="wXa-N8-gAl" secondAttribute="leading" constant="15" id="9zj-Ez-dXY"/>
+                                        <constraint firstItem="vte-q2-gJf" firstAttribute="leading" secondItem="wXa-N8-gAl" secondAttribute="leading" id="EE5-aR-xkn"/>
+                                        <constraint firstItem="LDY-AO-hIE" firstAttribute="centerY" secondItem="wXa-N8-gAl" secondAttribute="centerY" id="IXJ-Uf-VRm"/>
+                                        <constraint firstAttribute="trailing" secondItem="vte-q2-gJf" secondAttribute="trailing" id="SYh-pV-Ub7"/>
+                                        <constraint firstAttribute="bottom" secondItem="vte-q2-gJf" secondAttribute="bottom" id="Tts-2C-x8X"/>
+                                        <constraint firstItem="X5e-su-0Yy" firstAttribute="centerY" secondItem="wXa-N8-gAl" secondAttribute="centerY" id="eAh-6O-jeD"/>
+                                        <constraint firstAttribute="height" constant="44" id="oSh-F5-GbP"/>
+                                        <constraint firstAttribute="trailing" secondItem="LDY-AO-hIE" secondAttribute="trailing" constant="19" id="ym7-Sr-Rax"/>
+                                    </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="Mje-jF-GRg" appends="YES" id="iyv-rw-hKW"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Om-Fs-r4F" userLabel="Victory View" customClass="KL">
+                                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Парк Победы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKQ-XL-kCm" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="13.5" width="96" height="17"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark" translatesAutoresizingMaskIntoConstraints="NO" id="fhq-6z-Uho">
+                                            <rect key="frame" x="375" y="12" width="20" height="20"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZw-Us-YN8" userLabel="Divide View">
+                                            <rect key="frame" x="0.0" y="43" width="414" height="1"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="Z9t-mz-CsZ"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="fhq-6z-Uho" secondAttribute="trailing" constant="19" id="MA5-YN-SyA"/>
+                                        <constraint firstItem="UZw-Us-YN8" firstAttribute="leading" secondItem="7Om-Fs-r4F" secondAttribute="leading" id="N5M-o8-xHv"/>
+                                        <constraint firstItem="aKQ-XL-kCm" firstAttribute="centerY" secondItem="7Om-Fs-r4F" secondAttribute="centerY" id="QkW-al-Tzf"/>
+                                        <constraint firstAttribute="bottom" secondItem="UZw-Us-YN8" secondAttribute="bottom" id="TKz-No-gAv"/>
+                                        <constraint firstAttribute="trailing" secondItem="UZw-Us-YN8" secondAttribute="trailing" id="TfC-s4-y7L"/>
+                                        <constraint firstItem="fhq-6z-Uho" firstAttribute="centerY" secondItem="7Om-Fs-r4F" secondAttribute="centerY" id="YJc-f6-vpn"/>
+                                        <constraint firstAttribute="height" constant="44" id="fGN-VZ-ihb"/>
+                                        <constraint firstItem="aKQ-XL-kCm" firstAttribute="leading" secondItem="7Om-Fs-r4F" secondAttribute="leading" constant="15" id="xl5-bM-vaz"/>
+                                    </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="5O7-cJ-o3q" appends="YES" id="Kwz-XG-NOG"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUF-H4-731" userLabel="Rigen View">
+                                    <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ридженнтс парк" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMX-7n-Ui2" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="13.5" width="116" height="17"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark" translatesAutoresizingMaskIntoConstraints="NO" id="UNe-ng-70w">
+                                            <rect key="frame" x="375" y="12" width="20" height="20"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aXC-sY-cyT" userLabel="Divide View">
+                                            <rect key="frame" x="0.0" y="43" width="414" height="1"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="Fwh-c4-v1V"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstItem="aXC-sY-cyT" firstAttribute="leading" secondItem="oUF-H4-731" secondAttribute="leading" id="D4p-17-aEk"/>
+                                        <constraint firstItem="gMX-7n-Ui2" firstAttribute="leading" secondItem="oUF-H4-731" secondAttribute="leading" constant="15" id="RI5-Ft-d2q"/>
+                                        <constraint firstItem="gMX-7n-Ui2" firstAttribute="centerY" secondItem="oUF-H4-731" secondAttribute="centerY" id="UQ3-zs-Kav"/>
+                                        <constraint firstAttribute="bottom" secondItem="aXC-sY-cyT" secondAttribute="bottom" id="eSM-kS-vG0"/>
+                                        <constraint firstAttribute="trailing" secondItem="aXC-sY-cyT" secondAttribute="trailing" id="fhJ-sY-w19"/>
+                                        <constraint firstItem="UNe-ng-70w" firstAttribute="centerY" secondItem="oUF-H4-731" secondAttribute="centerY" id="iq6-wH-XdA"/>
+                                        <constraint firstAttribute="trailing" secondItem="UNe-ng-70w" secondAttribute="trailing" constant="19" id="qFV-rd-HmZ"/>
+                                        <constraint firstAttribute="height" constant="44" id="yd3-Aj-OLz"/>
+                                    </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="fFR-6Q-jEa" appends="YES" id="8Zi-4u-mzL"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iD-n6-obg" userLabel="Imperial View">
+                                    <rect key="frame" x="0.0" y="132" width="414" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Империал парк" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17f-91-E6M" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="13.5" width="110.5" height="17"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark" translatesAutoresizingMaskIntoConstraints="NO" id="76T-DC-wJE">
+                                            <rect key="frame" x="375" y="12" width="20" height="20"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6y-yL-9gY" userLabel="Divide View">
+                                            <rect key="frame" x="0.0" y="43" width="414" height="1"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="6fq-pa-P77"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="76T-DC-wJE" secondAttribute="trailing" constant="19" id="Nsf-c1-upL"/>
+                                        <constraint firstAttribute="bottom" secondItem="q6y-yL-9gY" secondAttribute="bottom" id="Y5e-cC-zVk"/>
+                                        <constraint firstAttribute="trailing" secondItem="q6y-yL-9gY" secondAttribute="trailing" id="bJn-QI-JV0"/>
+                                        <constraint firstItem="76T-DC-wJE" firstAttribute="centerY" secondItem="8iD-n6-obg" secondAttribute="centerY" id="jAa-6k-kB6"/>
+                                        <constraint firstItem="q6y-yL-9gY" firstAttribute="leading" secondItem="8iD-n6-obg" secondAttribute="leading" id="jXB-tr-RxP"/>
+                                        <constraint firstItem="17f-91-E6M" firstAttribute="centerY" secondItem="8iD-n6-obg" secondAttribute="centerY" id="l9y-8E-GV1"/>
+                                        <constraint firstAttribute="height" constant="44" id="lX2-R2-vmh"/>
+                                        <constraint firstItem="17f-91-E6M" firstAttribute="leading" secondItem="8iD-n6-obg" secondAttribute="leading" constant="15" id="r7R-Tn-Wb5"/>
+                                    </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="l6U-t1-mPA" appends="YES" id="GJr-Px-ap8"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFZ-Mg-Mxk" userLabel="Gorky View">
+                                    <rect key="frame" x="0.0" y="176" width="414" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Парк Горького" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYI-ih-BLy" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="13.5" width="102" height="17"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark" translatesAutoresizingMaskIntoConstraints="NO" id="bql-XV-Zmf">
+                                            <rect key="frame" x="375" y="12" width="20" height="20"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vS3-9R-xzN" userLabel="Divide View">
+                                            <rect key="frame" x="0.0" y="43" width="414" height="1"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="XKt-0A-tfc"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstItem="hYI-ih-BLy" firstAttribute="leading" secondItem="lFZ-Mg-Mxk" secondAttribute="leading" constant="15" id="3nh-AK-1JN"/>
+                                        <constraint firstItem="bql-XV-Zmf" firstAttribute="centerY" secondItem="lFZ-Mg-Mxk" secondAttribute="centerY" id="6kW-6y-mif"/>
+                                        <constraint firstItem="hYI-ih-BLy" firstAttribute="centerY" secondItem="lFZ-Mg-Mxk" secondAttribute="centerY" id="Bqp-Wu-67Y"/>
+                                        <constraint firstAttribute="trailing" secondItem="bql-XV-Zmf" secondAttribute="trailing" constant="19" id="Jnl-bg-QW9"/>
+                                        <constraint firstAttribute="trailing" secondItem="vS3-9R-xzN" secondAttribute="trailing" id="Pey-UT-8Kl"/>
+                                        <constraint firstAttribute="bottom" secondItem="vS3-9R-xzN" secondAttribute="bottom" id="a1w-T8-XcO"/>
+                                        <constraint firstItem="vS3-9R-xzN" firstAttribute="leading" secondItem="lFZ-Mg-Mxk" secondAttribute="leading" id="ehY-Qs-mNj"/>
+                                        <constraint firstAttribute="height" constant="44" id="fXz-QA-0JV"/>
+                                    </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="YuT-TD-oSt" appends="YES" id="dg8-ri-80k"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qeq-s1-YGE" userLabel="Hyde View">
+                                    <rect key="frame" x="0.0" y="220" width="414" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Гайд Парк" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWS-gs-aEt" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="13.5" width="71" height="17"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark" translatesAutoresizingMaskIntoConstraints="NO" id="8os-DV-Afw">
+                                            <rect key="frame" x="375" y="12" width="20" height="20"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XJq-aK-Kj7" userLabel="Divide View">
+                                            <rect key="frame" x="0.0" y="43" width="414" height="1"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="lWL-Mh-fvt"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="XJq-aK-Kj7" secondAttribute="trailing" id="0wN-wV-feo"/>
+                                        <constraint firstAttribute="trailing" secondItem="8os-DV-Afw" secondAttribute="trailing" constant="19" id="D0J-ga-SEN"/>
+                                        <constraint firstItem="nWS-gs-aEt" firstAttribute="leading" secondItem="Qeq-s1-YGE" secondAttribute="leading" constant="15" id="JMN-jm-7MV"/>
+                                        <constraint firstItem="nWS-gs-aEt" firstAttribute="centerY" secondItem="Qeq-s1-YGE" secondAttribute="centerY" id="NNG-o8-ise"/>
+                                        <constraint firstAttribute="height" constant="44" id="R8G-yr-dyb"/>
+                                        <constraint firstItem="XJq-aK-Kj7" firstAttribute="leading" secondItem="Qeq-s1-YGE" secondAttribute="leading" id="a4y-CV-fl2"/>
+                                        <constraint firstItem="8os-DV-Afw" firstAttribute="centerY" secondItem="Qeq-s1-YGE" secondAttribute="centerY" id="hov-gF-M0L"/>
+                                        <constraint firstAttribute="bottom" secondItem="XJq-aK-Kj7" secondAttribute="bottom" id="osQ-xQ-Eh5"/>
+                                    </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="nJv-ZA-Agk" appends="YES" id="n3D-t4-Cs6"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fo7-5I-yJ8" userLabel="Central View">
+                                    <rect key="frame" x="0.0" y="264" width="414" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сентрал Парк" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eu1-nb-fyN" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="13.5" width="97.5" height="17"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark" translatesAutoresizingMaskIntoConstraints="NO" id="bLv-7U-RDy">
+                                            <rect key="frame" x="375" y="12" width="20" height="20"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWg-7i-uNr" userLabel="Divide View">
+                                            <rect key="frame" x="0.0" y="43" width="414" height="1"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="AfG-MW-Iei"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstItem="eu1-nb-fyN" firstAttribute="leading" secondItem="fo7-5I-yJ8" secondAttribute="leading" constant="15" id="4Xp-nl-aB2"/>
+                                        <constraint firstAttribute="height" constant="44" id="6CI-uA-h9D"/>
+                                        <constraint firstItem="eu1-nb-fyN" firstAttribute="centerY" secondItem="fo7-5I-yJ8" secondAttribute="centerY" id="J6i-xP-opS"/>
+                                        <constraint firstAttribute="trailing" secondItem="bWg-7i-uNr" secondAttribute="trailing" id="JIg-CH-ZP2"/>
+                                        <constraint firstItem="bLv-7U-RDy" firstAttribute="centerY" secondItem="fo7-5I-yJ8" secondAttribute="centerY" id="Kqg-sN-tUz"/>
+                                        <constraint firstAttribute="bottom" secondItem="bWg-7i-uNr" secondAttribute="bottom" id="a2z-h3-Esx"/>
+                                        <constraint firstAttribute="trailing" secondItem="bLv-7U-RDy" secondAttribute="trailing" constant="19" id="fHR-3u-WoB"/>
+                                        <constraint firstItem="bWg-7i-uNr" firstAttribute="leading" secondItem="fo7-5I-yJ8" secondAttribute="leading" id="l59-42-GjK"/>
+                                    </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="FmK-cO-3dw" appends="YES" id="Vyh-lc-MO6"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S6W-oV-IaK" userLabel="Petrovsky View">
+                                    <rect key="frame" x="0.0" y="308" width="414" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Петровский Парк" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2T-to-mjr" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="13.5" width="124" height="17"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark" translatesAutoresizingMaskIntoConstraints="NO" id="Wad-As-38q">
+                                            <rect key="frame" x="375" y="12" width="20" height="20"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="djF-xT-DwT" userLabel="Divide View">
+                                            <rect key="frame" x="0.0" y="43" width="414" height="1"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="gad-zX-oL9"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstItem="g2T-to-mjr" firstAttribute="centerY" secondItem="S6W-oV-IaK" secondAttribute="centerY" id="0Ub-7M-KYF"/>
+                                        <constraint firstAttribute="trailing" secondItem="Wad-As-38q" secondAttribute="trailing" constant="19" id="56r-cm-7d7"/>
+                                        <constraint firstItem="g2T-to-mjr" firstAttribute="leading" secondItem="S6W-oV-IaK" secondAttribute="leading" constant="15" id="Adt-ns-REI"/>
+                                        <constraint firstAttribute="trailing" secondItem="djF-xT-DwT" secondAttribute="trailing" id="H68-rP-L29"/>
+                                        <constraint firstAttribute="bottom" secondItem="djF-xT-DwT" secondAttribute="bottom" id="YmX-ot-X8a"/>
+                                        <constraint firstItem="Wad-As-38q" firstAttribute="centerY" secondItem="S6W-oV-IaK" secondAttribute="centerY" id="cOQ-XT-6e8"/>
+                                        <constraint firstItem="djF-xT-DwT" firstAttribute="leading" secondItem="S6W-oV-IaK" secondAttribute="leading" id="lqK-SQ-Ozz"/>
+                                        <constraint firstAttribute="height" constant="44" id="r4W-cA-z42"/>
+                                    </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="rKv-tE-DpG" appends="YES" id="YYF-h3-jeN"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CtT-MA-ubd" userLabel="Queens View">
+                                    <rect key="frame" x="0.0" y="352" width="414" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Квинс Парк" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evQ-Du-Lpd" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="13.5" width="81.5" height="17"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark" translatesAutoresizingMaskIntoConstraints="NO" id="STZ-k9-9Hw">
+                                            <rect key="frame" x="375" y="12" width="20" height="20"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXu-bX-pJf" userLabel="Divide View">
+                                            <rect key="frame" x="0.0" y="43" width="414" height="1"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="adG-Oq-bfi"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstItem="evQ-Du-Lpd" firstAttribute="leading" secondItem="CtT-MA-ubd" secondAttribute="leading" constant="15" id="0V3-KV-mUx"/>
+                                        <constraint firstAttribute="bottom" secondItem="lXu-bX-pJf" secondAttribute="bottom" id="8BZ-Bh-TRo"/>
+                                        <constraint firstAttribute="height" constant="44" id="99y-Uf-nk4"/>
+                                        <constraint firstItem="evQ-Du-Lpd" firstAttribute="centerY" secondItem="CtT-MA-ubd" secondAttribute="centerY" id="CaE-8a-RGI"/>
+                                        <constraint firstAttribute="trailing" secondItem="lXu-bX-pJf" secondAttribute="trailing" id="Dob-ZI-s9f"/>
+                                        <constraint firstItem="STZ-k9-9Hw" firstAttribute="centerY" secondItem="CtT-MA-ubd" secondAttribute="centerY" id="NMs-kB-e2B"/>
+                                        <constraint firstAttribute="trailing" secondItem="STZ-k9-9Hw" secondAttribute="trailing" constant="19" id="ZEq-Fw-g93"/>
+                                        <constraint firstItem="lXu-bX-pJf" firstAttribute="leading" secondItem="CtT-MA-ubd" secondAttribute="leading" id="yH3-Hr-ir6"/>
+                                    </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="be2-mq-ik2" appends="YES" id="Ip6-uM-Kzq"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQP-lP-656" userLabel="Apple View">
+                                    <rect key="frame" x="0.0" y="396" width="414" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Яблоневый Сад" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RB6-ax-8f2" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="13.5" width="112" height="17"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark" translatesAutoresizingMaskIntoConstraints="NO" id="FDP-Cu-GPc">
+                                            <rect key="frame" x="375" y="12" width="20" height="20"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8mo-TJ-5MW" userLabel="Divide View">
+                                            <rect key="frame" x="0.0" y="43" width="414" height="1"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="Yev-Bg-WOL"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstItem="RB6-ax-8f2" firstAttribute="centerY" secondItem="BQP-lP-656" secondAttribute="centerY" id="4bk-NX-iRC"/>
+                                        <constraint firstAttribute="trailing" secondItem="FDP-Cu-GPc" secondAttribute="trailing" constant="19" id="6bq-K2-1DV"/>
+                                        <constraint firstAttribute="trailing" secondItem="8mo-TJ-5MW" secondAttribute="trailing" id="OiW-l0-g31"/>
+                                        <constraint firstItem="8mo-TJ-5MW" firstAttribute="leading" secondItem="BQP-lP-656" secondAttribute="leading" id="VOh-lZ-nEx"/>
+                                        <constraint firstItem="RB6-ax-8f2" firstAttribute="leading" secondItem="BQP-lP-656" secondAttribute="leading" constant="15" id="VX6-bG-6sB"/>
+                                        <constraint firstAttribute="height" constant="44" id="ZyY-U3-Pdi"/>
+                                        <constraint firstAttribute="bottom" secondItem="8mo-TJ-5MW" secondAttribute="bottom" id="kdC-gn-TeC"/>
+                                        <constraint firstItem="FDP-Cu-GPc" firstAttribute="centerY" secondItem="BQP-lP-656" secondAttribute="centerY" id="ooe-6Z-MUS"/>
+                                    </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="Oin-Ge-mqu" appends="YES" id="4Sh-Ax-NRc"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWE-Yf-KZ4" userLabel="Prime View">
+                                    <rect key="frame" x="0.0" y="440" width="414" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Прайм Парк" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIA-EA-1Iy" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="13.5" width="86" height="17"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark" translatesAutoresizingMaskIntoConstraints="NO" id="ODy-rb-ve3">
+                                            <rect key="frame" x="375" y="12" width="20" height="20"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDb-oI-onI" userLabel="Divide View">
+                                            <rect key="frame" x="0.0" y="43" width="414" height="1"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="eJc-Gq-Z5k"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstItem="dIA-EA-1Iy" firstAttribute="centerY" secondItem="LWE-Yf-KZ4" secondAttribute="centerY" id="2qu-sA-BVz"/>
+                                        <constraint firstItem="dIA-EA-1Iy" firstAttribute="leading" secondItem="LWE-Yf-KZ4" secondAttribute="leading" constant="15" id="CKb-Mb-Gys"/>
+                                        <constraint firstAttribute="bottom" secondItem="kDb-oI-onI" secondAttribute="bottom" id="Ffc-W6-eOI"/>
+                                        <constraint firstAttribute="trailing" secondItem="kDb-oI-onI" secondAttribute="trailing" id="Mh2-9a-hWa"/>
+                                        <constraint firstAttribute="height" constant="44" id="a9r-rl-f8L"/>
+                                        <constraint firstItem="ODy-rb-ve3" firstAttribute="centerY" secondItem="LWE-Yf-KZ4" secondAttribute="centerY" id="bbr-hH-cQ4"/>
+                                        <constraint firstItem="kDb-oI-onI" firstAttribute="leading" secondItem="LWE-Yf-KZ4" secondAttribute="leading" id="iQo-GK-Qyt"/>
+                                        <constraint firstAttribute="trailing" secondItem="ODy-rb-ve3" secondAttribute="trailing" constant="19" id="tfP-LF-MgM"/>
+                                    </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="mJ3-xw-rRP" appends="YES" id="f6V-3Y-x1G"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46q-zc-9Ni" userLabel="Cherry View">
+                                    <rect key="frame" x="0.0" y="484" width="414" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вишневый Сад" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coZ-0g-rOY" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="13.5" width="106" height="17"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check-mark" translatesAutoresizingMaskIntoConstraints="NO" id="0Hb-sI-Fi6">
+                                            <rect key="frame" x="375" y="12" width="20" height="20"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTy-Mi-38K" userLabel="Divide View">
+                                            <rect key="frame" x="0.0" y="43" width="414" height="1"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="csq-An-Eh6"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstItem="coZ-0g-rOY" firstAttribute="leading" secondItem="46q-zc-9Ni" secondAttribute="leading" constant="15" id="7N1-nZ-zh4"/>
+                                        <constraint firstAttribute="trailing" secondItem="0Hb-sI-Fi6" secondAttribute="trailing" constant="19" id="DY5-h0-M4F"/>
+                                        <constraint firstItem="coZ-0g-rOY" firstAttribute="centerY" secondItem="46q-zc-9Ni" secondAttribute="centerY" id="GMG-TF-sKL"/>
+                                        <constraint firstItem="0Hb-sI-Fi6" firstAttribute="centerY" secondItem="46q-zc-9Ni" secondAttribute="centerY" id="OD7-JM-Htk"/>
+                                        <constraint firstAttribute="bottom" secondItem="HTy-Mi-38K" secondAttribute="bottom" id="Vma-L4-D0k"/>
+                                        <constraint firstAttribute="trailing" secondItem="HTy-Mi-38K" secondAttribute="trailing" id="i92-M7-yDW"/>
+                                        <constraint firstAttribute="height" constant="44" id="qf7-He-iz6"/>
+                                        <constraint firstItem="HTy-Mi-38K" firstAttribute="leading" secondItem="46q-zc-9Ni" secondAttribute="leading" id="vb5-Ab-nnP"/>
+                                    </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="BRN-ko-V4N" appends="YES" id="9Pc-ly-36l"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="8iD-n6-obg" firstAttribute="leading" secondItem="oG2-MK-84V" secondAttribute="leading" id="2Jh-E5-B4S"/>
+                                <constraint firstItem="lFZ-Mg-Mxk" firstAttribute="leading" secondItem="oG2-MK-84V" secondAttribute="leading" id="4FO-8n-0yo"/>
+                                <constraint firstAttribute="trailing" secondItem="8iD-n6-obg" secondAttribute="trailing" id="5LT-c2-s72"/>
+                                <constraint firstItem="lFZ-Mg-Mxk" firstAttribute="top" secondItem="8iD-n6-obg" secondAttribute="bottom" id="9I7-iK-50g"/>
+                                <constraint firstItem="fo7-5I-yJ8" firstAttribute="top" secondItem="Qeq-s1-YGE" secondAttribute="bottom" id="Afx-iy-x7L"/>
+                                <constraint firstItem="CtT-MA-ubd" firstAttribute="leading" secondItem="oG2-MK-84V" secondAttribute="leading" id="EYm-TT-zeM"/>
+                                <constraint firstItem="Qeq-s1-YGE" firstAttribute="top" secondItem="lFZ-Mg-Mxk" secondAttribute="bottom" id="EyX-QA-bMC"/>
+                                <constraint firstItem="BQP-lP-656" firstAttribute="top" secondItem="CtT-MA-ubd" secondAttribute="bottom" id="FCx-cJ-JXU"/>
+                                <constraint firstAttribute="bottom" secondItem="46q-zc-9Ni" secondAttribute="bottom" id="Fo8-th-YBu"/>
+                                <constraint firstItem="LWE-Yf-KZ4" firstAttribute="leading" secondItem="oG2-MK-84V" secondAttribute="leading" id="J7Q-Qz-XPD"/>
+                                <constraint firstItem="8iD-n6-obg" firstAttribute="top" secondItem="oUF-H4-731" secondAttribute="bottom" id="JeL-A4-mK8"/>
+                                <constraint firstAttribute="trailing" secondItem="wXa-N8-gAl" secondAttribute="trailing" id="KC4-4Q-Dtm"/>
+                                <constraint firstItem="oUF-H4-731" firstAttribute="leading" secondItem="oG2-MK-84V" secondAttribute="leading" id="QSa-F1-siX"/>
+                                <constraint firstAttribute="trailing" secondItem="S6W-oV-IaK" secondAttribute="trailing" id="RSc-Ut-6SQ"/>
+                                <constraint firstItem="7Om-Fs-r4F" firstAttribute="top" secondItem="wXa-N8-gAl" secondAttribute="bottom" id="WX3-ej-o37"/>
+                                <constraint firstItem="wXa-N8-gAl" firstAttribute="top" secondItem="oG2-MK-84V" secondAttribute="top" id="aCT-Jc-Qmc"/>
+                                <constraint firstItem="LWE-Yf-KZ4" firstAttribute="top" secondItem="BQP-lP-656" secondAttribute="bottom" id="b1z-C3-qKr"/>
+                                <constraint firstAttribute="trailing" secondItem="7Om-Fs-r4F" secondAttribute="trailing" id="cMw-Ja-Dlg"/>
+                                <constraint firstItem="46q-zc-9Ni" firstAttribute="top" secondItem="LWE-Yf-KZ4" secondAttribute="bottom" id="crJ-ze-DCc"/>
+                                <constraint firstItem="fo7-5I-yJ8" firstAttribute="leading" secondItem="oG2-MK-84V" secondAttribute="leading" id="d2b-Wr-5IZ"/>
+                                <constraint firstItem="CtT-MA-ubd" firstAttribute="top" secondItem="S6W-oV-IaK" secondAttribute="bottom" id="dHN-s5-vye"/>
+                                <constraint firstItem="wXa-N8-gAl" firstAttribute="leading" secondItem="oG2-MK-84V" secondAttribute="leading" id="elz-fF-dbv"/>
+                                <constraint firstAttribute="trailing" secondItem="lFZ-Mg-Mxk" secondAttribute="trailing" id="fFe-1Z-WxF"/>
+                                <constraint firstAttribute="trailing" secondItem="BQP-lP-656" secondAttribute="trailing" id="g7K-yC-Q4x"/>
+                                <constraint firstAttribute="trailing" secondItem="fo7-5I-yJ8" secondAttribute="trailing" id="geY-ZN-kk5"/>
+                                <constraint firstItem="oUF-H4-731" firstAttribute="top" secondItem="7Om-Fs-r4F" secondAttribute="bottom" id="h4B-rs-OdD"/>
+                                <constraint firstItem="BQP-lP-656" firstAttribute="leading" secondItem="oG2-MK-84V" secondAttribute="leading" id="iBF-A3-MMN"/>
+                                <constraint firstItem="46q-zc-9Ni" firstAttribute="leading" secondItem="oG2-MK-84V" secondAttribute="leading" id="iom-Gd-6uc"/>
+                                <constraint firstAttribute="trailing" secondItem="46q-zc-9Ni" secondAttribute="trailing" id="kRS-sN-Ids"/>
+                                <constraint firstItem="S6W-oV-IaK" firstAttribute="leading" secondItem="oG2-MK-84V" secondAttribute="leading" id="q1s-wQ-NUM"/>
+                                <constraint firstAttribute="trailing" secondItem="CtT-MA-ubd" secondAttribute="trailing" id="qPT-Fo-345"/>
+                                <constraint firstItem="S6W-oV-IaK" firstAttribute="top" secondItem="fo7-5I-yJ8" secondAttribute="bottom" id="s3X-AW-qxp"/>
+                                <constraint firstAttribute="trailing" secondItem="oUF-H4-731" secondAttribute="trailing" id="s51-oi-wAx"/>
+                                <constraint firstItem="7Om-Fs-r4F" firstAttribute="leading" secondItem="oG2-MK-84V" secondAttribute="leading" id="vMw-ti-6gL"/>
+                                <constraint firstAttribute="trailing" secondItem="Qeq-s1-YGE" secondAttribute="trailing" id="vSf-uP-wNZ"/>
+                                <constraint firstAttribute="trailing" secondItem="LWE-Yf-KZ4" secondAttribute="trailing" id="vpr-3Y-54U"/>
+                                <constraint firstItem="wXa-N8-gAl" firstAttribute="leading" secondItem="oG2-MK-84V" secondAttribute="leading" id="wFr-Eg-F5Q"/>
+                                <constraint firstAttribute="trailing" secondItem="wXa-N8-gAl" secondAttribute="trailing" id="wrY-s3-YXB"/>
+                                <constraint firstItem="Qeq-s1-YGE" firstAttribute="leading" secondItem="oG2-MK-84V" secondAttribute="leading" id="wwr-eE-vOn"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="oG2-MK-84V" secondAttribute="trailing" id="CV6-cO-cZr"/>
+                        <constraint firstItem="9Y1-is-L0H" firstAttribute="bottom" secondItem="oG2-MK-84V" secondAttribute="bottom" id="Ieq-N8-02h"/>
+                        <constraint firstItem="oG2-MK-84V" firstAttribute="width" secondItem="31E-CC-YG3" secondAttribute="width" id="KEb-pl-jra"/>
+                        <constraint firstItem="oG2-MK-84V" firstAttribute="top" secondItem="31E-CC-YG3" secondAttribute="top" id="OwO-gt-qX9"/>
+                        <constraint firstItem="oG2-MK-84V" firstAttribute="leading" secondItem="31E-CC-YG3" secondAttribute="leading" id="dXM-em-4L9"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="9Y1-is-L0H"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="DuP-to-Ris"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEO-0a-TII" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="15" y="787" width="384" height="45"/>
+                    <color key="backgroundColor" red="0.70196078429999997" green="0.59607843140000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="FBh-Ii-N5F"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                    <state key="normal" title="Вызвать охрану в парк">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="security.callSecurityButton.inPark.title"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="callSecurity:" destination="iN0-l3-epB" eventType="touchUpInside" id="wdM-XU-paH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="78L-2I-ePb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="8SF-xM-KXO"/>
+                <constraint firstItem="zEO-0a-TII" firstAttribute="top" secondItem="31E-CC-YG3" secondAttribute="bottom" constant="23" id="Foy-4l-Phn"/>
+                <constraint firstItem="YAA-Jc-CCo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HQP-Us-grc"/>
+                <constraint firstItem="fAU-t2-1nU" firstAttribute="top" secondItem="YAA-Jc-CCo" secondAttribute="bottom" constant="14" id="HT3-Wj-ItM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="zEO-0a-TII" secondAttribute="bottom" constant="30" id="In1-Rf-E6L"/>
+                <constraint firstItem="31E-CC-YG3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="KT3-QV-OY3"/>
+                <constraint firstItem="31E-CC-YG3" firstAttribute="top" secondItem="fAU-t2-1nU" secondAttribute="bottom" id="MF0-ll-OS3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zEO-0a-TII" secondAttribute="trailing" constant="15" id="SMB-6V-Wil"/>
+                <constraint firstItem="zEO-0a-TII" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="UbL-Be-BVI"/>
+                <constraint firstItem="78L-2I-ePb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="YbK-7n-eVI"/>
+                <constraint firstItem="YAA-Jc-CCo" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="22" id="c8e-nx-Pdq"/>
+                <constraint firstItem="fAU-t2-1nU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nlj-af-8xJ"/>
+                <constraint firstAttribute="trailing" secondItem="fAU-t2-1nU" secondAttribute="trailing" id="tXY-bp-SiG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="31E-CC-YG3" secondAttribute="trailing" id="y8V-tM-ZTV"/>
+            </constraints>
+            <connections>
+                <outlet property="appleCheckmark" destination="FDP-Cu-GPc" id="d0L-Hz-Cnq"/>
+                <outlet property="appleLabel" destination="RB6-ax-8f2" id="wIw-OP-vWk"/>
+                <outlet property="callSecurityButton" destination="zEO-0a-TII" id="qnp-Ql-Fc7"/>
+                <outlet property="centralCheckmark" destination="bLv-7U-RDy" id="RNV-qN-Hgd"/>
+                <outlet property="centralLabel" destination="eu1-nb-fyN" id="ksX-7q-mK3"/>
+                <outlet property="cherryCheckmark" destination="0Hb-sI-Fi6" id="XVg-8t-T0J"/>
+                <outlet property="cherryLabel" destination="coZ-0g-rOY" id="BSS-We-liR"/>
+                <outlet property="gorkyCheckmark" destination="bql-XV-Zmf" id="sgb-CA-INu"/>
+                <outlet property="gorkyLabel" destination="hYI-ih-BLy" id="Co2-0I-xdV"/>
+                <outlet property="hydeCheckmark" destination="8os-DV-Afw" id="Zgg-1d-cfC"/>
+                <outlet property="hydeLabel" destination="nWS-gs-aEt" id="6Xd-MF-ZQ5"/>
+                <outlet property="imperialCheckmark" destination="76T-DC-wJE" id="BfV-cg-tsr"/>
+                <outlet property="imperialLabel" destination="17f-91-E6M" id="uul-jz-zWW"/>
+                <outlet property="mirableCheckmark" destination="LDY-AO-hIE" id="dVq-Gu-gvz"/>
+                <outlet property="mirableLabel" destination="X5e-su-0Yy" id="Ylg-QJ-tSL"/>
+                <outlet property="petrovskyCheckmark" destination="Wad-As-38q" id="CFn-m1-AUJ"/>
+                <outlet property="petrovskyLabel" destination="g2T-to-mjr" id="ubp-pH-K8t"/>
+                <outlet property="primeCheckmark" destination="ODy-rb-ve3" id="tsw-pU-RA9"/>
+                <outlet property="primeLabel" destination="dIA-EA-1Iy" id="bRG-Bv-Jj8"/>
+                <outlet property="rigenCheckmark" destination="UNe-ng-70w" id="ygR-5K-5QU"/>
+                <outlet property="rigenLabel" destination="gMX-7n-Ui2" id="mxG-MR-cTN"/>
+                <outlet property="royalCheckmark" destination="STZ-k9-9Hw" id="Rqg-66-0GP"/>
+                <outlet property="royalLabel" destination="evQ-Du-Lpd" id="KnW-m4-0im"/>
+                <outlet property="titleLabel" destination="YAA-Jc-CCo" id="2GW-QX-yCW"/>
+                <outlet property="victoryCheckmark" destination="fhq-6z-Uho" id="cg4-lz-eZV"/>
+                <outlet property="victoryLabel" destination="aKQ-XL-kCm" id="cOW-o7-nAo"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="136.60714285714286"/>
+        </view>
+        <tapGestureRecognizer id="Mje-jF-GRg">
+            <connections>
+                <action selector="mirabelPark:" destination="iN0-l3-epB" id="nZq-yp-Gcb"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="5O7-cJ-o3q">
+            <connections>
+                <action selector="victoryPark:" destination="iN0-l3-epB" id="ZKQ-xP-tzq"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="fFR-6Q-jEa">
+            <connections>
+                <action selector="rigenPark:" destination="iN0-l3-epB" id="EIV-GU-4iK"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="l6U-t1-mPA">
+            <connections>
+                <action selector="imperialPark:" destination="iN0-l3-epB" id="O0b-AS-JBb"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="YuT-TD-oSt">
+            <connections>
+                <action selector="gorkyPark:" destination="iN0-l3-epB" id="Ow9-In-6S8"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="nJv-ZA-Agk">
+            <connections>
+                <action selector="hydePark:" destination="iN0-l3-epB" id="vwj-Bh-orw"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="FmK-cO-3dw">
+            <connections>
+                <action selector="centralPark:" destination="iN0-l3-epB" id="7L6-62-Rkb"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="rKv-tE-DpG">
+            <connections>
+                <action selector="petrovskyPark:" destination="iN0-l3-epB" id="rCT-7B-dgm"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="be2-mq-ik2">
+            <connections>
+                <action selector="royalPark:" destination="iN0-l3-epB" id="Cy0-Ry-yaF"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="Oin-Ge-mqu">
+            <connections>
+                <action selector="applePark:" destination="iN0-l3-epB" id="nSZ-zQ-PJd"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="mJ3-xw-rRP">
+            <connections>
+                <action selector="primePark:" destination="iN0-l3-epB" id="HMB-iI-eMh"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="BRN-ko-V4N">
+            <connections>
+                <action selector="cherryPark:" destination="iN0-l3-epB" id="Ytr-am-ye1"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <designables>
+        <designable name="17f-91-E6M">
+            <size key="intrinsicContentSize" width="110.5" height="17"/>
+        </designable>
+        <designable name="RB6-ax-8f2">
+            <size key="intrinsicContentSize" width="112" height="17"/>
+        </designable>
+        <designable name="X5e-su-0Yy">
+            <size key="intrinsicContentSize" width="112" height="17"/>
+        </designable>
+        <designable name="aKQ-XL-kCm">
+            <size key="intrinsicContentSize" width="96" height="17"/>
+        </designable>
+        <designable name="coZ-0g-rOY">
+            <size key="intrinsicContentSize" width="106.5" height="17"/>
+        </designable>
+        <designable name="dIA-EA-1Iy">
+            <size key="intrinsicContentSize" width="86" height="17"/>
+        </designable>
+        <designable name="eu1-nb-fyN">
+            <size key="intrinsicContentSize" width="97.5" height="17"/>
+        </designable>
+        <designable name="evQ-Du-Lpd">
+            <size key="intrinsicContentSize" width="81.5" height="17"/>
+        </designable>
+        <designable name="g2T-to-mjr">
+            <size key="intrinsicContentSize" width="123.5" height="17"/>
+        </designable>
+        <designable name="gMX-7n-Ui2">
+            <size key="intrinsicContentSize" width="115.5" height="17"/>
+        </designable>
+        <designable name="hYI-ih-BLy">
+            <size key="intrinsicContentSize" width="102" height="17"/>
+        </designable>
+        <designable name="nWS-gs-aEt">
+            <size key="intrinsicContentSize" width="71" height="17"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="check-mark" width="20" height="20"/>
+        <image name="hide_view_rectangle_button" width="36" height="4"/>
+    </resources>
+</document>

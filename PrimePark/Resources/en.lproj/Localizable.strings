@@ -1,0 +1,613 @@
+// Tabbar
+
+"tabbar.home" = "Prime Park";
+"tabbar.concierge" = "Concierge";
+"tabbar.cityguide" = "Guide";
+"tabbar.prime" = "Prime";
+"tabbar.profile" = "Profile";
+
+// Home
+
+"home.item.security" = "Security";
+"home.item.pass" = "Pass";
+"home.item.parking" = "Parking";
+"home.item.charges" = "Charges";
+"home.item.carwash" = "Car wash";
+"home.item.cleaning" = "Cleaning";
+"home.item.drycleaning" = "Dry cleaning";
+"home.item.services" = "Services";
+"home.item.help" = "Help";
+"home.item.news" = "News";
+"home.item.restaurants" = "Restaurants";
+"home.item.market" = "Market";
+
+"home.item.different" = "Different";
+
+// Service names
+
+"services.cleaning" = "Cleaning";
+"services.dryCleaning" = "Dry cleaning";
+"services.carWash" = "Car wash";
+"services.panrties" = "Panrties";
+"services.gsm" = "Cellular phone amplification";
+"services.wifi" = "Internet and IP TV";
+"services.furniture" = "Corridor furniture";
+"services.repair" = "Flat renovation";
+"services.primeparkFurniture" = "PrimePark Furniture";
+"services.design" = "Apartment design projects";
+"services.tu" = "Projects / Specifications";
+"services.wifi.type" = "Connect internet";
+"services.furniture.type" = "selection of furniture and materials";
+"services.repair.type.first" = "Turnkey repair";
+"services.repair.type.second" = "Turn-key custom repair";
+"services.gsm.type.first" = "Cellular signal enhancement";
+"services.gsm.type.second" = "Unlimited Mobile Internet";
+"services.panrties.type" = "Pantry";
+"services.furniture.type.first" = "Mirror";
+"services.furniture.type.second" = "Mirror and table";
+"services.order.button" = "Order";
+"services.chooseType.title" = "Choose service type";
+
+// Service description
+"services.subtitle" = "";
+"services.call.button.title" = "Call up";
+
+"services.cleaning.description" = "Professional cleaning\nfor residents:\n- special pricing\n- order through the concierge service\n\nOur residents can have their flat professionally cleaned at your convenience and at a time that suits your needs";
+
+"services.dryCleaning.description" = "We pick up your dirty clothes at your convenience, clean, iron and hang them neatly by the required time. Additional services include: furniture dry-cleaning, dry-cleaning of curtains, dry-cleaning of carpets.";
+
+"services.carWash.description" = "Prime Park runs a car wash and detailing service.
+
+The heated underground parking in the Prime Park neighborhood has its own detailing center, which offers a premium range of services for car care for residents, including a car wash with 8 boxes, 2 detailing stations, and tire service.
+
+You can use the service yourself or give the car to valet-parkers.
+
+Working hours: from 10:00 to 22:00.";
+
+"services.panrties.description" = "We provide storage rooms for your use. You can buy storage space so that you don't have to keep things you don't use every day in your flat.\n\nContact the sales office of Residential Complex \"Prime Park\"";
+
+"services.gsm.description" = "Quality mobile connectivity, 3G and LTE at home, without dead zones and constant signal loss due to thick walls, lots of shielding metal in them, remoteness of base stations, or some other reason.";
+
+"services.wifi.description" = "Home Internet at space speeds of up to 10 Gbit/s\n\nHigh tech only - GPON and FTTx (fibre to the home)\n\nRedundant channels and state-of-the-art equipment - Ensuring reliable and resilient connections\n\nPrompt connection 1 day\n\n24/7 support";
+
+"services.furniture.description" = "Designer furniture on your floor.\nIf you wish, we can add cosiness to the lift lobbies and floor corridors. You can order furniture and accessories designed by Prime Park's chief architect Philip Ball";
+
+"services.repair.description" = "A full range of services: from developing individual design projects and implementing ready-made package solutions to furnishing and completing flats\n
+Batch solutions:
+- Innovative platform with apartment-by-apartment navigation and online price calculation
+- Packages: Sun and Moon classic and modern interiors in two colours, as well as the premium Star package with turnkey kitchen and appliances
+- Convenient for those who want to start decorating quickly or plan to rent out their flat
+- The simplicity and aesthetics of Italian design
+- Optimal value for money and quality of materials
+- Quick measurement
+- Working with a designer and adapting any package to the client
+- Fixed time frames for repair
+- Fixed cost of work
+- Professional cleaning
+- Each package contract holder receives a premium Italian perfume for the home as a gift!
+
+Individual design projects:
+- Portfolio-based designer selection
+- Fixed time frame
+- Working on budget
+- Author's supervision and full support during construction
+- Real furniture, kitchens, furnishings in renderings
+- Turnkey furnishings, including showroom style
+
+The company http://Edleshaus.com
+Lead sales manager Dobrova Tatiana
+9:00 to 21:00, seven days a week
++7 930 220 23 89
++7 930 307 14 97";
+"services.primeparkFurniture.description" = "Prime Furniture Solutions, working with European designers, offers you a complete customised furnishing solution for your flat. We have designed a package including built-in and freestanding furniture, curtains, carpets, lighting and accessories sourced from Italy and other European countries, as well as ensuring their delivery and quality installation. Our design team has created four styles to match the finish of your flat, bringing together all the interior pieces in a harmonious way.
+
+Schedule: weekdays from 10-30 to 19-30
+Phone: +7 965 173 39 33
+Email: infomoscow@belvedere.it";
+
+"service.dryCleaning.about.description" = "\"Главхимчистка\" is a leading business class chain of dry cleaning companies in Moscow and Moscow region. The main areas of the company's work are dry-cleaning and individual washing of clothes (clothes, textiles), repair, restoration and restoration of shoes and accessories. 6 technological factories and more than 25 salons (reception desks) in convenient locations of Moscow and the Moscow region The newest professional equipment made in Italy and Germany.
+
+Schedule: daily from 9:00 to 21:00";
+//Info
+
+"alert.button.yes" = "Yes";
+"alert.button.no" = "No";
+"alert.loading.button.title" = "Loading";
+"alert.button.cancel" = "Cancel";
+"alert.button.delete" = "Delete";
+
+// Auth
+
+"auth.next" = "Next";
+
+"auth.next.loading" = "Please wait";
+
+"auth.becomeResident" = "Become resident";
+"auth.call" = "Call to OC";
+"auth.terms" = "By clicking the \"Next\" button, you consent to the processing of your personal data and confirm that you have read this offer."; // super strange text
+"auth.title" = "Enter phone number";
+"auth.verificationTitle" = "Enter SMS code";
+"auth.retryTimer" = "Send code in";
+"auth.retry" = "Send code";
+"moderation.descriptionText" = "Your data is awaiting moderation. The management company will contact you to confirm them";
+"moderation.callToOCButton.title" = "Call to OC";
+"moderation.becomeResidentButton.title" = "Become resident";
+"moderation.changeNumberButton.title" = "Change number";
+
+// Coutry Code
+
+"countrycode.title" = "Select region";
+"country.russia" = "Russia";
+"country.australia" = "Australia";
+"country.bulgaria" = "Bulgaria";
+"country.brasil" = "Brasil";
+"country.germany" = "Germany";
+"country.georgia" = "Georgia";
+"country.denmark" = "Denmark";
+"country.dominicana" = "Dominicana";
+"country.egypt" = "Egypt";
+"country.iceland" = "Iceland";
+"country.spain" = "Spain";
+
+// News
+
+"news.title" = "News";
+"news.copy" = "Copy text";
+
+//Error
+
+"error.button.back" = "Back";
+"error.button.ok" = "Ok";
+"error.authorization.invalidCode.title" = "Authorization error";
+"error.authorization.invalidCode.subtitle" = "Try entering code again or contact support";
+"error.authorization.maximumAttempts.title" = "Authorization error";
+"error.authorization.maximumAttempts.subtitle" = "You have exceeded the number of attempts. Request code again";
+"error.authorization.codeIsCancelled.title" = "Authorization error";
+"error.authorization.codeIsCancelled.subtitle" = "Request code again";
+"error.newSection.title" = "Section is under construction";
+"error.newSection.subtitle" = "The application will be fully operational in the near future";
+"error.callSecurity.title" = "Request for a security call has been successfully sent";
+"error.callSecurity.subtitle" = "In the near future, security will be";
+
+//Security
+
+"security.title" = "Security";
+"security.description" = "Call security";
+"security.callback" = "Callback";
+"security.writeInChat" = "Write in chat";
+"security.securityCall" = "Call to security";
+"security.callSecurity.text" = "Call security";
+"security.callSecurityButton.inRoom" = "In room ";
+"security.callSecurityButton.inPark" = "In park";
+"security.callSecurityButton.inLobby" = "In lobby";
+"security.choosePark.title" = "Choose park";
+"security.choosePark.fruitPark" = "Fruit park";
+"security.choosePark.centralPark" = "Central park";
+"security.choosePark.artPark" = "Art park";
+"security.choosePark.sportPark" = "Sports alley";
+"security.callSecurityButton.inPark.title" = "Call security in park";
+"security.callbackText" = "Security callback";
+"security.chatWithSecurity.title" = "Chat with security";
+
+//Alert Security
+
+//Success
+"security.callSecurity.success.title" = "Заявка на вызов охраны успешно отправлена";
+"security.callSecurity.success.subtitle" = "В ближайшее время охрана будет на месте";
+
+//Error
+"security.callSecurity.error.title" = "Произошла ошибка при вызове охраны";
+"security.error.callSecurity.subtitle" = "Попробуйте еще раз, вернувшись назад";
+
+
+//Dry Cleaning
+
+"dryCleaning.title" = "Dry cleaning";
+"dryCleaning.subtitle" = "";
+"dryCleaning.description.title" = "About service";
+"dryCleaning.description.text" = "Группа компаний по уборке квартир и химчистке мягкой мебели, в состав которой входит фабрика по стирки ковров. В 2015 году был создан удобный онлайн-сервис по уборке квартир. За основу взят.";
+"dryCleaning.serviceType" = "Service type";
+"dryCleaning.serviceType.dryCleaningClothes" = "Dry cleaning clothes";
+"dryCleaning.serviceType.dryCleaningFurniture" = "Dry cleaning furnitures";
+"dryCleaning.serviceType.dryCleaningCarpet" = "Dry cleaning carpets";
+"dryCleaning.serviceType.dryCleaningCurtain" = "Dry cleaning curtains";
+"dryCleaning.serviceType.dryCleaningOther" = "Other";
+"dryCleaning.serviceType.dryCleaningOther.placeholder" = "Enter service description";
+"dryCleaning.serviceDate.title" = "Date of service";
+"dryCleaning.serviceDate.buttonTitle.now" = "Now";
+"dryCleaning.serviceDate.buttonTitle.chooseDay" = "Choose day";
+"dryCleaning.serviceDate.dateTitle" = "Date";
+"dryCleaning.serviceDate.date.time.title" = "Choose time interval";
+"dryCleaning.serviceDate.date.time.from" = "From";
+"dryCleaning.serviceDate.date.time.before" = "Before";
+"dryCleaning.orderButton.title" = "Order";
+"dryCleaning.chooseType.title" = "Choose service type";
+"dryCleaning.chooseFromTime.title" = "Choose start time";
+"dryCleaning.chooseBeforeTime.title" = "Choose end time";
+"dryCleaning.chooseTime.doneButton" = "Done";
+
+// Cleaning
+
+"cleaning.title" = "Cleaning";
+"cleaning.subtitle" = "";
+"cleaning.serviceType.springСleaning" = "Spring-cleaning";
+"cleaning.serviceType.cleaningAfterRenovation" = "Cleaning after renovation";
+"cleaning.serviceType.maintenanceCleaning" = "Maintenance cleaning";
+"cleaning.serviceType.windowCleaning" = "Window cleaning";
+"cleaning.serviceType.cleaningOther" = "Other";
+"сleaning.chooseType.title" = "Choose service type";
+
+// Car wash
+
+"carWash.title" = "Car wash";
+"carWash.subtitle" = "";
+"carWash.serviceType.washingOutside" = "Washing outside";
+"carWash.serviceType.engineWash" = "Engine wash";
+"carWash.serviceType.complexWashing" = "Complex washing";
+"carWash.serviceType.motorcycleWash" = "Motorcycle wash";
+"carWash.serviceType.washOther" = "Other";
+"carWash.chooseType.title" = "Choose service type";
+"carWash.keysHandover" = "Handover of keys";
+"carWash.driver.comePersonally" = "I will come personally";
+"carWash.driver.valetService" = "Via valet service";
+"carWash.driver.callBelboy" = "Call the belboy";
+"carWash.button.enroll" = "Записаться";
+"carWash.dateAndTime.title" = "Date and time";
+"carWash.details" = "Details";
+"carWash.service" = "Service";
+"carWash.history" = "History";
+"carWash.chooseDateAndTime" = "Choose date and time";
+"carWash.offer.text" = "For using the 'Car Wash' service, \nplease read carefully";
+"carWash.offer.link" = "\nour offer";
+"carWash.offer.confirm" = "I confirm that I have read";
+"carWash.offer" = "Offer";
+"carWash.tariff" = "Tariffs";
+"carWash.unfilled.error.title" = "You have not completed all fields";
+"carWash.alert.success.title" = "The application for the service 'Car Wash' has been successfully sent";
+"carWash.alert.success.subtitle" = "Your manager will contact you to clarify the details";
+"carWash.alert.error.title" = "There was an error in the provision of the service";
+"carWash.alert.error.subtitle" = "Try again by going back";
+"carWash.about.text" = "Operational washing, dry cleaning, polishing.
+\nSix simultaneously operating washing posts are at your service, so we will perform any amount of work quickly and without queues.";
+"carWash.choose" = "Choose";
+"carWash.empty.timeslots" = "We were unable to get a car wash schedule. Our manager will contact you and make an appointment at a time convenient for you.";
+
+// Services
+
+"service.serviceName" = "Service name";
+"service.serviceType" = "Service type";
+"service.serviceDescription" = "Description";
+"service.serviceDate" = "Date of service";
+"service.serviceTimeInterval" = "Time interval";
+"service.sesrviceHandoverKey" = "Handover of keys";
+"service.orderService.success.title" = "Service ordered";
+"service.orderService.error.title" = "Service not ordered";
+"service.orderService.error.subtitle" = "Try again or contact the OC";
+"service.chooseTime.error.title" = "Incorrect time entered";
+"service.chooseTime.error.subtitle" = "The work start time cannot be later than the work end time. And the time of completion of work cannot be earlier than the time of start of work";
+"service.chatWithSecurity" = "Chat with security";
+
+"service.temporaryUnavailable.title" = "Attention!";
+"service.temporaryUnavailable.subtitle" = "This service is temporarily unavailable";
+
+// Concierge
+
+"concierge.title" = "Concierge";
+"concierge.segmentedControl.inWork.title" = "In Work";
+"concierge.segmentedControl.completed.title" = "Completed";
+"concierge.newRequestButton.title" = "New request";
+"concierge.issueType.parking" = "Parking";
+"concierge.issueType.pass" = "Pass";
+"concierge.issueType.security" = "Security";
+"concierge.issueType.other" = "Other";
+"concierge.issueGuestEnding.1" = "guests";
+"concierge.issueGuestEnding.2_4" = "guests";
+"concierge.issueGuestEnding.other" = "guests";
+"concierge.in" = "in";
+"concierge.request" = "Request";
+"concierge.noData.title" = "You have no requests yet";
+"concierge.noData.subtitle" = "Create the first one and we will be happy to help";
+"concierge.issueStatus.accepted" = "Accepted";
+"concierge.issueStatus.assigned" = "Assigned";
+"concierge.issueStatus.checking" = "Checking";
+"concierge.issueStatus.closed" = "Closed";
+"concierge.issueStatus.completed" = "Completed";
+"concierge.issueStatus.inModeration" = "In moderation";
+"concierge.issueStatus.inWork" = "In work";
+"concierge.issueStatus.onRoad" = "On road";
+"concierge.issueStatus.reopened" = "Reopened";
+
+// Profile
+
+"profile.statusInApartment" = "Inhabitant";
+"profile.info.phone.title" = "Phone";
+"profile.info.apartment.title" = "Apartments";
+"profile.info.apartment.subtitle" = "Detailed information";
+"profile.info.residents.title" = "Residents";
+"profile.info.pass.title" = "Passes";
+"profile.info.passList.title" = "List of received passes";
+
+//
+"profile.info.lawInfo.title" = "Law info";
+"profile.info.lawInfo.first.subtitle" = "Agreements, about the OC, about the HC";
+"profile.info.lawInfo.first.subtitle.first" = "First agreement";
+"profile.info.lawInfo.first.subtitle.second" = "Second agreement";
+"profile.info.lawInfo.first.subtitle.third" = "Privacy agreement";
+"profile.info.lawInfo.first.subtitle.fourth" = "Another one";
+"profile.info.lawInfo.second.subtitle" = "About management company";
+"profile.info.lawInfo.second.subtitle.first" = "Essential elements";
+"profile.info.lawInfo.second.subtitle.second" = "Rights and obligations' management company";
+"profile.info.lawInfo.second.subtitle.third" = "Essential elements";
+//
+"profile.info.settings.title" = "Settings";
+"profile.info.settings.subtitle" = "App settings";
+"profile.settings.language" = "Language";
+"profile.settings.logout" = "Logout";
+"profile.settings.delete" = "Delete account";
+"pfofile.settings.language.choose" = "Choose language";
+"profile.chooseApartment.title" = "Choose apartment";
+"profile.logout.title" = "Are you sure that you want to log out of your account?";
+"profile.logout.subtitle" = "";
+"profile.delete.title" = "Are you sure that you want to delete your account?";
+"profile.delete.mail.subject" = "Deleting account ";
+"profile.delete.mail.text" = "<p>Please delete the account</p>";
+
+//
+"profile.apartments.title" = "Apartments";
+"profile.apartments.accountNumber.title" = "Рersonal account №:";
+"profile.apartments.street.title" = "Street";
+"profile.apartments.house.title" = "House";
+"profile.apartments.entrance.title" = "Entrance";
+"profile.apartments.floor.title" = "Floor";
+"profile.apartments.flat.title" = "Apartment";
+
+// Pass
+
+"passList.title" = "Passes";
+"passList.sgmentedControl.IGave" = "I gave";
+"passList.segmentedControl.giveForMe" = "Give for me";
+"passList.newPassButton.title" = "New pass";
+"passList.tableViewHeader.active" = "Active";
+"passList.tableViewHeader.history" = "History";
+"pass.type.onetime" = "One-time";
+"pass.type.oneDay" = "One day";
+"pass.type.temporary" = "Temporary";
+"pass.type.permanent" = "Permanent";
+"pass.before" = "Before";
+"pass.detail.repeat" = "Repeat";
+"pass.detail.revoke" = "Revoke";
+"pass.pass" = "pass";
+"pass.revoke.success.title" = "Pass successfully removed";
+"pass.revoke.success.subtitle" = "";
+"pass.revoke.error.title" = "Failed to revoke pass";
+"pass.revoke.error.subtitle" = "Try again, or contact the OC";
+
+// Create Pass
+
+"createPass.title" = "New pass";
+"createPass.passType.title" = "Pass type";
+"createPass.passType.oneTime" = "One-time";
+"createPass.passType.oneDay" = "One day";
+"createPass.passType.temporary" = "Temporary";
+"createPass.passType.permanent" = "Permanent";
+"createPass.needParking.title" = "Need parking";
+"createPass.enterCarNumber" = "Enter car number";
+"createPass.parkingPayment" = "Parking payment";
+"createPass.parkingPaymentResident" = "Resident";
+"createPass.parkingPaymentGuest" = "Guest";
+"createPass.dateOfVisit.title" = "Date of visit";
+"createPass.dateIntervalOfVisit.title" = "Validity";
+"createPass.entrance.title" = "Entrance";
+"createPass.comment.placeholder" = "Comment";
+"createPass.passOrderButton.title" = "Order the pass";
+"createPass.entrance.front" = "Central";
+"createPass.entrance.service" = "Service";
+"createPass.entrance.choose.title" = "Choose entrance";
+"createPass.guests.title" = "Guests";
+"createPass.addGuest.title" = "Guest 1";
+"createPass.choodeGuestButton.title" = "Choose";
+"createPass.addGuestView.title" = "Add guest";
+
+"createPass.addGuestView.contacts.title" = "Contacts";
+
+"createPass.recentGuests.title" = "Recent guests";
+"createPass.addGuest.firstName" = "First name";
+"createPass.addGuest.firstName.placeholder" = "Enter first name";
+"createPass.addGuest.lastName" = "Last name";
+"createPass.addGuest.lastName.placeholder" = "Enter last name";
+"createPass.addGuest.middleName" = "Middle name (not required)";
+"createPass.addGuest.middleName.placeholder" = "Enter middle name";
+"createPass.addGuest.phone" = "Phone number";
+"createPass.addGuest.phone.placeholder" = "Enter phone number";
+"createPass.addGuestButton.title" = "Add";
+"createPass.parkingAlert.title" = "This functionality is not available in this version";
+
+// Create Pass Alert
+
+// Success
+"createPass.requestSuccess.title" = "Pass request completed successfully";
+"createPass.requestSuccess.subtitle" = "";
+"createPass.oneTime.requestSuccess.title" = "The request has been sent!";
+"createPass.oneTime.requestSuccess.subtitle" = "The pass under the number {n} is ready and sent to the recipient by sms";
+"createPass.noOneTime.requestSuccess.title" = "The request has been sent!";
+"createPass.noOneTime.requestSuccess.subtitle" = "The pass under the number {n} is ready";
+
+//Multi One Time Pass variant
+"createPass.oneTime.multi.requestSuccess.subtitle" = "The passes numbered {n} are ready and texted to the recipient";
+//Multi No One Time Pass variant
+"createPass.noOneTime.multi.requestSuccess.subtitle" = "The passes numbered {n} are ready";
+
+// Error
+"createPass.addGuest.notFillFields.error.title" = "Fields are not filled";
+"createPass.addGuest.notFillFields.error.subtitle" = "Fill all required fields";
+"createPass.addGuest.limit.title" = "Maximum number of guests"; //add path error
+"createPass.addGuest.limit.subtitle" = "You can not add more";  //add path error
+"createPass.requestError.nameLength.subtitle" = "The length of the first and last name must be between 2 and 100 characters"; //add path error
+"createPass.requestError.template.subtitle" = "Contact the OC (template error)"; //add path error
+"createPass.requestError.role.subtitle" = "The person is attached to the apartment with another role"; //add path error
+"createPass.requestError.phone.subtitle" = "Incorrect phone"; //add path error
+"createPass.noGuests.title" = "No guests"; //add path error
+"createPass.noGuests.subtitle" = "Add at least one guest"; //add path error
+"createPass.requestError.title" = "Guests cannot be added"; //add path error
+"createPass.requestError.subtitle" = "Contact the OC"; //add path error
+"createPass.noCarNumber.title" = "Enter car number"; //add path error
+
+// Pass info
+
+"passInfo.title" = "Pass rules and rates";
+"passInfo.rules.title" = "Rules";
+"passInfo.rules.first.title" = "The first rule";
+"passInfo.rules.second.title" = "The second rule";
+"passInfo.rules.third.title" = "The third rule";
+"passInfo.rules.fourth.title" = "The fouth rule";
+"passInfo.rules.first.description" = "The first rule";
+"passInfo.rules.second.description" = "The second rule";
+"passInfo.rules.third.description" = "The third rule";
+"passInfo.rules.fourth.description" = "The fouth rule";
+"passInfo.rates.title" = "Rates";
+"passInfo.rates.first.title" = "The first rate";
+"passInfo.rates.second.title" = "The second rate";
+"passInfo.rates.first.description" = "The first rate";
+"passInfo.rates.second.description" = "The second rate";
+
+// Parking info
+
+"parkingInfo.title" = "Pass rules and rates";
+"parkingInfo.rules.title" = "Rules";
+"parkingInfo.rules.first.title" = "The first rule";
+"parkingInfo.rules.second.title" = "The second rule";
+"parkingInfo.rules.third.title" = "The third rule";
+"parkingInfo.rules.fourth.title" = "The fouth rule";
+"parkingInfo.rules.first.description" = "The first rule";
+"parkingInfo.rules.second.description" = "The second rule";
+"parkingInfo.rules.third.description" = "The third rule";
+"parkingInfo.rules.fourth.description" = "The fouth rule";
+"parkingInfo.rates.title" = "Rates";
+"parkingInfo.rates.first.title" = "The first rate";
+"parkingInfo.rates.second.title" = "The second rate";
+"parkingInfo.rates.first.description" = "The first rate";
+"parkingInfo.rates.second.description" = "The second rate";
+
+// Parking
+
+"parking.title" = "Parking";
+"parking.segmentedControl.onetime" = "One-time";
+"parking.segmentedControl.permanent" = "Permanent";
+"parking.segmentedControl.valet" = "Valet";
+"parking.segmentedControl.valet.alert.subtitle" = "Для заказа подачи машины по Valet сессии нужно ввести номер тикета и пин, указанный в Parking Valet Ticket";
+"passList.newParkingButton.title" = "New issue";
+"parking.noData.title" = "You have no requests yet";
+"parking.type.onetime" = "One-time";
+"parking.type.permanent" = "Permanent";
+"parking.type.valet" = "Valet";
+"parking.type.valet.abonement.one.month" = "1 month";
+"parking.type.valet.abonement.two.month" = "2 month";
+"parking.type.valet.abonement.six.month" = "6 month";
+//
+"parking.about.textview" = "Parking passes come in two types, Valet and Private. \nValet pass - Valet service parking in front of the entrance and serving on -1 floor, near your lift lobby, in the Valet issue area and self-exit. \nPrivate season ticket - self-parking on the -2nd floor, with a linked car space.";
+"parking.valet.guestCard" = "Guest card";
+"parking.valet.subscription" = "Subscription";
+"parking.valet.create.button" = "Create";
+// Create parking
+
+"createParking.title" = "Request on parking";
+"createParking.enterCarNumber" = "Enter car number";
+"createParking.enterCarModel" = "Enter car model";
+"createParking.parkingPayment" = "Parking payment";
+"createParking.parkingPaymentResident" = "Resident";
+"createParking.parkingPaymentGuest" = "Guest";
+"createParking.dateOfVisit.title" = "Date of visit";
+"createParking.comment.placeholder" = "Comment";
+"createParking.parkingOrderButton.title" = "Order parking";
+"createParking.guests.title" = "Guests";
+"createParking.addGuest.title" = "Guest 1";
+"createParking.choodeGuestButton.title" = "Choose";
+"createParking.addGuest.limit.title" = "Maximum number of guests";
+"createParking.addGuest.limit.subtitle" = "You can not add more";
+"createParking.noData.title" = "Fields are not filled";
+"createParking.noData.subtitle" = "Add at least one guest and enter car number";
+"createParking.createOrder.success.title" = "Parking application has been successfully sent";
+"createParking.createOrder.success.subtitle" = "";
+"createParking.createOrder.error.title" = "Parking request not sent";
+"createParking.createOrder.error.subtitle" = "Сontact the UK";
+"createParking.addGuest.limit.title" = "Maximum number of guests";
+"createParking.addGuest.limit.subtitle" = "You can not add more";
+
+"createParking.permanent.createOrder.success.title" = "Issue have ordered";
+"createParking.permanent.createOrder.success.subtitle" = "Parking operator's manager contact you soon";//"Менеджер оператора парковки свяжется с Вами в ближайшее время";
+"createParking.permanent.createOrder.error.title" = "Заявка не отправлена";
+"createParking.permanent.createOrder.error.subtitle" = "Заявка не отправлена";
+
+// Residents
+
+"residentList.title" = "Residents";
+"residentList.addResidentButton.title" = "Add resident";
+"resident.role.inhabitant" = "Owner";
+"resident.role.cohabitant" = "Resident";
+"resident.role.brigadier" = "Brigadier";
+"resident.role.guest" = "Guest";
+"resident.deleteBrigadier.text" = "Hello. I want to delete brigadier.";
+"resident.deleteGuest.text" = "Hello. I want to delete guest.";
+"resident.deleteCohabitant.text" = "Hello. I want to delete resident.";
+"resident.deleteResident.fullname" = "Full name:";
+"resident.deleteResident.phone" = "Phone:";
+"resident.deleteResident.success.title" = "Application sent";
+"resident.deleteResident.success.subtitle" = "It will be considered within a few days.";
+"resident.deleteResident.error.title" = "Application not sent";
+"resident.deleteResident.error.subtitle" = "Try again or contact OC";
+"resident.deleteResident.alert.title" = "Are you sure you want to remove the resident?";
+
+// Add resident
+
+"addResident.title" = "Add resident";
+"addResident.role.title" = "Role";
+"addResident.role.inhabitant" = "Inhabitant";
+"addResident.role.brigadier" = "Brigadier";
+"addResident.role.guest" = "Guest";
+"addResident.firstName" = "First name";
+"addResident.firstName.placeholder" = "Enter first name";
+"addResident.lastName" = "Last name";
+"addResident.lastName.placeholder" = "Enter last name";
+"addResident.middleName" = "Middle name (not required)";
+"addResident.middleName.placeholder" = "Enter middle name";
+"addResident.phone" = "Phone number";
+"addResident.phone.placeholder" = "Enter phone number";
+"addResident.button.title" = "Add";
+
+// Calendar
+"calendar.doneButton" = "Done";
+
+//Charges
+"charges.title" = "Charges";
+"charges.counter.title" = "Meters";
+"charges.upd.title" = "UPD";
+"charges.balance.subtitle" = "Balance";
+"charges.accountNumber.title" = "Рersonal account №:";
+"charges.refill.title" = "Refill account";
+"charges.refill.allert" = "Payment in processing";
+"charges.empty.title" = "A personal account recharge is available";
+"charges.empty.subtitle" = "Other functions of the section \nin the modernisation process.";
+
+//Charges Counter
+"charges.counter.counterNumber.title" = "Counter №:";
+"charges.counter.counterNumber.subtitle" = "Counter №";
+"charges.counter.hotWater" = "Hot water";
+"charges.counter.coldWater" = "Cold water";
+"charges.counter.electricity" = "Electricity";
+"charges.counter.heating" = "Heating";
+"charges.counter.cooling" = "Refrigeration";
+"charges.counter.kW" = "kW";
+"charges.counter.Gcal" = "Gcal";
+"charges.counter.day" = "Day";
+"charges.counter.night" = "Night";
+"charges.counter.total" = "Total";
+
+// Deposit
+"deposit.title" = "Refill your account";
+"deposit.flat.title" = "Apartment";
+"deposit.sum.subtitle" = "Amount";
+"deposit.notification.subtitle" = "The balance will be updated within 3 working days";
+
+"timePicker.startTime.title" = "Start time";
+"timePicker.endTime.title" = "End time";
+"dryCleaning.popup.title" = "The Dry cleaning request has been sent. A manager will contact you with further details";

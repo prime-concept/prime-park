@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ValetDayCell" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="44" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="44" height="65"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pz8-M3-7bx" userLabel="contentView" customClass="RoundedView" customModule="PrimePark" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="44" height="65"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Q99-Hk-eWi">
+                                <rect key="frame" x="11" y="7" width="22" height="51"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ср" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bs-bS-tO7">
+                                        <rect key="frame" x="5" y="0.0" width="12" height="12.5"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="11"/>
+                                        <color key="textColor" red="0.50980392156862742" green="0.50196078431372548" blue="0.50980392156862742" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLs-Er-ieW">
+                                        <rect key="frame" x="2" y="16.5" width="18.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="16"/>
+                                        <color key="textColor" red="0.52549019607843139" green="0.51764705882352935" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="июн" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCp-A5-8BG">
+                                        <rect key="frame" x="0.0" y="38.5" width="22" height="12.5"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="11"/>
+                                        <color key="textColor" red="0.50980392156862742" green="0.50196078431372548" blue="0.50980392156862742" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Q99-Hk-eWi" firstAttribute="top" secondItem="pz8-M3-7bx" secondAttribute="top" constant="7" id="Mhg-a4-8Rd"/>
+                            <constraint firstItem="Q99-Hk-eWi" firstAttribute="centerX" secondItem="pz8-M3-7bx" secondAttribute="centerX" id="mYP-oZ-dc4"/>
+                            <constraint firstAttribute="bottom" secondItem="Q99-Hk-eWi" secondAttribute="bottom" constant="7" id="xob-8c-8Ir"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pz8-M3-7bx" secondAttribute="trailing" id="Ite-Ly-IxA"/>
+                <constraint firstItem="pz8-M3-7bx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Rvx-wB-rLB"/>
+                <constraint firstItem="pz8-M3-7bx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="c6n-L2-PAR"/>
+                <constraint firstAttribute="bottom" secondItem="pz8-M3-7bx" secondAttribute="bottom" id="qxv-OZ-d3O"/>
+            </constraints>
+            <size key="customSize" width="150" height="175"/>
+            <connections>
+                <outlet property="backgroundContentView" destination="pz8-M3-7bx" id="tgP-7z-Lb1"/>
+                <outlet property="dayLabel" destination="eLs-Er-ieW" id="fod-0s-8nI"/>
+                <outlet property="dayOfWeekLabel" destination="8Bs-bS-tO7" id="VEu-Fe-WgN"/>
+                <outlet property="monthLabel" destination="dCp-A5-8BG" id="XwI-di-smf"/>
+            </connections>
+            <point key="canvasLocation" x="-86.956521739130437" y="73.995535714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,618 @@
+// Tabbar
+
+"tabbar.home" = "Prime Park";
+"tabbar.concierge" = "Консьерж";
+"tabbar.cityguide" = "Гид";
+"tabbar.prime" = "Prime";
+"tabbar.profile" = "Профиль";
+
+// Home
+
+"home.item.security" = "Охрана";
+"home.item.pass" = "Пропуск";
+"home.item.parking" = "Паркинг";
+"home.item.charges" = "Начисления";
+"home.item.carwash" = "Автомойка";
+"home.item.cleaning" = "Клининг";
+"home.item.drycleaning" = "Химчистка";
+"home.item.services" = "Услуги";
+"home.item.help" = "Помощь";
+"home.item.news" = "Новости УК";
+"home.item.restaurants" = "Рестораны";
+"home.item.market" = "Маркет";
+
+"home.item.different" = "Другое";
+
+// Service names
+"services.subtitle" = "";
+"services.call.button.title" = "Позвонить";
+"services.cleaning" = "Клининг";
+"services.dryCleaning" = "Химчистка";
+"services.carWash" = "Автомойка";
+"services.panrties" = "Кладовые";
+"services.gsm" = "Усиление сотовой связи";
+"services.wifi" = "Интернет и IP-телевидение";
+"services.furniture" = "Мебель в коридор";
+"services.repair" = "Ремонт квартиры";
+"services.primeparkFurniture" = "Мебель PrimePark";
+"services.design" = "Дизайн-проекты квартиры";
+"services.tu" = "Проекты / ТУ";
+"services.wifi.type" = "Подключить интернет";
+"services.furniture.type" = "Подбор мебели и материалов";
+"services.repair.type.first" = "Типовой ремонт под ключ";
+"services.repair.type.second" = "Авторский ремонт под ключ";
+"services.gsm.type.first" = "Усиление сигнала сотовой связи";
+"services.gsm.type.second" = "Безлимитный мобильный интернет";
+"services.panrties.type" = "Кладовая";
+"services.furniture.type.first" = "Зеркало";
+"services.furniture.type.second" = "Зеркало и стол";
+"services.order.button" = "Заказать";
+"services.chooseType.title" = "Выберите тип услуги";
+// Service description
+
+"services.cleaning.description" = "Профессиональная уборка\nдля резидентов:\n- специальные цены\n- заказ через консьерж-службу\n\nНаши специалисты проведут качественную уборку квартиры в удобное для вас время с учетом любых пожеланий";
+
+"services.dryCleaning.description" = "Заберем грязные вещи в удобное для вас время, почистим, выгладим, вернем аккуратно развешанными к нужному часу. Дополнительно осуществляем: химчистку мебели, химчистку штор, химчистку ковров.";
+
+"services.carWash.description" = "В квартале Prime Park работает автомойка и детейлинг.
+
+На территории отапливаемого подземного паркинга квартала Prime Park работает собственный детейлинг-центр, который предлагает премиальный комплекс услуг для ухода за автомобилями резидентов, включая автомойку на 8 боксов, 2 поста детейлинга и шиномонтаж.
+
+Воспользоваться сервисом можно самостоятельно или передать автомобиль valet-парковщикам.
+
+График работы: с 10:00 до 22:00.";
+
+"services.panrties.description" = "Предоставляем в собственность кладовые помещения. Вы можете приобрести кладовые помещения для того, чтобы не хранить в квартире вещи, которыми не пользуетесь каждый день.\n\nОбращайтесь в офис продаж ЖК \"Прайм-Парк\"";
+
+"services.gsm.description" = "Качественная мобильная связь, 3G и LTE дома, без мертвых зон и постоянной потери сигнала, из-за толстых стен, большого количества в них экранирующего металла, удаленности базовых станций, или по каким-то другим причинам.";
+
+"services.wifi.description" = "Домашний Интернет на космической скорости до 10 Гбит/с\n\nТолько высокие технологии - GPON и FTTx (оптика в квартиру)\n\nРезервные каналы и современное оборудование - Гарантия надежности и устойчивости соединения\n\nОперативное подключение 1 день\n\nКруглосуточная поддержка 24/7";
+
+"services.furniture.description" = "Дизайнерская мебель на вашем этаже.\nПо вашему желанию добавим уюта в лифтовые холлы и коридоры этажа. Вы можете заказать мебель и аксессуары, выполненные по проекту главного архитектора Прайм Парка Филипа Болла";
+
+"services.repair.description" = "Полный спектр услуг: от разработки индивидуальных дизайн-проектов и реализации готовых пакетных решений до отделки и комплектации квартир\n
+Пакетные решения:
+- Инновационная платформа с поквартирной навигацией и расчётом цены ремонта онлайн
+- Пакеты: классические и современные интерьеры Sun и Moon в двух цветовых вариантах, а также премиальный пакет Star с кухней и техникой под ключ
+- Удобно для тех, кто хочет быстро начать отделку или планирует сдавать квартиру
+- Лаконичность и эстетика итальянского дизайна
+- Оптимальное соотношение цены и качества материалов
+- Быстрый замер
+- Работа с дизайнером и адаптация любого пакета под клиента
+- Фиксированные сроки ремонта
+- Фиксированная стоимость работ
+- Профессиональный клининг
+- Каждому обладателю контракта на пакет - премиальная итальянская парфюмерия для дома в подарок!
+
+Индивидуальные дизайн-проекты:
+- Выбор дизайнера по портфолио
+- Фиксированные сроки
+- Работа в рамках бюджета
+- Авторский надзор и полное сопровождение в процессе стройки
+- Реальные мебель, кухни, предметы интерьера в визуализациях
+- Комплектация под ключ, в том числе в стиле шоу-ромов
+
+Компания http://Edleshaus.com
+Ведущий менеджер по продажам Доброва Татьяна
+С 9:00 до 21:00 без выходных
++7 930 220 23 89
++7 930 307 14 97";
+"services.primeparkFurniture.description" = "Prime Furniture Solutions, сотрудничая с европейскими дизайнерами, предлагает вам полное индивидуальное решение по меблировке вашей квартиры. Мы разработали пакет, включающий встроенную и отдельностоящую мебель, шторы, ковры, освещение и аксессуары, поставляемые из Италии и других европейских стран, а также обеспечим их доставку и качественный монтаж. Наша команда дизайнеров создала четыре стиля, которые в соответствии с отделкой вашей квартиры, гармонично обьединят все предметы интерьера.
+
+График: будние дни с 10-30 до 19-30
+Телефон: +7 965 173 39 33
+Почта: infomoscow@belvedere.it";
+"service.dryCleaning.about.description" = "Главхимчистка - ведущая сеть предприятий бизнес-класса на рынке химчисток Москвы и Московской области. Основные направления работы компании — химчистка и индивидуальная стирка вещей (одежда, текстиль), ремонт, реставрация и восстановление обуви и аксессуаров. 6 технологичных фабрик и более 25 салонов (пунктов приема) в удобных локациях Москвы и Московской области Новейшее профессиональное оборудование производства Италия и Германия.
+
+Режим работы: ежедневно с 9:00 до 21:00.";
+
+
+
+//Info
+
+"alert.button.yes" = "Да";
+"alert.button.no" = "Нет";
+"alert.button.cancel" = "Отмена";
+"alert.button.delete" = "Удалить";
+"alert.loading.button.title" = "Загрузка";
+
+// Auth
+
+"auth.next" = "Далее";
+
+"auth.next.loading" = "Пожалуйста подождите";
+
+"auth.becomeResident" = "Стать жителем";
+"auth.call" = "Звонок в УК";
+"auth.terms" = "Нажимая на кнопку \"Далее\", Вы даете согласие на обработку своих персональных данных и подтверждаете ознакомление с офертой";
+"auth.title" = "Введите номер телефона";
+"auth.verificationTitle" = "Введите код из СМС";
+"auth.retryTimer" = "Отправить код через";
+"auth.retry" = "Отправить код";
+"moderation.descriptionText" = "Вашего номера телефона нет в списках жителей.\nПросьба позвонить в УК.";
+"moderation.callToOCButton.title" = "Звонок в УК";
+"moderation.becomeResidentButton.title" = "Стать жителем";
+"moderation.changeNumberButton.title" = "Сменить номер";
+
+// Coutry Code
+
+"countrycode.title" = "Выберите регион";
+"country.russia" = "Россия";
+"country.australia" = "Австралия";
+"country.bulgaria" = "Болгария";
+"country.brasil" = "Бразилия";
+"country.germany" = "Германия";
+"country.georgia" = "Грузия";
+"country.denmark" = "Дания";
+"country.dominicana" = "Доминикана";
+"country.egypt" = "Египет";
+"country.iceland" = "Исландия";
+"country.spain" = "Испания";
+
+// News
+
+"news.title" = "Новости";
+"news.copy" = "Копировать текст";
+
+//Error
+
+"error.button.back" = "Назад";
+"error.button.ok" = "Ок";
+"error.authorization.invalidCode.title" = "Произошла ошибка авторизации";
+"error.authorization.invalidCode.subtitle" = "Попробуйте ввести код еще раз или обратитесь в службу поддержки";
+"error.authorization.maximumAttempts.title" = "Произошла ошибка авторизации";
+"error.authorization.maximumAttempts.subtitle" = "Превышен лимит попыток, повторите еще раз через 3 минуты";
+"error.newSection.title" = "Раздел находится в разработке";
+"error.newSection.subtitle" = "В ближайшее время все полностью заработает";
+"error.callSecurity.title" = "Заявка на вызов охраны успешно отправлена";
+"error.callSecurity.subtitle" = "В ближайшее время охрана будет на месте";
+
+//Security
+
+"security.title" = "Охрана";
+"security.description" = "Оперативная связь с охраной в ЖК Прайм Парк.";
+"security.callback" = "Обратный звонок";
+"security.writeInChat" = "Написать в чат";
+//"security.securityCall" = "Позвонить в охрану";
+"security.securityCall" = "Звонок охране";
+"security.callSecurity.text" = "Вызвать охрану";
+"security.callSecurityButton.inRoom" = "В квартиру ";
+"security.callSecurityButton.inPark" = "В парк";
+"security.callSecurityButton.inLobby" = "В лобби";
+"security.choosePark.title" = "Выберите парк";
+"security.choosePark.fruitPark" = "Фруктовый парк";
+"security.choosePark.centralPark" = "Центральный парк";
+"security.choosePark.artPark" = "Парк искусств";
+"security.choosePark.sportPark" = "Аллея спорта";
+"security.callSecurityButton.inPark.title" = "Вызвать охрану в парк";
+"security.callbackText" = "Обратный звонок от охраны";
+"security.chatWithSecurity.title" = "Чат с охраной";
+
+//Alert Security
+
+//Success
+"security.callSecurity.success.title" = "Заявка на вызов охраны успешно отправлена";
+"security.callSecurity.success.subtitle" = "В ближайшее время охрана будет на месте";
+
+//Error
+"security.callSecurity.error.title" = "Произошла ошибка при вызове охраны";
+"security.error.callSecurity.subtitle" = "Попробуйте еще раз, вернувшись назад";
+
+
+//Dry Cleaning
+
+"dryCleaning.title" = "Химчистка";
+"dryCleaning.subtitle" = "";
+"dryCleaning.description.title" = "Об услуге";
+"dryCleaning.description.text" = "Группа компаний по уборке квартир и химчистке мягкой мебели, в состав которой входит фабрика по стирки ковров. В 2015 году был создан удобный онлайн-сервис по уборке квартир. За основу взят.";
+"dryCleaning.serviceType" = "Тип услуги";
+"dryCleaning.serviceType.dryCleaningClothes" = "Химчистка одежды";
+"dryCleaning.serviceType.dryCleaningFurniture" = "Химчистка мебели";
+"dryCleaning.serviceType.dryCleaningCarpet" = "Химчистка ковров";
+"dryCleaning.serviceType.dryCleaningCurtain" = "Химчистка штор";
+"dryCleaning.serviceType.dryCleaningOther" = "Другое";
+"dryCleaning.serviceType.dryCleaningOther.placeholder" = "Введите описание услуги";
+"dryCleaning.serviceDate.title" = "Дата оказания услуги";
+"dryCleaning.serviceDate.buttonTitle.now" = "Сейчас";
+"dryCleaning.serviceDate.buttonTitle.chooseDay" = "Выбрать день";
+"dryCleaning.serviceDate.dateTitle" = "Дата";
+"dryCleaning.serviceDate.date.time.title" = "Выберите временной интервал";
+"dryCleaning.serviceDate.date.time.from" = "От";
+"dryCleaning.serviceDate.date.time.before" = "До";
+"dryCleaning.orderButton.title" = "Заказать";
+"dryCleaning.chooseType.title" = "Выберите тип услуги";
+"dryCleaning.chooseFromTime.title" = "Выберите начало";
+"dryCleaning.chooseBeforeTime.title" = "Выберите конец";
+"dryCleaning.chooseTime.doneButton" = "Готово";
+
+// Cleaning
+
+"cleaning.title" = "Клининг";
+"cleaning.subtitle" = "";
+"cleaning.serviceType.springСleaning" = "Генеральная уборка";
+"cleaning.serviceType.cleaningAfterRenovation" = "Уборка после ремонта";
+"cleaning.serviceType.maintenanceCleaning" = "Поддерживающая уборка";
+"cleaning.serviceType.windowCleaning" = "Мойка окон";
+"cleaning.serviceType.cleaningOther" = "Другое";
+"сleaning.chooseType.title" = "Выберите тип услуги";
+
+// Car wash
+
+"carWash.title" = "Автомойка";
+"carWash.subtitle" = "";
+"carWash.serviceType.washingOutside" = "Мойка снаружи";
+"carWash.serviceType.engineWash" = "Мойка двигателя";
+"carWash.serviceType.complexWashing" = "Комплексная мойка";
+"carWash.serviceType.motorcycleWash" = "Мойка мотоцикла";
+"carWash.serviceType.washOther" = "Другое";
+"carWash.chooseType.title" = "Выберите тип услуги";
+"carWash.keysHandover" = "Передача ключей";
+"carWash.driver.comePersonally" = "Подъеду лично";
+"carWash.driver.valetService" = "Через службу валет";
+"carWash.driver.callBelboy" = "Вызвать белбоя";
+"carWash.button.enroll" = "Записаться";
+"carWash.dateAndTime.title" = "Дата и время";
+"carWash.details" = "Детали";
+"carWash.service" = "Услуга";
+"carWash.history" = "История";
+"carWash.chooseDateAndTime" = "Выберите дату и время";
+"carWash.offer.text" = "Для оказания услуги 'Автомойка' \nвнимательно ознакомьтесь";
+"carWash.offer.link" = "\nс нашей офертой";
+"carWash.offer.confirm" = "Подтверждаю, что ознакомился";
+"carWash.offer" = "Оферта";
+"carWash.tariff" = "Тарифы";
+"carWash.unfilled.error.title" = "Вы не заполнили все поля";
+"carWash.alert.success.title" = "Заявка на услугу 'Автомойка' успешно отправлена";
+"carWash.alert.success.subtitle" = "Менеджер с вами свяжется для уточнения деталей";
+"carWash.alert.error.title" = "Произошла ошибка при оказании услуги";
+"carWash.alert.error.subtitle" = "Попробуйте еще раз, вернувшись назад";
+"carWash.about.text" = "Оперативная мойка, химчистка, полировка.
+\nК вашим услугам шесть одновременно работающих моечных постов, поэтому любой объем работ мы выполним быстро и без очередей";
+"carWash.choose" = "Выбрать";
+"carWash.empty.timeslots" = "Не удалось получить расписание автомойки. Наш менеджер свяжется с вами и запишет на удобное для вас время.";
+// Services
+
+"service.serviceName" = "Название услуги";
+"service.serviceType" = "Тип услуги";
+"service.serviceDescription" = "Описание";
+"service.serviceDate" = "Дата услуги";
+"service.serviceTimeInterval" = "Время";
+"service.sesrviceHandoverKey" = "Передача ключей";
+"service.orderService.success.title" = "Услуга заказана";
+"service.orderService.error.title" = "Услуга не заказана";
+"service.orderService.error.subtitle" = "Обратитесь в УК";
+"service.chooseTime.error.title" = "Неправильно введено время";
+"service.chooseTime.error.subtitle" = "Время начала работ не может быть позже времени окончания работ. И время окончания работ не может быть раньше времени начала работ";
+"service.chatWithSecurity" = "Чат с охраной";
+
+"service.temporaryUnavailable.title" = "Внимание!";
+"service.temporaryUnavailable.subtitle" = "Этот сервис временно недоступен";
+// Concierge
+
+"concierge.title" = "Concierge";
+"concierge.segmentedControl.inWork.title" = "В работе";
+"concierge.segmentedControl.completed.title" = "Завершенные";
+"concierge.newRequestButton.title" = "Новый запрос";
+"concierge.issueType.parking" = "Паркинг";
+"concierge.issueType.pass" = "Пропуск";
+"concierge.issueType.security" = "Охрана";
+"concierge.issueType.other" = "Другое";
+"concierge.issueGuestEnding.1" = "гость";
+"concierge.issueGuestEnding.2_4" = "гостя";
+"concierge.issueGuestEnding.other" = "гостей";
+"concierge.in" = "в";
+"concierge.request" = "Заявка";
+"concierge.noData.title" = "У Вас пока нет запросов";
+"concierge.noData.subtitle" = "Создайте первый и мы с радостью поможем";
+"concierge.issueStatus.accepted" = "Принято";
+"concierge.issueStatus.assigned" = "Назначено";
+"concierge.issueStatus.checking" = "Проверяется";
+"concierge.issueStatus.closed" = "Закрыто";
+"concierge.issueStatus.completed" = "Выполнено";
+"concierge.issueStatus.inModeration" = "На модерации";
+"concierge.issueStatus.inWork" = "В работе";
+"concierge.issueStatus.onRoad" = "В пути";
+"concierge.issueStatus.reopened" = "Открыто заново";
+
+// Profile
+
+"profile.statusInApartment" = "Житель";
+"profile.info.phone.title" = "Телефон";
+"profile.info.apartment.title" = "Квартиры";
+"profile.info.apartment.subtitle" = "Детальная информация";
+"profile.info.residents.title" = "Резиденты";
+"profile.info.pass.title" = "Пропуска";
+"profile.info.passList.title" = "Список полученных пропусков";
+
+//
+"profile.info.lawInfo.title" = "Юридическая информация";
+"profile.info.lawInfo.first.subtitle" = "Соглашения, об УК, о ЖК";
+"profile.info.lawInfo.first.subtitle.first" = "Соглашение первое";
+"profile.info.lawInfo.first.subtitle.second" = "Соглашение второе";
+"profile.info.lawInfo.first.subtitle.third" = "Соглашение о конфиденциальности";
+"profile.info.lawInfo.first.subtitle.fourth" = "Еще одно соглашение";
+"profile.info.lawInfo.second.subtitle" = "Об управляющей компании";
+"profile.info.lawInfo.second.subtitle.first" = "Реквизиты";
+"profile.info.lawInfo.second.subtitle.second" = "Права и обязанности управляющей компании";
+"profile.info.lawInfo.second.subtitle.third" = "Реквизиты";
+
+//
+"profile.info.settings.title" = "Настройки";
+"profile.info.settings.subtitle" = "Настройки приложения";
+"profile.settings.language" = "Язык";
+"profile.settings.logout" = "Выход";
+"profile.settings.delete" = "Удалить аккаунт";
+"pfofile.settings.language.choose" = "Выберите язык";
+"profile.chooseApartment.title" = "Выбрать квартиру";
+"profile.logout.title" = "Вы уверены, что хотите выйти из приложения?";
+"profile.logout.subtitle" = "";
+"profile.delete.title" = "Вы уверены, что хотите удалить аккаунт?";
+"profile.delete.mail.subject" = "Удаление аккаунта ";
+"profile.delete.mail.text" = "<p>Прошу удалить аккаунт<p>";
+
+//
+"profile.apartments.title" = "Квартиры";
+"profile.apartments.accountNumber.title" = "№ лицевого счета:";
+"profile.apartments.street.title" = "Улица";
+"profile.apartments.house.title" = "Дом";
+"profile.apartments.entrance.title" = "Подъезд";
+"profile.apartments.floor.title" = "Этаж";
+"profile.apartments.flat.title" = "Квартира";
+
+// Pass
+
+"passList.title" = "Пропуска";
+"passList.sgmentedControl.IGave" = "Выданные";
+"passList.segmentedControl.giveForMe" = "Полученные";
+"passList.newPassButton.title" = "Новый пропуск";
+"passList.tableViewHeader.active" = "Действующие";
+"passList.tableViewHeader.history" = "История";
+"pass.type.onetime" = "Разовый";
+"pass.type.oneDay" = "Однодневный";
+"pass.type.temporary" = "Временный";
+"pass.type.permanent" = "Постоянный";
+"pass.before" = "До";
+"pass.detail.repeat" = "Повторить";
+"pass.detail.revoke" = "Заблокировать";
+"pass.pass" = "пропуск";
+"pass.revoke.success.title" = "Пропуск успешно удален";
+"pass.revoke.success.subtitle" = "";
+"pass.revoke.error.title" = "Не удалось заблокировать пропуск";
+"pass.revoke.error.subtitle" = "Обратитесь в УК";
+
+// Create Pass
+
+"createPass.title" = "Новый пропуск";
+"createPass.passType.title" = "Тип пропуска";
+"createPass.passType.oneTime" = "Разовый";
+"createPass.passType.oneDay" = "Однодневный";
+"createPass.passType.temporary" = "Временный";
+"createPass.passType.permanent" = "Постоянный";
+"createPass.needParking.title" = "Требуется паркинг";
+"createPass.enterCarNumber" = "Введите номер машины";
+"createPass.parkingPayment" = "Оплата паркинга";
+"createPass.parkingPaymentResident" = "Жителем";
+"createPass.parkingPaymentGuest" = "Гостем";
+"createPass.dateOfVisit.title" = "Дата посещения";
+"createPass.dateIntervalOfVisit.title" = "Время действия";
+"createPass.entrance.title" = "Вход";
+"createPass.comment.placeholder" = "Комментарий";
+"createPass.passOrderButton.title" = "Заказать пропуск";
+"createPass.entrance.front" = "Парадный";
+"createPass.entrance.service" = "Сервисный";
+"createPass.entrance.choose.title" = "Выберите вход";
+"createPass.guests.title" = "Гости";
+"createPass.addGuest.title" = "Гость 1";
+"createPass.choodeGuestButton.title" = "Выбрать";
+"createPass.addGuestView.title" = "Добавить гостя";
+
+"createPass.addGuestView.contacts.title" = "Контакты";
+
+"createPass.recentGuests.title" = "Недавние гости";
+"createPass.addGuest.firstName" = "Имя";
+"createPass.addGuest.firstName.placeholder" = "Введите имя";
+"createPass.addGuest.lastName" = "Фамилия";
+"createPass.addGuest.lastName.placeholder" = "Введите фамилию";
+"createPass.addGuest.middleName" = "Отчество (не обязательно)";
+"createPass.addGuest.middleName.placeholder" = "Введите отчество";
+"createPass.addGuest.phone" = "Номер телефона";
+"createPass.addGuest.phone.placeholder" = "Введите номер телефона";
+"createPass.addGuestButton.title" = "Добавить";
+
+"createPass.parkingAlert.title" = "Данный функционал не доступен в текущей версии";
+
+// Create Pass Alert
+
+// Success
+"createPass.requestSuccess.title" = "Запрос на пропуск успешно выполнен";
+"createPass.requestSuccess.subtitle" = "";
+"createPass.oneTime.requestSuccess.title" = "Заявка отправлена!";
+"createPass.oneTime.requestSuccess.subtitle" = "Пропуск под номер {n} готов и отправлен получателю в смс";
+"createPass.noOneTime.requestSuccess.title" = "Заявка отправлена!";
+"createPass.noOneTime.requestSuccess.subtitle" = "Пропуск под номером {n} готов";
+
+//Multi One Time Pass variant
+"createPass.oneTime.multi.requestSuccess.subtitle" = "Пропуска под номерами {n} готовы и отправлены получателю в смс";
+//Multi No One Time Pass variant
+"createPass.noOneTime.multi.requestSuccess.subtitle" = "Пропуска под номерами {n} готовы";
+
+// Error
+"createPass.addGuest.notFillFields.error.title" = "Не заполнены поля";
+"createPass.addGuest.notFillFields.error.subtitle" = "Заполните все обязательные поля";
+"createPass.addGuest.limit.title" = "Максимальное число гостей"; //add path error
+"createPass.addGuest.limit.subtitle" = "Вы не можете добавить больше";  //add path error
+"createPass.requestError.nameLength.subtitle" = "Длина имени и фамилии должна быть от 2 до 100 символов"; //add path error
+"createPass.requestError.template.subtitle" = "Обратитесь в УК (ошибка шаблона)"; //add path error
+"createPass.requestError.role.subtitle" = "Данному номеру телефона уже присвоена роль, обратитесь в УК"; //add path error //Человек прикреплен к квартире под другой ролью
+"createPass.requestError.phone.subtitle" = "Неверный номер"; //add path error
+"createPass.noGuests.title" = "Нет гостей"; //add path error
+"createPass.noGuests.subtitle" = "Добавьте хотя бы одного гостя"; //add path error
+"createPass.requestError.title" = "Нельзя добавить гостей"; //add path error
+"createPass.requestError.subtitle" = "Обратитесь в УК"; //add path error
+"createPass.noCarNumber.title" = "Введите номер машины"; //add path error
+
+// Pass info
+
+"passInfo.title" = " Правила и тарифы пропусков";
+"passInfo.Rules.title" = "Правила";
+"passInfo.rules.first.title" = "Правило первое";
+"passInfo.rules.second.title" = "Правило второе";
+"passInfo.rules.third.title" = "Правило третье";
+"passInfo.rules.fourth.title" = "Правило четвертое";
+"passInfo.rules.first.description" = "Правило первое";
+"passInfo.rules.second.description" = "Правило второе";
+"passInfo.rules.third.description" = "Правило третье";
+"passInfo.rules.fourth.description" = "Правило четвертое";
+"passInfo.rates.title" = "Тарифы";
+"passInfo.rates.first.title" = "Тариф первый";
+"passInfo.rates.second.title" = "Тариф второй";
+"passInfo.rates.first.description" = "Тариф первый";
+"passInfo.rates.second.description" = "Тариф второй";
+
+// Parking info
+
+"parkingInfo.title" = " Правила и тарифы парковки";
+"parkingInfo.Rules.title" = "Правила";
+"parkingInfo.rules.first.title" = "Правило первое";
+"parkingInfo.rules.second.title" = "Правило второе";
+"parkingInfo.rules.third.title" = "Правило третье";
+"parkingInfo.rules.fourth.title" = "Правило четвертое";
+"parkingInfo.rules.first.description" = "Правило первое";
+"parkingInfo.rules.second.description" = "Правило второе";
+"parkingInfo.rules.third.description" = "Правило третье";
+"parkingInfo.rules.fourth.description" = "Правило четвертое";
+"parkingInfo.rates.title" = "Тарифы";
+"parkingInfo.rates.first.title" = "Тариф первый";
+"parkingInfo.rates.second.title" = "Тариф второй";
+"parkingInfo.rates.first.description" = "Тариф первый";
+"parkingInfo.rates.second.description" = "Тариф второй";
+
+// Parking
+
+"parking.title" = "Паркинг";
+"parking.segmentedControl.onetime" = "Разовый";
+"parking.segmentedControl.permanent" = "Абонементы";
+"parking.segmentedControl.valet" = "Valet";
+"parking.segmentedControl.valet.alert.subtitle" = "Для заказа подачи машины по Valet сессии нужно ввести номер тикета и пин, указанный в Parking Valet Ticket";
+"passList.newParkingButton.title" = "Новая заявка";
+"parking.noData.title" = "У Вас пока нет заявок";
+"parking.type.onetime" = "Разовый";
+"parking.type.permanent" = "Постоянный";
+"parking.type.valet" = "Valet";
+"parking.type.valet.abonement.one.month" = "1 месяц";
+"parking.type.valet.abonement.two.month" = "2 месяца";
+"parking.type.valet.abonement.six.month" = "6 месяцев";
+
+//
+//["1 машина", "2 машины", "3 машины и более"]
+//private var arrOfMonthModel = ["1 месяц", "3 месяца", "6 месяцев и более"]
+"parking.about.textview" = "Абонементы на паркинг бывают двух типов, Valet и Private. \nValet абонемент - парковка Valet сервисом перед входной группой и подача на -1 этаже, возле вашего лифтового холла, в зоне Valet выдачи и самостоятельный выезд. \nPrivate абонемент - самостоятельная парковка на -2 этаже, с привязанным машино местом.";
+"parking.valet.guestCard" = "Гостевая карта";
+"parking.valet.subscription" = "Абонемент";
+"parking.valet.create.button" = "Создать";
+
+"parking.permanent.carAmount.firts" = "";
+"parking.permanent.carAmount.second" = "";
+"parking.permanent.carAmount.third" = "";
+// Create parking
+
+"createParking.title" = "Заявка на пропуск";
+"createParking.enterCarNumber" = "Введите номер машины";
+"createParking.enterCarModel" = "Введите марку машины";
+"createParking.parkingPayment" = "Оплата паркинга";
+"createParking.parkingPaymentResident" = "Резидентом";
+"createParking.parkingPaymentGuest" = "Гостем";
+"createParking.dateOfVisit.title" = "Дата посещения";
+"createParking.comment.placeholder" = "Комментарий";
+"createParking.parkingOrderButton.title" = "Заказать паркинг";
+"createParking.guests.title" = "Гости";
+"createParking.addGuest.title" = "Гость 1";
+"createParking.choodeGuestButton.title" = "Выбрать";
+"createParking.addGuest.limit.title" = "Максимальное число гостей";
+"createParking.addGuest.limit.subtitle" = "You can not add more";
+"createParking.noData.title" = "Не все обязательные поля заполнены";
+"createParking.noData.subtitle" = "Добавьте хотя бы одного гостя и введите номер машины";
+"createParking.createOrder.success.title" = "Заявка отправлена!";
+"createParking.createOrder.success.subtitle" = "Пропуск готов и отправлен получателю в смс";
+"createParking.createOrder.error.title" = "Заявка на паркинг не отправлена";
+"createParking.createOrder.error.subtitle" = "Обратитесь в УК";
+"createParking.addGuest.limit.title" = "Максимальное число гостей";
+"createParking.addGuest.limit.subtitle" = "Вы не можете добавить больше";
+
+"createParking.permanent.createOrder.success.title" = "Заявка отправлена";
+"createParking.permanent.createOrder.success.subtitle" = "Менеджер оператора парковки свяжется с Вами в ближайшее время";
+"createParking.permanent.createOrder.error.title" = "Заявка не отправлена";
+"createParking.permanent.createOrder.error.subtitle" = "Заявка не отправлена";
+
+// Residents
+
+"residentList.title" = "Резиденты";
+"residentList.addResidentButton.title" = "Добавить резидента";
+"resident.role.inhabitant" = "Владелец";
+"resident.role.cohabitant" = "Житель";
+"resident.role.brigadier" = "Бригадир";
+"resident.role.guest" = "Гость";
+"resident.deleteBrigadier.text" = "Добрый день! Хочу удалить бригадира.";
+"resident.deleteGuest.text" = "Добрый день! Хочу удалить гостя.";
+"resident.deleteCohabitant.text" = "Добрый день! Хочу удалить жителя.";
+"resident.deleteResident.fullname" = "ФИО:";
+"resident.deleteResident.phone" = "Телефон:";
+"resident.deleteResident.success.title" = "Заявка отправлена";
+"resident.deleteResident.success.subtitle" = "Её рассмотрят в течение нескольких дней";
+"resident.deleteResident.error.title" = "Заявка не отправлена";
+"resident.deleteResident.error.subtitle" = "Попробуйте еще раз или свяжитесь с УК";
+"resident.deleteResident.alert.title" = "Вы уверены, что хотите удалить резидента?";
+
+// Add resident
+
+"addResident.title" = "Добавить резидента";
+"addResident.role.title" = "Роль";
+"addResident.role.inhabitant" = "Житель";
+"addResident.role.brigadier" = "Бригадир";
+"addResident.role.guest" = "Гость";
+"addResident.firstName" = "Имя";
+"addResident.firstName.placeholder" = "Введите имя";
+"addResident.lastName" = "Фамилия";
+"addResident.lastName.placeholder" = "Введите фамилию";
+"addResident.middleName" = "Отчество (не обязательно)";
+"addResident.middleName.placeholder" = "Введите отчество";
+"addResident.phone" = "Номер телефона";
+"addResident.phone.placeholder" = "Введите номер телефона";
+"addResident.button.title" = "Добавить";
+
+// Calendar
+"calendar.doneButton" = "Готово";
+
+//Charges
+"charges.title" = "Начисления";
+"charges.counter.title" = "Счетчики";
+"charges.upd.title" = "ЕПД";
+"charges.balance.subtitle" = "Баланс";
+"charges.accountNumber.title" = "№ лицевого счета:";
+"charges.refill.title" = "Пополнить счет";
+"charges.refill.allert" = "Платеж в обработке";
+"charges.empty.title" = "Доступно пополнение лицевого счета";
+"charges.empty.subtitle" = "Другие функции раздела на\nмодернизации.";
+//Charges Counter
+"charges.counter.counterNumber.title" = "№ счетчика:";
+"charges.counter.counterNumber.subtitle" = "№ счетчика";
+"charges.counter.hotWater" = "Вода горячая";
+"charges.counter.coldWater" = "Вода холодная";
+"charges.counter.electricity" = "Электричество";
+"charges.counter.heating" = "Теплоснабжение";
+"charges.counter.cooling" = "Холодоснабжение";
+"charges.counter.kW" = "кВт";
+"charges.counter.Gcal" = "Гкал";
+"charges.counter.day" = "День";
+"charges.counter.night" = "Ночь";
+"charges.counter.total" = "Всего";
+
+// Deposit
+"deposit.title" = "Пополнение счета";
+"deposit.flat.title" = "Квартира";
+"deposit.sum.subtitle" = "Сумма";
+"deposit.notification.subtitle" = "Баланс обновится в течение 3-х рабочих дней";
+
+"timePicker.startTime.title" = "Время начала";
+"timePicker.endTime.title" = "Время окончания";
+"dryCleaning.popup.title" = "Заявка на услугу «Химчистка» отправлена. Менеджер с Вами свяжется для уточнения деталей";

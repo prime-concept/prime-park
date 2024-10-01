@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UPDHeader" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="102"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQs-Hd-7i8" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="0.0" width="374" height="102"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23 343 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sa-cN-w4R">
+                            <rect key="frame" x="281" y="25" width="78" height="22.5"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="20"/>
+                            <color key="textColor" red="0.73333333333333328" green="0.22745098039215686" blue="0.1764705882352941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Не оплачено" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0n-VP-xaI">
+                            <rect key="frame" x="286" y="48.5" width="73" height="14"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                            <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="04.07" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bL-MN-o52">
+                            <rect key="frame" x="15" y="25" width="41" height="18"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата формирования отчета" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Al6-La-f6S">
+                            <rect key="frame" x="15" y="48.5" width="157" height="14"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                            <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=".2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EON-TI-i9E">
+                            <rect key="frame" x="56" y="25" width="41" height="18"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <color key="textColor" red="0.50980392156862742" green="0.50980392156862742" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="EON-TI-i9E" firstAttribute="leading" secondItem="5bL-MN-o52" secondAttribute="trailing" id="1td-Y6-TdB"/>
+                        <constraint firstItem="EON-TI-i9E" firstAttribute="top" secondItem="5bL-MN-o52" secondAttribute="top" id="Cam-iZ-Aoo"/>
+                        <constraint firstItem="a0n-VP-xaI" firstAttribute="trailing" secondItem="1Sa-cN-w4R" secondAttribute="trailing" id="Jv1-N4-UpA"/>
+                        <constraint firstAttribute="trailing" secondItem="1Sa-cN-w4R" secondAttribute="trailing" constant="15" id="Q14-7Z-P90"/>
+                        <constraint firstItem="Al6-La-f6S" firstAttribute="top" secondItem="a0n-VP-xaI" secondAttribute="top" id="VB8-d8-5CV"/>
+                        <constraint firstItem="Al6-La-f6S" firstAttribute="leading" secondItem="5bL-MN-o52" secondAttribute="leading" id="W4V-B3-Ips"/>
+                        <constraint firstItem="a0n-VP-xaI" firstAttribute="top" secondItem="1Sa-cN-w4R" secondAttribute="bottom" constant="1" id="YTY-PO-XDR"/>
+                        <constraint firstItem="5bL-MN-o52" firstAttribute="top" secondItem="1Sa-cN-w4R" secondAttribute="top" id="a5q-BC-xaC"/>
+                        <constraint firstItem="1Sa-cN-w4R" firstAttribute="top" secondItem="gQs-Hd-7i8" secondAttribute="top" constant="25" id="cJk-80-PxZ"/>
+                        <constraint firstItem="5bL-MN-o52" firstAttribute="leading" secondItem="gQs-Hd-7i8" secondAttribute="leading" constant="15" id="oet-6l-BaT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gQs-Hd-7i8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Lzn-wm-43N"/>
+                <constraint firstItem="gQs-Hd-7i8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="h2o-3L-Vlt"/>
+                <constraint firstAttribute="bottom" secondItem="gQs-Hd-7i8" secondAttribute="bottom" id="jxI-HP-bGF"/>
+                <constraint firstAttribute="trailing" secondItem="gQs-Hd-7i8" secondAttribute="trailing" id="teg-kf-a3f"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="40.579710144927539" y="293.97321428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ParkingListView" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfW-Fq-YzG" userLabel="Navigation View">
+                    <rect key="frame" x="0.0" y="44" width="414" height="92"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Паркинг" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NV-mO-KjD" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="174.5" y="17" width="65" height="18"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="parking.title"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOu-D4-2M8" userLabel="Back View">
+                            <rect key="frame" x="15" y="11" width="50" height="30"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_button" translatesAutoresizingMaskIntoConstraints="NO" id="9S6-ef-lh7">
+                                    <rect key="frame" x="0.0" y="5" width="11.5" height="20"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="4Ty-ri-X4c"/>
+                                <constraint firstItem="9S6-ef-lh7" firstAttribute="leading" secondItem="xOu-D4-2M8" secondAttribute="leading" id="KMs-2Y-NRg"/>
+                                <constraint firstItem="9S6-ef-lh7" firstAttribute="top" secondItem="xOu-D4-2M8" secondAttribute="top" constant="5" id="Sxb-W7-ADG"/>
+                                <constraint firstAttribute="bottom" secondItem="9S6-ef-lh7" secondAttribute="bottom" constant="5" id="zrg-AT-dCq"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="3LT-zW-Qxm" appends="YES" id="HQV-NK-YmR"/>
+                            </connections>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3St-cd-hGD">
+                            <rect key="frame" x="379" y="15" width="20" height="22"/>
+                            <state key="normal" image="info_icon"/>
+                            <connections>
+                                <action selector="showInfo:" destination="iN0-l3-epB" eventType="touchUpInside" id="TVs-ji-eld"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kek-YS-Ybl" customClass="PrimeSegmentControl" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="50" width="384" height="37"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="37" id="z8O-AT-x6L"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="segmentTitles" value="parking.segmentedControl.onetime,parking.segmentedControl.permanent,parking.segmentedControl.valet"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isBasicStyle" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Kek-YS-Ybl" secondAttribute="trailing" constant="15" id="2zr-6Y-ZcD"/>
+                        <constraint firstItem="xOu-D4-2M8" firstAttribute="leading" secondItem="bfW-Fq-YzG" secondAttribute="leading" constant="15" id="Fcs-JI-oCG"/>
+                        <constraint firstAttribute="trailing" secondItem="3St-cd-hGD" secondAttribute="trailing" constant="15" id="I3i-b6-cWn"/>
+                        <constraint firstItem="Kek-YS-Ybl" firstAttribute="leading" secondItem="bfW-Fq-YzG" secondAttribute="leading" constant="15" id="LZn-DH-JQ3"/>
+                        <constraint firstItem="xOu-D4-2M8" firstAttribute="centerY" secondItem="0NV-mO-KjD" secondAttribute="centerY" id="Ljc-qN-V8i"/>
+                        <constraint firstItem="0NV-mO-KjD" firstAttribute="centerX" secondItem="bfW-Fq-YzG" secondAttribute="centerX" id="Yc6-DV-FgK"/>
+                        <constraint firstAttribute="bottom" secondItem="Kek-YS-Ybl" secondAttribute="bottom" constant="5" id="dOA-ht-Ujn"/>
+                        <constraint firstItem="3St-cd-hGD" firstAttribute="centerY" secondItem="0NV-mO-KjD" secondAttribute="centerY" id="kex-OP-2nl"/>
+                        <constraint firstItem="0NV-mO-KjD" firstAttribute="top" secondItem="bfW-Fq-YzG" secondAttribute="top" constant="17" id="n6H-OP-ZwE"/>
+                        <constraint firstAttribute="height" constant="92" id="viq-EH-8CC"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="aOm-Us-yOL" userLabel="One Time Table View">
+                    <rect key="frame" x="0.0" y="136" width="414" height="726"/>
+                    <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Exh-dO-IIZ" userLabel="No Data View">
+                    <rect key="frame" x="0.0" y="136" width="414" height="726"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="У Вас пока нет заявок" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHD-7h-Cij" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="123.5" y="354" width="167.5" height="18"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="parking.noData.title"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Создайте первую заявку" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JiS-QM-L0H" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="126" y="377" width="162.5" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                            <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="concierge.noData.subtitle"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="CHD-7h-Cij" firstAttribute="centerY" secondItem="Exh-dO-IIZ" secondAttribute="centerY" id="AuS-Q4-Qkg"/>
+                        <constraint firstItem="CHD-7h-Cij" firstAttribute="centerX" secondItem="Exh-dO-IIZ" secondAttribute="centerX" id="U0B-GP-e9K"/>
+                        <constraint firstItem="JiS-QM-L0H" firstAttribute="top" secondItem="CHD-7h-Cij" secondAttribute="bottom" constant="5" id="bBx-w8-WIc"/>
+                        <constraint firstItem="JiS-QM-L0H" firstAttribute="centerX" secondItem="Exh-dO-IIZ" secondAttribute="centerX" id="loW-j9-yNT"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZdL-Eu-VqK" userLabel="Permanent Section" customClass="CreatePermanentParkingView" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="136" width="414" height="726"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4p7-DU-HMa">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="726"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eah-mE-70e">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="726"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ip5-bi-0Zb" userLabel="Hidden Content View" customClass="RoundedView" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="145"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Об услуге" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wf-Lg-y5G" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="30" width="67" height="16"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="14"/>
+                                                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="dryCleaning.description.title"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="064-Uh-TOi">
+                                                    <rect key="frame" x="15" y="52" width="384" height="81"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <gestureRecognizers/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="81" id="WHU-o3-mph"/>
+                                                    </constraints>
+                                                    <string key="text">Абонементы на паркинг бывают двух типов, Valet и Private. 
+Valet абонемент - парковка Valet сервисом перед входной группой и подача на -1 этаже, возле вашего лифтового холла, в зоне Valet выдачи и самостоятельный выезд. 
+Private абонемент - самостоятельная парковка на -2 этаже, с привязанным машино местом.</string>
+                                                    <color key="textColor" red="0.79607843140000001" green="0.78823529410000004" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="show_text" highlightedImage="hide_text" translatesAutoresizingMaskIntoConstraints="NO" id="Oyk-MX-Iga">
+                                                    <rect key="frame" x="200" y="139" width="14" height="6"/>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52T-Se-pmn">
+                                                    <rect key="frame" x="182" y="129" width="50" height="16"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="0Ya-xe-QVt"/>
+                                                        <constraint firstAttribute="width" constant="50" id="wJs-3z-K7c"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="mQG-mX-T0N" appends="YES" id="2Tb-aC-pl8"/>
+                                                    </connections>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="6Wf-Lg-y5G" firstAttribute="leading" secondItem="Ip5-bi-0Zb" secondAttribute="leading" constant="15" id="1WJ-Gz-zXj"/>
+                                                <constraint firstAttribute="bottom" secondItem="064-Uh-TOi" secondAttribute="bottom" constant="12" id="47b-3h-JTB"/>
+                                                <constraint firstAttribute="trailing" secondItem="064-Uh-TOi" secondAttribute="trailing" constant="15" id="4Bn-Pc-PCd"/>
+                                                <constraint firstItem="064-Uh-TOi" firstAttribute="top" secondItem="6Wf-Lg-y5G" secondAttribute="bottom" constant="6" id="KUn-uQ-jEl"/>
+                                                <constraint firstItem="064-Uh-TOi" firstAttribute="leading" secondItem="Ip5-bi-0Zb" secondAttribute="leading" constant="15" id="POx-Jz-PnO"/>
+                                                <constraint firstItem="6Wf-Lg-y5G" firstAttribute="top" secondItem="Ip5-bi-0Zb" secondAttribute="top" constant="30" id="XBw-az-GGE"/>
+                                                <constraint firstItem="Oyk-MX-Iga" firstAttribute="centerX" secondItem="Ip5-bi-0Zb" secondAttribute="centerX" id="ZjE-hH-aeC"/>
+                                                <constraint firstItem="52T-Se-pmn" firstAttribute="centerX" secondItem="Ip5-bi-0Zb" secondAttribute="centerX" id="cpb-x5-qPQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="Oyk-MX-Iga" secondAttribute="bottom" id="e7y-xr-XMW"/>
+                                                <constraint firstAttribute="bottom" secondItem="52T-Se-pmn" secondAttribute="bottom" id="leU-e6-LOt"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="22"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KvX-QN-gLj" userLabel="Service Type View">
+                                            <rect key="frame" x="0.0" y="170" width="414" height="49"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Тип услуги" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="llL-i6-T9C" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="1" width="384" height="14"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Valet абонемент" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8k-d5-KJa" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="21" width="384" height="16"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Cq-Xf-y9o" userLabel="Divide View">
+                                                    <rect key="frame" x="15" y="47" width="384" height="1"/>
+                                                    <color key="backgroundColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="0l3-hJ-9IR"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accessory_right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="mLT-gp-uf0">
+                                                    <rect key="frame" x="378" y="21.5" width="15" height="15"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <gestureRecognizers/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="mLT-gp-uf0" secondAttribute="trailing" constant="21" id="8x8-wt-vqP"/>
+                                                <constraint firstAttribute="bottom" secondItem="6Cq-Xf-y9o" secondAttribute="bottom" constant="1" id="GnC-KI-PEA"/>
+                                                <constraint firstAttribute="trailing" secondItem="llL-i6-T9C" secondAttribute="trailing" constant="15" id="Nd0-en-ObG"/>
+                                                <constraint firstItem="F8k-d5-KJa" firstAttribute="top" secondItem="llL-i6-T9C" secondAttribute="bottom" constant="6" id="P8S-fa-Vng"/>
+                                                <constraint firstItem="6Cq-Xf-y9o" firstAttribute="leading" secondItem="KvX-QN-gLj" secondAttribute="leading" constant="15" id="S5O-Tl-eMf"/>
+                                                <constraint firstAttribute="trailing" secondItem="F8k-d5-KJa" secondAttribute="trailing" constant="15" id="SiP-Y4-H6h"/>
+                                                <constraint firstItem="mLT-gp-uf0" firstAttribute="centerY" secondItem="F8k-d5-KJa" secondAttribute="centerY" id="Xc6-Qi-n9x"/>
+                                                <constraint firstItem="llL-i6-T9C" firstAttribute="leading" secondItem="KvX-QN-gLj" secondAttribute="leading" constant="15" id="msP-1v-Mlq"/>
+                                                <constraint firstAttribute="bottom" secondItem="F8k-d5-KJa" secondAttribute="bottom" constant="12" id="uCI-pL-srF"/>
+                                                <constraint firstItem="llL-i6-T9C" firstAttribute="top" secondItem="KvX-QN-gLj" secondAttribute="top" constant="1" id="uqg-IY-mfs"/>
+                                                <constraint firstAttribute="trailing" secondItem="6Cq-Xf-y9o" secondAttribute="trailing" constant="15" id="vhN-Fc-W8s"/>
+                                                <constraint firstItem="F8k-d5-KJa" firstAttribute="leading" secondItem="KvX-QN-gLj" secondAttribute="leading" constant="15" id="zxW-lp-5pf"/>
+                                            </constraints>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="jAz-yo-8Cv" appends="YES" id="UhN-q7-ZYa"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0P-zL-sTK" userLabel="Parking Payment View">
+                                            <rect key="frame" x="0.0" y="234" width="414" height="83"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество машин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOg-fO-a5A" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="15" width="109" height="14"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRS-db-jii" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="34" width="75" height="24"/>
+                                                    <color key="backgroundColor" name="Gold"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                                    <state key="normal" title="1 машина">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="chooseCarsAmount:" destination="iN0-l3-epB" eventType="touchUpInside" id="55J-dL-M7d"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTX-Ff-Z3N" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="95" y="34" width="78" height="24"/>
+                                                    <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                                    <state key="normal" title="2 машины">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="chooseCarsAmount:" destination="iN0-l3-epB" eventType="touchUpInside" id="vuM-lh-XdI"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYN-JF-90G" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="178" y="34" width="126" height="24"/>
+                                                    <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                                    <state key="normal" title="3 машины и более">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="chooseCarsAmount:" destination="iN0-l3-epB" eventType="touchUpInside" id="fFx-ku-yRw"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="aRS-db-jii" firstAttribute="top" secondItem="OOg-fO-a5A" secondAttribute="bottom" constant="5" id="E6g-OW-4N9"/>
+                                                <constraint firstItem="iYN-JF-90G" firstAttribute="centerY" secondItem="HTX-Ff-Z3N" secondAttribute="centerY" id="MqG-H9-icy"/>
+                                                <constraint firstItem="HTX-Ff-Z3N" firstAttribute="centerY" secondItem="aRS-db-jii" secondAttribute="centerY" id="SCJ-ws-WTe"/>
+                                                <constraint firstItem="OOg-fO-a5A" firstAttribute="leading" secondItem="c0P-zL-sTK" secondAttribute="leading" constant="15" id="VFG-LP-PjP"/>
+                                                <constraint firstItem="HTX-Ff-Z3N" firstAttribute="leading" secondItem="aRS-db-jii" secondAttribute="trailing" constant="5" id="XBx-iu-XiS"/>
+                                                <constraint firstItem="OOg-fO-a5A" firstAttribute="top" secondItem="c0P-zL-sTK" secondAttribute="top" constant="15" id="dVG-HR-Ys4"/>
+                                                <constraint firstAttribute="height" constant="83" id="htS-PM-xRw"/>
+                                                <constraint firstItem="iYN-JF-90G" firstAttribute="leading" secondItem="HTX-Ff-Z3N" secondAttribute="trailing" constant="5" id="ira-70-A9b"/>
+                                                <constraint firstItem="aRS-db-jii" firstAttribute="leading" secondItem="c0P-zL-sTK" secondAttribute="leading" constant="15" id="sXt-qj-2oo"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vpj-IS-Y9z" userLabel="Parking Payment View">
+                                            <rect key="frame" x="0.0" y="317" width="414" height="83"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Срок абонемента" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfk-vc-Am7" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="15" width="100" height="14"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CC-2B-qlO" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="34" width="65" height="24"/>
+                                                    <color key="backgroundColor" name="Gold"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                                    <state key="normal" title="1 месяц">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="chooseMonthAmount:" destination="iN0-l3-epB" eventType="touchUpInside" id="NFE-su-tvq"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiA-1w-xXv" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="85" y="34" width="71" height="24"/>
+                                                    <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                                    <state key="normal" title="3 месяца">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="chooseMonthAmount:" destination="iN0-l3-epB" eventType="touchUpInside" id="vZI-SQ-GBl"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4U-Dp-ppk" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="161" y="34" width="126" height="24"/>
+                                                    <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                                    <state key="normal" title="6 месяцев и более">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="chooseMonthAmount:" destination="iN0-l3-epB" eventType="touchUpInside" id="Rfc-Lh-C78"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="83" id="2FL-gl-G82"/>
+                                                <constraint firstItem="nfk-vc-Am7" firstAttribute="top" secondItem="Vpj-IS-Y9z" secondAttribute="top" constant="15" id="5MN-Lg-NkT"/>
+                                                <constraint firstItem="iiA-1w-xXv" firstAttribute="leading" secondItem="2CC-2B-qlO" secondAttribute="trailing" constant="5" id="8qK-v9-sjX"/>
+                                                <constraint firstItem="iiA-1w-xXv" firstAttribute="centerY" secondItem="2CC-2B-qlO" secondAttribute="centerY" id="DFd-Iv-AXp"/>
+                                                <constraint firstItem="n4U-Dp-ppk" firstAttribute="leading" secondItem="iiA-1w-xXv" secondAttribute="trailing" constant="5" id="PHY-ig-SoH"/>
+                                                <constraint firstItem="2CC-2B-qlO" firstAttribute="leading" secondItem="Vpj-IS-Y9z" secondAttribute="leading" constant="15" id="Q6z-gB-50a"/>
+                                                <constraint firstItem="2CC-2B-qlO" firstAttribute="top" secondItem="nfk-vc-Am7" secondAttribute="bottom" constant="5" id="r4y-eE-0LA"/>
+                                                <constraint firstItem="n4U-Dp-ppk" firstAttribute="centerY" secondItem="iiA-1w-xXv" secondAttribute="centerY" id="sFh-Fr-zdu"/>
+                                                <constraint firstItem="nfk-vc-Am7" firstAttribute="leading" secondItem="Vpj-IS-Y9z" secondAttribute="leading" constant="15" id="x0I-j4-UJb"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="c0P-zL-sTK" secondAttribute="trailing" id="0hG-9y-wFf"/>
+                                        <constraint firstItem="Ip5-bi-0Zb" firstAttribute="top" secondItem="eah-mE-70e" secondAttribute="top" id="6XG-bB-vh8"/>
+                                        <constraint firstAttribute="trailing" secondItem="Vpj-IS-Y9z" secondAttribute="trailing" id="6tI-6N-vVI"/>
+                                        <constraint firstItem="c0P-zL-sTK" firstAttribute="leading" secondItem="eah-mE-70e" secondAttribute="leading" id="Bae-0E-v7R"/>
+                                        <constraint firstItem="c0P-zL-sTK" firstAttribute="top" secondItem="KvX-QN-gLj" secondAttribute="bottom" constant="15" id="DVX-nL-Bjq"/>
+                                        <constraint firstItem="KvX-QN-gLj" firstAttribute="leading" secondItem="eah-mE-70e" secondAttribute="leading" id="Q4G-8s-KNz"/>
+                                        <constraint firstItem="KvX-QN-gLj" firstAttribute="top" secondItem="Ip5-bi-0Zb" secondAttribute="bottom" constant="25" id="UWT-tC-93h"/>
+                                        <constraint firstItem="Vpj-IS-Y9z" firstAttribute="top" secondItem="c0P-zL-sTK" secondAttribute="bottom" id="Zhy-qk-c5x"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ip5-bi-0Zb" secondAttribute="trailing" id="bEa-9I-9lr"/>
+                                        <constraint firstItem="Ip5-bi-0Zb" firstAttribute="leading" secondItem="eah-mE-70e" secondAttribute="leading" id="bUd-9U-pwb"/>
+                                        <constraint firstAttribute="trailing" secondItem="KvX-QN-gLj" secondAttribute="trailing" id="nw9-w5-ZsT"/>
+                                        <constraint firstItem="Vpj-IS-Y9z" firstAttribute="leading" secondItem="eah-mE-70e" secondAttribute="leading" id="sDF-LQ-Acv"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="eah-mE-70e" firstAttribute="top" secondItem="IYR-wh-UtJ" secondAttribute="top" id="DK9-KI-IDL"/>
+                                <constraint firstItem="eah-mE-70e" firstAttribute="bottom" secondItem="IYR-wh-UtJ" secondAttribute="bottom" id="PTG-Rh-LOG"/>
+                                <constraint firstItem="eah-mE-70e" firstAttribute="trailing" secondItem="IYR-wh-UtJ" secondAttribute="trailing" id="Qq7-8b-zOF"/>
+                                <constraint firstItem="eah-mE-70e" firstAttribute="leading" secondItem="IYR-wh-UtJ" secondAttribute="leading" id="xrF-0o-xRZ"/>
+                            </constraints>
+                            <viewLayoutGuide key="contentLayoutGuide" id="IYR-wh-UtJ"/>
+                            <viewLayoutGuide key="frameLayoutGuide" id="AtT-fE-A0B"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.070589028299999995" green="0.070586808030000003" blue="0.070588313040000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="4p7-DU-HMa" firstAttribute="top" secondItem="ZdL-Eu-VqK" secondAttribute="top" id="2Us-sG-76Z"/>
+                        <constraint firstAttribute="trailing" secondItem="4p7-DU-HMa" secondAttribute="trailing" id="FbJ-5s-hMu"/>
+                        <constraint firstItem="4p7-DU-HMa" firstAttribute="leading" secondItem="ZdL-Eu-VqK" secondAttribute="leading" id="c1F-uV-ydc"/>
+                        <constraint firstAttribute="bottom" secondItem="4p7-DU-HMa" secondAttribute="bottom" id="cN6-1o-OdB"/>
+                        <constraint firstItem="eah-mE-70e" firstAttribute="height" secondItem="ZdL-Eu-VqK" secondAttribute="height" id="fLD-bA-0Ej"/>
+                        <constraint firstItem="eah-mE-70e" firstAttribute="width" secondItem="ZdL-Eu-VqK" secondAttribute="width" id="juX-TA-ec9"/>
+                    </constraints>
+                </view>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="A91-IE-53s" userLabel="Valet Table View">
+                    <rect key="frame" x="0.0" y="136" width="414" height="726"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0Q-vg-d7P" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="134.5" y="791" width="145" height="41"/>
+                    <color key="backgroundColor" name="Gold"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="25" minY="12" maxX="25" maxY="12"/>
+                    <state key="normal" title="Новая заявка">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="passList.newParkingButton.title"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="createNewIssue:" destination="iN0-l3-epB" eventType="touchUpInside" id="teL-BJ-j9T"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qws-Mh-aiS" userLabel="In Development View">
+                    <rect key="frame" x="0.0" y="136" width="414" height="726"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Раздел находится в разработке" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3h-OG-SY6" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="84.5" y="354" width="245" height="18"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="error.newSection.title"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Создайте первую заявку" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aF-r5-Vmg" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="126" y="377" width="162.5" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                            <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="concierge.noData.subtitle"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="n3h-OG-SY6" firstAttribute="centerX" secondItem="qws-Mh-aiS" secondAttribute="centerX" id="EWo-F1-LJX"/>
+                        <constraint firstItem="n3h-OG-SY6" firstAttribute="centerY" secondItem="qws-Mh-aiS" secondAttribute="centerY" id="SMK-Bi-3ny"/>
+                        <constraint firstItem="1aF-r5-Vmg" firstAttribute="top" secondItem="n3h-OG-SY6" secondAttribute="bottom" constant="5" id="lPb-uk-F0g"/>
+                        <constraint firstItem="1aF-r5-Vmg" firstAttribute="centerX" secondItem="qws-Mh-aiS" secondAttribute="centerX" id="yTi-mt-dtT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="A91-IE-53s" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="2M0-39-TeK"/>
+                <constraint firstItem="A91-IE-53s" firstAttribute="top" secondItem="bfW-Fq-YzG" secondAttribute="bottom" id="2ct-Hz-DpI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Exh-dO-IIZ" secondAttribute="bottom" id="4R5-mf-Q7j"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="aOm-Us-yOL" secondAttribute="trailing" id="4iK-Nt-UFx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="z0Q-vg-d7P" secondAttribute="bottom" constant="30" id="5fk-Mq-PCk"/>
+                <constraint firstItem="qws-Mh-aiS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6Dv-Cf-Skm"/>
+                <constraint firstItem="Exh-dO-IIZ" firstAttribute="top" secondItem="bfW-Fq-YzG" secondAttribute="bottom" id="97R-OD-7NA"/>
+                <constraint firstItem="ZdL-Eu-VqK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9UV-Ig-cUY"/>
+                <constraint firstItem="z0Q-vg-d7P" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="F6Z-o5-aTl"/>
+                <constraint firstItem="bfW-Fq-YzG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="I2L-oV-8tb"/>
+                <constraint firstItem="qws-Mh-aiS" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="JyL-Vf-rOg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bfW-Fq-YzG" secondAttribute="trailing" id="KiD-aR-sUP"/>
+                <constraint firstItem="aOm-Us-yOL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="QL0-wD-77O"/>
+                <constraint firstItem="Exh-dO-IIZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="SjK-qe-Qfi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="aOm-Us-yOL" secondAttribute="bottom" id="Ujh-13-09r"/>
+                <constraint firstItem="ZdL-Eu-VqK" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Zad-RC-Yyv"/>
+                <constraint firstItem="ZdL-Eu-VqK" firstAttribute="top" secondItem="bfW-Fq-YzG" secondAttribute="bottom" id="aKS-Yo-Ypc"/>
+                <constraint firstItem="A91-IE-53s" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="bEz-qP-DFj"/>
+                <constraint firstItem="aOm-Us-yOL" firstAttribute="top" secondItem="bfW-Fq-YzG" secondAttribute="bottom" id="cEP-jA-XQm"/>
+                <constraint firstItem="qws-Mh-aiS" firstAttribute="top" secondItem="bfW-Fq-YzG" secondAttribute="bottom" id="h2K-LO-LRF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qws-Mh-aiS" secondAttribute="bottom" id="igR-8x-h5j"/>
+                <constraint firstItem="A91-IE-53s" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mjZ-5z-KhU"/>
+                <constraint firstItem="Exh-dO-IIZ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="p7M-fM-4br"/>
+                <constraint firstItem="bfW-Fq-YzG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sac-b4-3dM"/>
+                <constraint firstItem="ZdL-Eu-VqK" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="tGd-Wi-hEE"/>
+            </constraints>
+            <connections>
+                <outlet property="createIssueButton" destination="z0Q-vg-d7P" id="mUz-kX-LYe"/>
+                <outlet property="inDevelopmentView" destination="qws-Mh-aiS" id="6mz-6P-0b0"/>
+                <outlet property="noDataView" destination="Exh-dO-IIZ" id="K2k-9A-xHy"/>
+                <outlet property="permanentSection" destination="ZdL-Eu-VqK" id="5aW-lf-q7G"/>
+                <outlet property="segmentedControl" destination="Kek-YS-Ybl" id="knK-w3-NdO"/>
+                <outlet property="serviceNameLabel" destination="F8k-d5-KJa" id="fKi-6J-oxx"/>
+                <outlet property="showTextImageView" destination="Oyk-MX-Iga" id="5yA-yA-dAP"/>
+                <outlet property="tableView" destination="aOm-Us-yOL" id="9KE-q1-25W"/>
+                <outlet property="textView" destination="064-Uh-TOi" id="Hgo-az-3Ew"/>
+                <outlet property="textViewHeightConstraint" destination="WHU-o3-mph" id="vP4-vN-Tnx"/>
+                <outlet property="valetTableView" destination="A91-IE-53s" id="1Rp-P1-ACO"/>
+                <outletCollection property="monthAmountButtonArr" destination="2CC-2B-qlO" collectionClass="NSMutableArray" id="s5Y-34-PIi"/>
+                <outletCollection property="monthAmountButtonArr" destination="iiA-1w-xXv" collectionClass="NSMutableArray" id="N0P-lj-dVk"/>
+                <outletCollection property="monthAmountButtonArr" destination="n4U-Dp-ppk" collectionClass="NSMutableArray" id="zf5-cL-XQb"/>
+                <outletCollection property="carsAmountButtonArr" destination="aRS-db-jii" collectionClass="NSMutableArray" id="UAF-sf-hRc"/>
+                <outletCollection property="carsAmountButtonArr" destination="HTX-Ff-Z3N" collectionClass="NSMutableArray" id="Nl3-Nl-ZJ4"/>
+                <outletCollection property="carsAmountButtonArr" destination="iYN-JF-90G" collectionClass="NSMutableArray" id="yOj-i4-CS8"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="152.67857142857142"/>
+        </view>
+        <tapGestureRecognizer id="3LT-zW-Qxm">
+            <connections>
+                <action selector="back:" destination="iN0-l3-epB" id="0MC-eq-Nhe"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="jAz-yo-8Cv">
+            <connections>
+                <action selector="chooseServiceType:" destination="iN0-l3-epB" id="3Q2-Qz-nv9"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="mQG-mX-T0N">
+            <connections>
+                <action selector="openDesriptionText:" destination="iN0-l3-epB" id="3y9-Bp-Tpk"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <designables>
+        <designable name="0NV-mO-KjD">
+            <size key="intrinsicContentSize" width="65" height="18"/>
+        </designable>
+        <designable name="1aF-r5-Vmg">
+            <size key="intrinsicContentSize" width="162.5" height="16"/>
+        </designable>
+        <designable name="6Wf-Lg-y5G">
+            <size key="intrinsicContentSize" width="67" height="16"/>
+        </designable>
+        <designable name="CHD-7h-Cij">
+            <size key="intrinsicContentSize" width="167.5" height="18"/>
+        </designable>
+        <designable name="F8k-d5-KJa">
+            <size key="intrinsicContentSize" width="109.5" height="16"/>
+        </designable>
+        <designable name="JiS-QM-L0H">
+            <size key="intrinsicContentSize" width="162.5" height="16"/>
+        </designable>
+        <designable name="OOg-fO-a5A">
+            <size key="intrinsicContentSize" width="109" height="13.5"/>
+        </designable>
+        <designable name="llL-i6-T9C">
+            <size key="intrinsicContentSize" width="60" height="13.5"/>
+        </designable>
+        <designable name="n3h-OG-SY6">
+            <size key="intrinsicContentSize" width="245" height="18"/>
+        </designable>
+        <designable name="nfk-vc-Am7">
+            <size key="intrinsicContentSize" width="99.5" height="13.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="accessory_right_arrow" width="15" height="15"/>
+        <image name="back_button" width="11.5" height="20"/>
+        <image name="hide_text" width="14" height="6"/>
+        <image name="info_icon" width="20" height="20"/>
+        <image name="show_text" width="14" height="6"/>
+        <namedColor name="Gold">
+            <color red="0.68599998950958252" green="0.59600001573562622" blue="0.49399998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="Repeat Parking View" customClass="RepeatParkingView" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="310"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TqX-Z9-Tso" userLabel="Content View" customClass="RoundedView" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="15" y="48" width="384" height="262"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0e-jf-QxB" userLabel="Title View">
+                            <rect key="frame" x="0.0" y="0.0" width="384" height="55"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hide_view_rectangle_button" translatesAutoresizingMaskIntoConstraints="NO" id="DAy-fP-tAm">
+                                    <rect key="frame" x="174" y="10" width="36" height="4"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Разовый пропуск" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3x-vq-LuB">
+                                    <rect key="frame" x="125" y="23" width="134" height="18"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzk-wh-DoU">
+                                    <rect key="frame" x="0.0" y="54" width="384" height="1"/>
+                                    <color key="backgroundColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Kx7-Vo-Emi"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="mzk-wh-DoU" firstAttribute="leading" secondItem="Q0e-jf-QxB" secondAttribute="leading" id="81L-ED-CaO"/>
+                                <constraint firstItem="DAy-fP-tAm" firstAttribute="centerX" secondItem="Q0e-jf-QxB" secondAttribute="centerX" id="9Ei-bL-VPL"/>
+                                <constraint firstAttribute="trailing" secondItem="mzk-wh-DoU" secondAttribute="trailing" id="E2k-hr-DkG"/>
+                                <constraint firstAttribute="height" constant="55" id="JzY-fX-T1M"/>
+                                <constraint firstItem="M3x-vq-LuB" firstAttribute="centerX" secondItem="Q0e-jf-QxB" secondAttribute="centerX" id="N6w-Fs-9ZV"/>
+                                <constraint firstAttribute="bottom" secondItem="mzk-wh-DoU" secondAttribute="bottom" id="bxc-xG-wgg"/>
+                                <constraint firstItem="DAy-fP-tAm" firstAttribute="top" secondItem="Q0e-jf-QxB" secondAttribute="top" constant="10" id="nrn-Kh-8kg"/>
+                                <constraint firstItem="M3x-vq-LuB" firstAttribute="top" secondItem="Q0e-jf-QxB" secondAttribute="top" constant="23" id="vjG-xU-Wzp"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Парадный вход" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVH-Uw-qwg">
+                            <rect key="frame" x="15" y="70" width="136" height="20.5"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17.11.2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEm-q5-EAN">
+                            <rect key="frame" x="15" y="95.5" width="70.5" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                            <color key="textColor" red="0.50980392156862742" green="0.50196078431372548" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_residents" translatesAutoresizingMaskIntoConstraints="NO" id="De0-QJ-JX2">
+                            <rect key="frame" x="15" y="138.5" width="34" height="34"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Иванов Иван Иванович" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdM-qJ-tvU">
+                            <rect key="frame" x="59" y="136.5" width="310" height="18"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+7 999 999 99 92" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUi-mc-Vkb">
+                            <rect key="frame" x="59" y="159.5" width="92.5" height="13.5"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                            <color key="textColor" red="0.50980392156862742" green="0.50196078431372548" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9zk-wF-6Ok">
+                            <rect key="frame" x="15" y="203" width="354" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgW-BW-7VE" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="354" height="44"/>
+                                    <color key="backgroundColor" name="Gold"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                                    <inset key="contentEdgeInsets" minX="0.0" minY="13" maxX="0.0" maxY="13"/>
+                                    <state key="normal" title="Повторить">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="22"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="pass.detail.repeat"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="repeatPass:" destination="iN0-l3-epB" eventType="touchUpInside" id="oc0-Ha-IE7"/>
+                                    </connections>
+                                </button>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hM-9j-pfu" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="354" height="0.0"/>
+                                    <color key="backgroundColor" red="0.50980392156862742" green="0.50196078431372548" blue="0.50980392156862742" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                                    <inset key="contentEdgeInsets" minX="0.0" minY="13" maxX="0.0" maxY="13"/>
+                                    <state key="normal" title="Отменить">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="22"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="pass.detail.revoke"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="revoke:" destination="iN0-l3-epB" eventType="touchUpInside" id="n3q-SJ-BYT"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Q0e-jf-QxB" firstAttribute="leading" secondItem="TqX-Z9-Tso" secondAttribute="leading" id="20J-3N-KMb"/>
+                        <constraint firstAttribute="trailing" secondItem="bdM-qJ-tvU" secondAttribute="trailing" constant="15" id="5k9-PM-LeH"/>
+                        <constraint firstItem="CEm-q5-EAN" firstAttribute="top" secondItem="sVH-Uw-qwg" secondAttribute="bottom" constant="5" id="BZh-yO-6PC"/>
+                        <constraint firstItem="CEm-q5-EAN" firstAttribute="leading" secondItem="TqX-Z9-Tso" secondAttribute="leading" constant="15" id="GaW-69-B2j"/>
+                        <constraint firstItem="sVH-Uw-qwg" firstAttribute="top" secondItem="Q0e-jf-QxB" secondAttribute="bottom" constant="15" id="I9U-mb-ngc"/>
+                        <constraint firstAttribute="bottom" secondItem="9zk-wF-6Ok" secondAttribute="bottom" constant="15" id="KJ9-QJ-9RQ"/>
+                        <constraint firstItem="9zk-wF-6Ok" firstAttribute="top" secondItem="fUi-mc-Vkb" secondAttribute="bottom" constant="30" id="Kvd-0O-ixk"/>
+                        <constraint firstItem="9zk-wF-6Ok" firstAttribute="leading" secondItem="TqX-Z9-Tso" secondAttribute="leading" constant="15" id="LYw-L6-Li3"/>
+                        <constraint firstItem="sVH-Uw-qwg" firstAttribute="leading" secondItem="TqX-Z9-Tso" secondAttribute="leading" constant="15" id="P0p-9h-QGC"/>
+                        <constraint firstItem="fUi-mc-Vkb" firstAttribute="top" secondItem="bdM-qJ-tvU" secondAttribute="bottom" constant="5" id="Pt6-RH-SNQ"/>
+                        <constraint firstItem="Q0e-jf-QxB" firstAttribute="top" secondItem="TqX-Z9-Tso" secondAttribute="top" id="Wcz-P7-Boh"/>
+                        <constraint firstAttribute="trailing" secondItem="Q0e-jf-QxB" secondAttribute="trailing" id="d7G-nV-KPQ"/>
+                        <constraint firstItem="De0-QJ-JX2" firstAttribute="leading" secondItem="TqX-Z9-Tso" secondAttribute="leading" constant="15" id="fL3-G2-KJo"/>
+                        <constraint firstItem="bdM-qJ-tvU" firstAttribute="top" secondItem="CEm-q5-EAN" secondAttribute="bottom" constant="25" id="kgR-xJ-Wad"/>
+                        <constraint firstItem="bdM-qJ-tvU" firstAttribute="leading" secondItem="De0-QJ-JX2" secondAttribute="trailing" constant="10" id="o28-ct-AV0"/>
+                        <constraint firstItem="fUi-mc-Vkb" firstAttribute="leading" secondItem="bdM-qJ-tvU" secondAttribute="leading" id="uAm-hi-zcU"/>
+                        <constraint firstItem="De0-QJ-JX2" firstAttribute="top" secondItem="CEm-q5-EAN" secondAttribute="bottom" constant="27" id="uCi-5V-8jI"/>
+                        <constraint firstAttribute="trailing" secondItem="9zk-wF-6Ok" secondAttribute="trailing" constant="15" id="wt8-vF-6yl"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="TqX-Z9-Tso" secondAttribute="bottom" id="W9F-FX-Ws9"/>
+                <constraint firstItem="TqX-Z9-Tso" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="eMh-la-WnP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TqX-Z9-Tso" secondAttribute="trailing" constant="15" id="oFS-X8-leO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="CEm-q5-EAN" id="pNX-dY-kdz"/>
+                <outlet property="entranceLabel" destination="sVH-Uw-qwg" id="UB6-mp-bmK"/>
+                <outlet property="nameLabel" destination="bdM-qJ-tvU" id="nZV-5N-0xu"/>
+                <outlet property="personImage" destination="De0-QJ-JX2" id="TTU-K7-aDw"/>
+                <outlet property="phoneLabel" destination="fUi-mc-Vkb" id="8Y0-QL-XV5"/>
+                <outlet property="repeatButton" destination="rgW-BW-7VE" id="u9P-RE-8g1"/>
+                <outlet property="revokeButton" destination="2hM-9j-pfu" id="6rS-S3-mKg"/>
+                <outlet property="titleLabel" destination="M3x-vq-LuB" id="DRf-c0-jPF"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="2.6785714285714284"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hide_view_rectangle_button" width="36" height="4"/>
+        <image name="profile_residents" width="34" height="34"/>
+        <namedColor name="Gold">
+            <color red="0.68599998950958252" green="0.59600001573562622" blue="0.49399998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

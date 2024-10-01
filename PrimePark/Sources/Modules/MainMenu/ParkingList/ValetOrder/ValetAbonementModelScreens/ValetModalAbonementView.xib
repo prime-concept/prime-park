@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bKw-IT-fuy" userLabel="Valet Modal First View" customClass="ValetModalAbonementView" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="354"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hide_view_rectangle_button" translatesAutoresizingMaskIntoConstraints="NO" id="m12-DR-U5R">
+                    <rect key="frame" x="189" y="54" width="36" height="4"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заказ абонемента" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqR-iK-d2o">
+                    <rect key="frame" x="137" y="67" width="140.5" height="18"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Hq-vX-ang" userLabel="Divide View">
+                    <rect key="frame" x="0.0" y="99" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="xLv-Fp-zeT"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73y-kG-B0b" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="15" y="192.5" width="384" height="44"/>
+                    <color key="backgroundColor" red="0.68627450980392157" green="0.59607843137254901" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="13" maxX="0.0" maxY="13"/>
+                    <state key="normal" title="Заказать">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="Заказать"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="order:" destination="bKw-IT-fuy" eventType="touchUpInside" id="yDf-P6-Vih"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тариф" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCu-3M-kfY">
+                    <rect key="frame" x="15" y="120" width="36" height="13.5"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="lfF-Yv-can">
+                    <rect key="frame" x="15" y="138.5" width="224" height="24"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4r-Jt-gY7" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="65" height="24"/>
+                            <color key="backgroundColor" red="0.68627450980392157" green="0.59607843137254901" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                            <state key="normal" title="1 месяц">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="chooseTariff:" destination="bKw-IT-fuy" eventType="touchUpInside" id="JrL-1Y-RUA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o13-F7-5BD" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="70" y="0.0" width="71" height="24"/>
+                            <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                            <state key="normal" title="2 месяца">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="chooseTariff:" destination="bKw-IT-fuy" eventType="touchUpInside" id="peL-EU-pR0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JR4-iQ-8Nu" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="146" y="0.0" width="78" height="24"/>
+                            <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                            <state key="normal" title="6 месяцев">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="chooseTariff:" destination="bKw-IT-fuy" eventType="touchUpInside" id="gjB-Gg-NGO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="dqS-bg-sNc"/>
+            <color key="backgroundColor" red="0.211766392" green="0.2117616534" blue="0.21176484230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="73y-kG-B0b" firstAttribute="leading" secondItem="dqS-bg-sNc" secondAttribute="leading" constant="15" id="2Ml-MS-GbY"/>
+                <constraint firstItem="lfF-Yv-can" firstAttribute="leading" secondItem="dqS-bg-sNc" secondAttribute="leading" constant="15" id="532-bA-Vs1"/>
+                <constraint firstItem="4Hq-vX-ang" firstAttribute="top" secondItem="zqR-iK-d2o" secondAttribute="bottom" constant="14" id="8Kq-pN-ch2"/>
+                <constraint firstItem="dqS-bg-sNc" firstAttribute="trailing" secondItem="73y-kG-B0b" secondAttribute="trailing" constant="15" id="GeM-ac-Ghy"/>
+                <constraint firstItem="m12-DR-U5R" firstAttribute="top" secondItem="dqS-bg-sNc" secondAttribute="top" constant="10" id="GoV-pZ-ch6"/>
+                <constraint firstItem="zqR-iK-d2o" firstAttribute="centerX" secondItem="bKw-IT-fuy" secondAttribute="centerX" id="JNK-Hd-2SR"/>
+                <constraint firstAttribute="trailing" secondItem="4Hq-vX-ang" secondAttribute="trailing" id="LwP-08-vhp"/>
+                <constraint firstItem="zqR-iK-d2o" firstAttribute="top" secondItem="m12-DR-U5R" secondAttribute="bottom" constant="9" id="Pst-1s-LWh"/>
+                <constraint firstItem="4Hq-vX-ang" firstAttribute="leading" secondItem="bKw-IT-fuy" secondAttribute="leading" id="af0-sk-1hn"/>
+                <constraint firstItem="zCu-3M-kfY" firstAttribute="top" secondItem="4Hq-vX-ang" secondAttribute="bottom" constant="20" id="cUT-UK-lNy"/>
+                <constraint firstItem="zCu-3M-kfY" firstAttribute="leading" secondItem="dqS-bg-sNc" secondAttribute="leading" constant="15" id="jBU-mb-HQX"/>
+                <constraint firstItem="73y-kG-B0b" firstAttribute="top" secondItem="lfF-Yv-can" secondAttribute="bottom" constant="30" id="olR-kL-TYO"/>
+                <constraint firstItem="m12-DR-U5R" firstAttribute="centerX" secondItem="bKw-IT-fuy" secondAttribute="centerX" id="vxE-0x-ojY"/>
+                <constraint firstItem="lfF-Yv-can" firstAttribute="top" secondItem="zCu-3M-kfY" secondAttribute="bottom" constant="5" id="x7y-Tt-9gI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="orderButton" destination="73y-kG-B0b" id="Pbw-cl-1YH"/>
+                <outletCollection property="buttons" destination="K4r-Jt-gY7" collectionClass="NSMutableArray" id="WPZ-YB-SRn"/>
+                <outletCollection property="buttons" destination="o13-F7-5BD" collectionClass="NSMutableArray" id="n2V-Ld-8Y8"/>
+                <outletCollection property="buttons" destination="JR4-iQ-8Nu" collectionClass="NSMutableArray" id="Tlj-Dp-hBd"/>
+            </connections>
+            <point key="canvasLocation" x="-2236.231884057971" y="-16.071428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hide_view_rectangle_button" width="36" height="4"/>
+    </resources>
+</document>

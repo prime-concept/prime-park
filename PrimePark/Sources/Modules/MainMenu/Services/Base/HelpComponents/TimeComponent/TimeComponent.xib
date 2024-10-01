@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimeComponent" customModule="PrimePark" customModuleProvider="target">
+            <connections>
+                <outlet property="beforeTimeLabel" destination="MBb-Ga-2ih" id="mGc-Fe-AaK"/>
+                <outlet property="fromTimeLabel" destination="a1r-Mb-A4R" id="7jg-OT-BrF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="k5Y-zl-gs1" userLabel="Choose Time Servive View">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="1000" text="Выберите временной интервал" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYB-cb-h8K" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="15" y="1" width="177" height="14"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="dryCleaning.serviceDate.date.time.title"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nva-5a-GgI" userLabel="Choose Strart Time Service View">
+                    <rect key="frame" x="0.0" y="24" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="1000" text="От" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPh-zB-2oG" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="1" width="15" height="14"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                            <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="dryCleaning.serviceDate.date.time.from"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="13:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1r-Mb-A4R">
+                            <rect key="frame" x="15" y="21" width="35.5" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1D-sv-z7i" userLabel="Divide View">
+                            <rect key="frame" x="15" y="48" width="384" height="1"/>
+                            <color key="backgroundColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="kFE-fa-fxU"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accessory_right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="oCv-dW-sh0">
+                            <rect key="frame" x="378" y="21.5" width="15" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="a1r-Mb-A4R" firstAttribute="top" secondItem="YPh-zB-2oG" secondAttribute="bottom" constant="6" id="3D9-8W-Uhv"/>
+                        <constraint firstAttribute="trailing" secondItem="oCv-dW-sh0" secondAttribute="trailing" constant="21" id="3jK-sH-E7P"/>
+                        <constraint firstItem="a1r-Mb-A4R" firstAttribute="leading" secondItem="nva-5a-GgI" secondAttribute="leading" constant="15" id="C8I-mU-PfI"/>
+                        <constraint firstItem="YPh-zB-2oG" firstAttribute="leading" secondItem="nva-5a-GgI" secondAttribute="leading" constant="15" id="K5e-qe-5VV"/>
+                        <constraint firstItem="Q1D-sv-z7i" firstAttribute="leading" secondItem="nva-5a-GgI" secondAttribute="leading" constant="15" id="LkR-f3-DWL"/>
+                        <constraint firstAttribute="bottom" secondItem="Q1D-sv-z7i" secondAttribute="bottom" constant="1" id="NgO-P7-JPa"/>
+                        <constraint firstItem="Q1D-sv-z7i" firstAttribute="top" secondItem="a1r-Mb-A4R" secondAttribute="bottom" constant="11" id="XLb-5N-FXw"/>
+                        <constraint firstItem="YPh-zB-2oG" firstAttribute="top" secondItem="nva-5a-GgI" secondAttribute="top" constant="1" id="XeG-us-Ult"/>
+                        <constraint firstItem="oCv-dW-sh0" firstAttribute="centerY" secondItem="a1r-Mb-A4R" secondAttribute="centerY" id="lTw-bc-Dsc"/>
+                        <constraint firstAttribute="trailing" secondItem="Q1D-sv-z7i" secondAttribute="trailing" constant="15" id="qYX-OV-dj7"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="7nl-xS-dVw" appends="YES" id="ZSz-YG-mnC"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5SD-Ry-fJd" userLabel="Choose End Time Service View">
+                    <rect key="frame" x="0.0" y="94" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="1000" text="До" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4V-F0-dMc" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="1" width="16" height="14"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                            <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="dryCleaning.serviceDate.date.time.before"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="16:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBb-Ga-2ih">
+                            <rect key="frame" x="15" y="21" width="35.5" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqf-Ku-RWl" userLabel="Divide View">
+                            <rect key="frame" x="15" y="48" width="384" height="1"/>
+                            <color key="backgroundColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="kEt-TG-MBr"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accessory_right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="bNx-nn-GTA">
+                            <rect key="frame" x="378" y="21.5" width="15" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="nqf-Ku-RWl" secondAttribute="trailing" constant="15" id="58G-Tp-W7o"/>
+                        <constraint firstAttribute="bottom" secondItem="nqf-Ku-RWl" secondAttribute="bottom" constant="1" id="Fdq-qM-LQu"/>
+                        <constraint firstItem="h4V-F0-dMc" firstAttribute="leading" secondItem="5SD-Ry-fJd" secondAttribute="leading" constant="15" id="JRi-8O-EAs"/>
+                        <constraint firstItem="nqf-Ku-RWl" firstAttribute="top" secondItem="MBb-Ga-2ih" secondAttribute="bottom" constant="11" id="YrO-2b-vnQ"/>
+                        <constraint firstItem="h4V-F0-dMc" firstAttribute="top" secondItem="5SD-Ry-fJd" secondAttribute="top" constant="1" id="jvj-8p-BIa"/>
+                        <constraint firstItem="nqf-Ku-RWl" firstAttribute="leading" secondItem="5SD-Ry-fJd" secondAttribute="leading" constant="15" id="s8M-Nf-gNq"/>
+                        <constraint firstItem="MBb-Ga-2ih" firstAttribute="top" secondItem="h4V-F0-dMc" secondAttribute="bottom" constant="6" id="vAA-46-GIW"/>
+                        <constraint firstItem="MBb-Ga-2ih" firstAttribute="leading" secondItem="5SD-Ry-fJd" secondAttribute="leading" constant="15" id="yAO-sG-EhE"/>
+                        <constraint firstItem="bNx-nn-GTA" firstAttribute="centerY" secondItem="MBb-Ga-2ih" secondAttribute="centerY" id="yWP-R9-vhF"/>
+                        <constraint firstAttribute="trailing" secondItem="bNx-nn-GTA" secondAttribute="trailing" constant="21" id="ysk-lD-Viq"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="1p3-tK-cM8" appends="YES" id="lD0-oU-ckE"/>
+                    </connections>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="b6N-Fh-oez"/>
+            <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="nva-5a-GgI" firstAttribute="leading" secondItem="k5Y-zl-gs1" secondAttribute="leading" id="GVT-fa-i4j"/>
+                <constraint firstAttribute="trailing" secondItem="5SD-Ry-fJd" secondAttribute="trailing" id="Lgw-b5-7wH"/>
+                <constraint firstItem="WYB-cb-h8K" firstAttribute="leading" secondItem="k5Y-zl-gs1" secondAttribute="leading" constant="15" id="NVc-BL-guu"/>
+                <constraint firstItem="5SD-Ry-fJd" firstAttribute="top" secondItem="nva-5a-GgI" secondAttribute="bottom" constant="20" id="UeV-Rx-IWS"/>
+                <constraint firstItem="WYB-cb-h8K" firstAttribute="top" secondItem="k5Y-zl-gs1" secondAttribute="top" constant="1" id="dOP-Jg-qVx"/>
+                <constraint firstAttribute="trailing" secondItem="nva-5a-GgI" secondAttribute="trailing" id="iqq-3W-Xvl"/>
+                <constraint firstAttribute="bottom" secondItem="5SD-Ry-fJd" secondAttribute="bottom" id="jGM-x9-nrg"/>
+                <constraint firstItem="5SD-Ry-fJd" firstAttribute="leading" secondItem="k5Y-zl-gs1" secondAttribute="leading" id="jWc-FP-S1f"/>
+                <constraint firstItem="nva-5a-GgI" firstAttribute="top" secondItem="WYB-cb-h8K" secondAttribute="bottom" constant="9" id="kLe-S1-mlg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-659.4202898550725" y="318.75"/>
+        </view>
+        <tapGestureRecognizer id="7nl-xS-dVw">
+            <connections>
+                <action selector="chooseFromTime:" destination="-1" id="XDx-HA-lPp"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="1p3-tK-cM8">
+            <connections>
+                <action selector="chooseBeforeTime:" destination="-1" id="jM5-rT-r8H"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <designables>
+        <designable name="WYB-cb-h8K">
+            <size key="intrinsicContentSize" width="177" height="14"/>
+        </designable>
+        <designable name="YPh-zB-2oG">
+            <size key="intrinsicContentSize" width="15" height="14"/>
+        </designable>
+        <designable name="h4V-F0-dMc">
+            <size key="intrinsicContentSize" width="16" height="14"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="accessory_right_arrow" width="15" height="15"/>
+    </resources>
+</document>

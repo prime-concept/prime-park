@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TimePickerView" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите начальное время" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOx-Zv-SlC" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="98.5" y="28" width="217" height="18"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="dryCleaning.chooseFromTime.title"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fug-N1-dRe">
+                    <rect key="frame" x="0.0" y="60" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="lWX-Fx-aXu"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hide_view_rectangle_button" translatesAutoresizingMaskIntoConstraints="NO" id="bKc-Ca-e5w">
+                    <rect key="frame" x="189" y="10" width="36" height="4"/>
+                </imageView>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zMH-Vz-gLS">
+                    <rect key="frame" x="0.0" y="76" width="414" height="34.5"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </datePicker>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gZ-hi-Ejw" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="361" y="23" width="45" height="28"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                    <state key="normal" title="Готово">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="dryCleaning.chooseTime.doneButton"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="doneButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="qBA-qZ-veY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Fug-N1-dRe" secondAttribute="trailing" id="FK0-ba-bse"/>
+                <constraint firstItem="2gZ-hi-Ejw" firstAttribute="centerY" secondItem="GOx-Zv-SlC" secondAttribute="centerY" id="I7a-Wk-iyz"/>
+                <constraint firstItem="zMH-Vz-gLS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="S9N-fF-bJk"/>
+                <constraint firstItem="Fug-N1-dRe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TxD-BZ-7Dv"/>
+                <constraint firstItem="bKc-Ca-e5w" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="UAi-iy-2ic"/>
+                <constraint firstAttribute="trailing" secondItem="2gZ-hi-Ejw" secondAttribute="trailing" constant="8" id="Ulb-Be-svi"/>
+                <constraint firstItem="zMH-Vz-gLS" firstAttribute="top" secondItem="Fug-N1-dRe" secondAttribute="bottom" constant="15" id="Zt7-HK-OgL"/>
+                <constraint firstItem="Fug-N1-dRe" firstAttribute="top" secondItem="GOx-Zv-SlC" secondAttribute="bottom" constant="14" id="gGg-YC-0zC"/>
+                <constraint firstItem="GOx-Zv-SlC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ghO-Fe-tA4"/>
+                <constraint firstItem="bKc-Ca-e5w" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pth-4i-sX9"/>
+                <constraint firstAttribute="trailing" secondItem="zMH-Vz-gLS" secondAttribute="trailing" id="tEX-gl-6mx"/>
+                <constraint firstItem="GOx-Zv-SlC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="28" id="ytz-vT-jnf"/>
+            </constraints>
+            <connections>
+                <outlet property="timePicker" destination="zMH-Vz-gLS" id="cfo-99-aym"/>
+                <outlet property="titleLabel" destination="GOx-Zv-SlC" id="hoP-Il-ohi"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="GOx-Zv-SlC">
+            <size key="intrinsicContentSize" width="217" height="18"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="hide_view_rectangle_button" width="36" height="4"/>
+    </resources>
+</document>

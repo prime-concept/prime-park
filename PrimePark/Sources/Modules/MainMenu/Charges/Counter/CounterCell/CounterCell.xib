@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gU6-T1-LnY" userLabel="Counter Cell" customClass="CounterCell" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gU6-T1-LnY" id="JVn-cR-Cdh" userLabel="Super Content View">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fY-4z-bYl" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Июнь 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfW-DF-sLd">
+                                <rect key="frame" x="20" y="19" width="72" height="16"/>
+                                <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 m³" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsu-yb-oAM">
+                                <rect key="frame" x="357" y="19" width="37" height="16"/>
+                                <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="linesCornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPB-fH-fPm">
+                                <rect key="frame" x="20" y="53" width="374" height="1"/>
+                                <color key="backgroundColor" red="0.15686407690000001" green="0.15686029200000001" blue="0.15686288479999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="mtn-7n-mWc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.070589028299999995" green="0.070586808030000003" blue="0.070588313040000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tPB-fH-fPm" secondAttribute="trailing" constant="20" symbolic="YES" id="5AQ-hV-nIu"/>
+                            <constraint firstItem="fsu-yb-oAM" firstAttribute="centerY" secondItem="1fY-4z-bYl" secondAttribute="centerY" id="7kQ-oS-6Tu"/>
+                            <constraint firstItem="PfW-DF-sLd" firstAttribute="centerY" secondItem="1fY-4z-bYl" secondAttribute="centerY" id="9D9-eX-XLG"/>
+                            <constraint firstAttribute="bottom" secondItem="tPB-fH-fPm" secondAttribute="bottom" id="BQr-XB-wlP"/>
+                            <constraint firstItem="PfW-DF-sLd" firstAttribute="top" secondItem="1fY-4z-bYl" secondAttribute="top" constant="19" id="Qkl-wz-dyE"/>
+                            <constraint firstItem="tPB-fH-fPm" firstAttribute="top" secondItem="PfW-DF-sLd" secondAttribute="bottom" constant="18" id="UMD-k4-OGB"/>
+                            <constraint firstAttribute="trailing" secondItem="fsu-yb-oAM" secondAttribute="trailing" constant="20" symbolic="YES" id="VYp-CU-I95"/>
+                            <constraint firstItem="PfW-DF-sLd" firstAttribute="leading" secondItem="1fY-4z-bYl" secondAttribute="leading" constant="20" symbolic="YES" id="X5t-xq-kEW"/>
+                            <constraint firstItem="tPB-fH-fPm" firstAttribute="leading" secondItem="1fY-4z-bYl" secondAttribute="leading" constant="20" symbolic="YES" id="jpI-Be-pJy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1fY-4z-bYl" firstAttribute="top" secondItem="JVn-cR-Cdh" secondAttribute="top" id="3mZ-eQ-IHO"/>
+                    <constraint firstAttribute="bottom" secondItem="1fY-4z-bYl" secondAttribute="bottom" id="4Wf-Iv-Nuy"/>
+                    <constraint firstAttribute="trailing" secondItem="1fY-4z-bYl" secondAttribute="trailing" id="6ZW-Wq-GVM"/>
+                    <constraint firstItem="1fY-4z-bYl" firstAttribute="leading" secondItem="JVn-cR-Cdh" secondAttribute="leading" id="LIq-Jt-u3O"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="firstLine" destination="PfW-DF-sLd" id="WAQ-FH-Ka7"/>
+                <outlet property="secondLine" destination="fsu-yb-oAM" id="1xh-RC-BSd"/>
+            </connections>
+            <point key="canvasLocation" x="-486" y="173"/>
+        </tableViewCell>
+    </objects>
+</document>

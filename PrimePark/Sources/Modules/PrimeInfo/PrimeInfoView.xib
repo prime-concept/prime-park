@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Light.ttf">
+            <string>Ubuntu-Light</string>
+        </array>
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PrimeInfoView" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prime-park-background-image" translatesAutoresizingMaskIntoConstraints="NO" id="AlN-ul-9KQ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="335"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info_prime_logo" translatesAutoresizingMaskIntoConstraints="NO" id="zat-As-LcY">
+                    <rect key="frame" x="35" y="134" width="73" height="20"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваши заботы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bL8-cA-xH4">
+                    <rect key="frame" x="35" y="179" width="213" height="39.5"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu Light" pointSize="35"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="— наша миссия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHz-Wz-gGL">
+                    <rect key="frame" x="35" y="223.5" width="261" height="39.5"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="35"/>
+                    <color key="textColor" red="0.70196078429999997" green="0.59607843140000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnV-jM-nYH">
+                    <rect key="frame" x="37" y="283" width="327" height="559"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">Наша задача – понять Вас и сделать так, чтобы в Вашей жизни осталось место только для приятных моментов. Наши ассистенты предложат Вам нестандартные решения любой поставленной задачи.
+
+</string>
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" metaFont="system" size="17"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">Мы сопровождаем Вас 24 часа
+в сутки, 7 дней в неделю.</string>
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" metaFont="systemBold" size="17"/>
+                                <font key="NSOriginalFont" metaFont="systemBold" size="17"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment>
+                            <string key="content">
+Ваш персональный ассистент – часть отлаженного механизма клуба PRIME, признанного лидера в предоставлении консьерж-услуг. </string>
+                            <attributes>
+                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" metaFont="system" size="17"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="AlN-ul-9KQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5GE-dO-MsI"/>
+                <constraint firstItem="bL8-cA-xH4" firstAttribute="top" secondItem="zat-As-LcY" secondAttribute="bottom" constant="25" id="8VA-q6-0hz"/>
+                <constraint firstItem="tHz-Wz-gGL" firstAttribute="top" secondItem="bL8-cA-xH4" secondAttribute="bottom" constant="5" id="9H7-oD-qV0"/>
+                <constraint firstItem="zat-As-LcY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="90" id="9K0-6l-MGx"/>
+                <constraint firstItem="zat-As-LcY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="35" id="HA1-DX-wUc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WnV-jM-nYH" secondAttribute="trailing" constant="50" id="MTU-YO-ov0"/>
+                <constraint firstItem="bL8-cA-xH4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="35" id="VtV-gh-Sg8"/>
+                <constraint firstItem="tHz-Wz-gGL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="35" id="d3p-U6-p1B"/>
+                <constraint firstItem="WnV-jM-nYH" firstAttribute="top" secondItem="tHz-Wz-gGL" secondAttribute="bottom" constant="20" id="daV-ix-nlA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="WnV-jM-nYH" secondAttribute="bottom" constant="20" id="dsG-tN-hd2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AlN-ul-9KQ" secondAttribute="trailing" id="hRw-0k-Bj6"/>
+                <constraint firstItem="WnV-jM-nYH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="37" id="l1x-NF-xPc"/>
+                <constraint firstItem="AlN-ul-9KQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pkU-x2-asB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backgroundImage" destination="AlN-ul-9KQ" id="gSM-Kv-1V2"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="info_prime_logo" width="73" height="20"/>
+        <image name="prime-park-background-image" width="375" height="335"/>
+    </resources>
+</document>

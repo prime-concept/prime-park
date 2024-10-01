@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoApartmentController" customModule="PrimePark" customModuleProvider="target">
+            <connections>
+                <outlet property="entranceLabel" destination="dxR-QE-Fi7" id="BFT-22-0UZ"/>
+                <outlet property="floorLabel" destination="bOc-5E-e0W" id="dRU-wh-g7z"/>
+                <outlet property="houseLabel" destination="HKe-JB-dn7" id="zwS-VQ-iYC"/>
+                <outlet property="roomLabel" destination="c8B-vI-vz4" id="Lvg-Ux-GUy"/>
+                <outlet property="streetLabel" destination="DRD-gR-Xer" id="KM4-NC-vdZ"/>
+                <outlet property="view" destination="Pbr-Tq-RmV" id="ZQE-HY-cRV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Pbr-Tq-RmV">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hide_view_rectangle_button" translatesAutoresizingMaskIntoConstraints="NO" id="q6E-hC-PgT">
+                    <rect key="frame" x="189" y="54" width="36" height="4"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="О квартире" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oap-ln-vTr" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="164" y="67" width="86.5" height="19"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YRK-PK-eM3" userLabel="Divide View">
+                    <rect key="frame" x="0.0" y="101" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="bHk-SN-CMN"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Pz-ks-B0u">
+                    <rect key="frame" x="0.0" y="102" width="414" height="745"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSH-4J-MRn" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="319"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjA-cd-hf1">
+                                    <rect key="frame" x="20" y="29" width="374" height="58"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Улица" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8I-25-dip" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="6" width="37" height="15"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="13"/>
+                                            <color key="textColor" red="0.58039599659999996" green="0.57638990879999996" blue="0.5803930759" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Малая Бронная" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRD-gR-Xer">
+                                            <rect key="frame" x="0.0" y="30" width="103" height="16"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                            <color key="textColor" red="0.91765320299999997" green="0.91763597730000002" blue="0.91764765979999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SHS-Rb-w3v" userLabel="Divide View">
+                                            <rect key="frame" x="0.0" y="57" width="374" height="1"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="btL-0J-GBn"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.27451187370000002" green="0.27450600269999997" blue="0.27450999619999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="DRD-gR-Xer" secondAttribute="bottom" constant="12" id="3xi-RP-a28"/>
+                                        <constraint firstItem="SHS-Rb-w3v" firstAttribute="leading" secondItem="yjA-cd-hf1" secondAttribute="leading" id="bNu-nR-Qxn"/>
+                                        <constraint firstItem="Q8I-25-dip" firstAttribute="top" secondItem="yjA-cd-hf1" secondAttribute="top" constant="6" id="f1p-o6-MLA"/>
+                                        <constraint firstItem="Q8I-25-dip" firstAttribute="leading" secondItem="yjA-cd-hf1" secondAttribute="leading" id="g5g-WK-2X8"/>
+                                        <constraint firstAttribute="height" constant="58" id="gCN-5y-NkO"/>
+                                        <constraint firstAttribute="bottom" secondItem="SHS-Rb-w3v" secondAttribute="bottom" id="jcK-b7-UTe"/>
+                                        <constraint firstItem="DRD-gR-Xer" firstAttribute="leading" secondItem="yjA-cd-hf1" secondAttribute="leading" id="tfh-f8-icy"/>
+                                        <constraint firstAttribute="trailing" secondItem="SHS-Rb-w3v" secondAttribute="trailing" id="wMe-rG-ed6"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="buc-D7-TtX">
+                                    <rect key="frame" x="20" y="87" width="374" height="58"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дом" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVf-Y4-TNx" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="6" width="26" height="15"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="13"/>
+                                            <color key="textColor" red="0.58039599659999996" green="0.57638990879999996" blue="0.5803930759" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKe-JB-dn7">
+                                            <rect key="frame" x="0.0" y="30" width="16" height="16"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                            <color key="textColor" red="0.91765320299999997" green="0.91763597730000002" blue="0.91764765979999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xbc-e3-FjH" userLabel="Divide View">
+                                            <rect key="frame" x="0.0" y="57" width="374" height="1"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="pNS-b0-MpN"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.27451187370000002" green="0.27450600269999997" blue="0.27450999619999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="58" id="4Hs-EJ-UXY"/>
+                                        <constraint firstAttribute="bottom" secondItem="HKe-JB-dn7" secondAttribute="bottom" constant="12" id="766-2s-kDb"/>
+                                        <constraint firstAttribute="trailing" secondItem="Xbc-e3-FjH" secondAttribute="trailing" id="81h-lF-QRC"/>
+                                        <constraint firstItem="tVf-Y4-TNx" firstAttribute="top" secondItem="buc-D7-TtX" secondAttribute="top" constant="6" id="HIK-NH-kle"/>
+                                        <constraint firstItem="tVf-Y4-TNx" firstAttribute="leading" secondItem="buc-D7-TtX" secondAttribute="leading" id="akt-sl-XxP"/>
+                                        <constraint firstItem="Xbc-e3-FjH" firstAttribute="leading" secondItem="buc-D7-TtX" secondAttribute="leading" id="igq-O6-Ghi"/>
+                                        <constraint firstItem="HKe-JB-dn7" firstAttribute="leading" secondItem="buc-D7-TtX" secondAttribute="leading" id="mlc-ff-6wx"/>
+                                        <constraint firstAttribute="bottom" secondItem="Xbc-e3-FjH" secondAttribute="bottom" id="ywn-lK-gY5"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Or-GR-492">
+                                    <rect key="frame" x="20" y="145" width="374" height="58"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подъезд" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w8m-AR-ykL" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="6" width="54" height="15"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="13"/>
+                                            <color key="textColor" red="0.58039599659999996" green="0.57638990879999996" blue="0.5803930759" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxR-QE-Fi7">
+                                            <rect key="frame" x="0.0" y="30" width="16" height="16"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                            <color key="textColor" red="0.91765320299999997" green="0.91763597730000002" blue="0.91764765979999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ODA-DG-j7h" userLabel="Divide View">
+                                            <rect key="frame" x="0.0" y="57" width="374" height="1"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="pPK-XV-ttl"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.27451187370000002" green="0.27450600269999997" blue="0.27450999619999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="dxR-QE-Fi7" secondAttribute="bottom" constant="12" id="2cO-OI-cZm"/>
+                                        <constraint firstItem="w8m-AR-ykL" firstAttribute="top" secondItem="8Or-GR-492" secondAttribute="top" constant="6" id="Ivc-PY-l7n"/>
+                                        <constraint firstAttribute="height" constant="58" id="LOW-Sg-Qbq"/>
+                                        <constraint firstItem="ODA-DG-j7h" firstAttribute="leading" secondItem="8Or-GR-492" secondAttribute="leading" id="bCa-66-JZU"/>
+                                        <constraint firstAttribute="bottom" secondItem="ODA-DG-j7h" secondAttribute="bottom" id="bXW-Dk-BHW"/>
+                                        <constraint firstItem="dxR-QE-Fi7" firstAttribute="leading" secondItem="8Or-GR-492" secondAttribute="leading" id="be8-Bz-56Q"/>
+                                        <constraint firstAttribute="trailing" secondItem="ODA-DG-j7h" secondAttribute="trailing" id="cok-0W-orT"/>
+                                        <constraint firstItem="w8m-AR-ykL" firstAttribute="leading" secondItem="8Or-GR-492" secondAttribute="leading" id="vHQ-UI-1sk"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4e-eH-y66">
+                                    <rect key="frame" x="20" y="203" width="374" height="58"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Этаж" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6v-db-3W4" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="6" width="33" height="15"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="13"/>
+                                            <color key="textColor" red="0.58039599659999996" green="0.57638990879999996" blue="0.5803930759" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOc-5E-e0W">
+                                            <rect key="frame" x="0.0" y="30" width="8" height="16"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                            <color key="textColor" red="0.91765320299999997" green="0.91763597730000002" blue="0.91764765979999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gw-yG-2bH" userLabel="Divide View">
+                                            <rect key="frame" x="0.0" y="57" width="374" height="1"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="GN0-Gf-Qgj"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.27451187370000002" green="0.27450600269999997" blue="0.27450999619999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="5gw-yG-2bH" secondAttribute="bottom" id="DVx-lw-nrC"/>
+                                        <constraint firstAttribute="trailing" secondItem="5gw-yG-2bH" secondAttribute="trailing" id="Jji-9E-Lfd"/>
+                                        <constraint firstItem="C6v-db-3W4" firstAttribute="leading" secondItem="v4e-eH-y66" secondAttribute="leading" id="dL2-zT-S9W"/>
+                                        <constraint firstAttribute="bottom" secondItem="bOc-5E-e0W" secondAttribute="bottom" constant="12" id="ddg-9x-Ps4"/>
+                                        <constraint firstItem="C6v-db-3W4" firstAttribute="top" secondItem="v4e-eH-y66" secondAttribute="top" constant="6" id="exZ-Ei-Hcu"/>
+                                        <constraint firstItem="5gw-yG-2bH" firstAttribute="leading" secondItem="v4e-eH-y66" secondAttribute="leading" id="yBF-29-l6a"/>
+                                        <constraint firstItem="bOc-5E-e0W" firstAttribute="leading" secondItem="v4e-eH-y66" secondAttribute="leading" id="zgH-0e-Z6a"/>
+                                        <constraint firstAttribute="height" constant="58" id="ziL-XP-g17"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WEO-Ao-q0K">
+                                    <rect key="frame" x="20" y="261" width="374" height="58"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Квартира" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Naa-ud-MLO" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="6" width="58" height="15"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="13"/>
+                                            <color key="textColor" red="0.58039599659999996" green="0.57638990879999996" blue="0.5803930759" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="324" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8B-vI-vz4">
+                                            <rect key="frame" x="0.0" y="30" width="24" height="16"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                            <color key="textColor" red="0.91765320299999997" green="0.91763597730000002" blue="0.91764765979999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8oh-nH-GCp" userLabel="Divide View">
+                                            <rect key="frame" x="0.0" y="57" width="374" height="1"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="i2m-Kj-Ken"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.27451187370000002" green="0.27450600269999997" blue="0.27450999619999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="8oh-nH-GCp" secondAttribute="trailing" id="1y8-a0-3yt"/>
+                                        <constraint firstAttribute="height" constant="58" id="3eh-2X-g6c"/>
+                                        <constraint firstItem="8oh-nH-GCp" firstAttribute="leading" secondItem="WEO-Ao-q0K" secondAttribute="leading" id="4nG-Sf-BSR"/>
+                                        <constraint firstAttribute="bottom" secondItem="c8B-vI-vz4" secondAttribute="bottom" constant="12" id="DRG-D0-HFC"/>
+                                        <constraint firstItem="c8B-vI-vz4" firstAttribute="leading" secondItem="WEO-Ao-q0K" secondAttribute="leading" id="LrZ-Xq-fvn"/>
+                                        <constraint firstItem="Naa-ud-MLO" firstAttribute="leading" secondItem="WEO-Ao-q0K" secondAttribute="leading" id="SmR-bc-fga"/>
+                                        <constraint firstAttribute="bottom" secondItem="8oh-nH-GCp" secondAttribute="bottom" id="Zhw-Td-lpX"/>
+                                        <constraint firstItem="Naa-ud-MLO" firstAttribute="top" secondItem="WEO-Ao-q0K" secondAttribute="top" constant="6" id="mWw-1J-BrQ"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="buc-D7-TtX" secondAttribute="trailing" constant="20" symbolic="YES" id="04U-ci-z8S"/>
+                                <constraint firstAttribute="trailing" secondItem="yjA-cd-hf1" secondAttribute="trailing" constant="20" symbolic="YES" id="4dq-ix-WpC"/>
+                                <constraint firstAttribute="trailing" secondItem="WEO-Ao-q0K" secondAttribute="trailing" constant="20" symbolic="YES" id="6hU-Nc-tIE"/>
+                                <constraint firstItem="v4e-eH-y66" firstAttribute="leading" secondItem="TSH-4J-MRn" secondAttribute="leading" constant="20" symbolic="YES" id="8Gi-Kj-j2s"/>
+                                <constraint firstAttribute="bottom" secondItem="WEO-Ao-q0K" secondAttribute="bottom" id="Aat-vn-Pvs"/>
+                                <constraint firstItem="buc-D7-TtX" firstAttribute="leading" secondItem="TSH-4J-MRn" secondAttribute="leading" constant="20" symbolic="YES" id="HVC-1z-kKL"/>
+                                <constraint firstItem="v4e-eH-y66" firstAttribute="top" secondItem="8Or-GR-492" secondAttribute="bottom" id="NpM-OV-SW1"/>
+                                <constraint firstItem="yjA-cd-hf1" firstAttribute="leading" secondItem="TSH-4J-MRn" secondAttribute="leading" constant="20" symbolic="YES" id="Pp1-qM-00i"/>
+                                <constraint firstItem="yjA-cd-hf1" firstAttribute="top" secondItem="TSH-4J-MRn" secondAttribute="top" constant="29" id="U4j-3u-bHX"/>
+                                <constraint firstAttribute="trailing" secondItem="v4e-eH-y66" secondAttribute="trailing" constant="20" symbolic="YES" id="chB-L1-93E"/>
+                                <constraint firstItem="8Or-GR-492" firstAttribute="leading" secondItem="TSH-4J-MRn" secondAttribute="leading" constant="20" symbolic="YES" id="daH-iW-7nM"/>
+                                <constraint firstItem="8Or-GR-492" firstAttribute="top" secondItem="buc-D7-TtX" secondAttribute="bottom" id="l9V-sc-4gw"/>
+                                <constraint firstAttribute="trailing" secondItem="8Or-GR-492" secondAttribute="trailing" constant="20" symbolic="YES" id="tDN-mn-tvv"/>
+                                <constraint firstItem="WEO-Ao-q0K" firstAttribute="leading" secondItem="TSH-4J-MRn" secondAttribute="leading" constant="20" symbolic="YES" id="uCa-Ru-ZQU"/>
+                                <constraint firstItem="buc-D7-TtX" firstAttribute="top" secondItem="yjA-cd-hf1" secondAttribute="bottom" id="uFI-6F-P08"/>
+                                <constraint firstItem="WEO-Ao-q0K" firstAttribute="top" secondItem="v4e-eH-y66" secondAttribute="bottom" id="vA9-IW-IK1"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="TSH-4J-MRn" firstAttribute="top" secondItem="iqO-4m-u0n" secondAttribute="top" id="7vP-f1-ATg"/>
+                        <constraint firstItem="TSH-4J-MRn" firstAttribute="leading" secondItem="iqO-4m-u0n" secondAttribute="leading" id="Flk-sN-Izn"/>
+                        <constraint firstItem="TSH-4J-MRn" firstAttribute="width" secondItem="4Pz-ks-B0u" secondAttribute="width" id="GZg-DN-McD"/>
+                        <constraint firstItem="TSH-4J-MRn" firstAttribute="bottom" secondItem="iqO-4m-u0n" secondAttribute="bottom" id="OQ8-jT-RQS"/>
+                        <constraint firstItem="iqO-4m-u0n" firstAttribute="trailing" secondItem="TSH-4J-MRn" secondAttribute="trailing" id="ZL5-Ps-8kh"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="iqO-4m-u0n"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="Gcr-fs-SEW"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ips-5P-NK2"/>
+            <color key="backgroundColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Oap-ln-vTr" firstAttribute="top" secondItem="ips-5P-NK2" secondAttribute="top" constant="23" id="6Sq-Lb-D6Y"/>
+                <constraint firstItem="ips-5P-NK2" firstAttribute="trailing" secondItem="4Pz-ks-B0u" secondAttribute="trailing" id="C7w-r0-cqR"/>
+                <constraint firstItem="YRK-PK-eM3" firstAttribute="leading" secondItem="ips-5P-NK2" secondAttribute="leading" id="Drk-d3-hBB"/>
+                <constraint firstItem="ips-5P-NK2" firstAttribute="trailing" secondItem="YRK-PK-eM3" secondAttribute="trailing" id="Gye-f4-sqb"/>
+                <constraint firstItem="4Pz-ks-B0u" firstAttribute="top" secondItem="YRK-PK-eM3" secondAttribute="bottom" id="MJ4-Nl-503"/>
+                <constraint firstItem="q6E-hC-PgT" firstAttribute="top" secondItem="ips-5P-NK2" secondAttribute="top" constant="10" id="NS1-Rp-Pmm"/>
+                <constraint firstItem="ips-5P-NK2" firstAttribute="bottom" secondItem="4Pz-ks-B0u" secondAttribute="bottom" constant="15" id="VQ7-WZ-Evk"/>
+                <constraint firstItem="4Pz-ks-B0u" firstAttribute="leading" secondItem="ips-5P-NK2" secondAttribute="leading" id="VZh-LQ-amu"/>
+                <constraint firstItem="YRK-PK-eM3" firstAttribute="top" secondItem="Oap-ln-vTr" secondAttribute="bottom" constant="15" id="XmF-NT-AUT"/>
+                <constraint firstItem="Oap-ln-vTr" firstAttribute="centerX" secondItem="Pbr-Tq-RmV" secondAttribute="centerX" id="YNk-jB-gv7"/>
+                <constraint firstItem="q6E-hC-PgT" firstAttribute="centerX" secondItem="Pbr-Tq-RmV" secondAttribute="centerX" id="tab-TG-yGo"/>
+            </constraints>
+            <point key="canvasLocation" x="-72.463768115942031" y="100.44642857142857"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="C6v-db-3W4">
+            <size key="intrinsicContentSize" width="33" height="15.5"/>
+        </designable>
+        <designable name="Naa-ud-MLO">
+            <size key="intrinsicContentSize" width="58.5" height="15.5"/>
+        </designable>
+        <designable name="Oap-ln-vTr">
+            <size key="intrinsicContentSize" width="86.5" height="19"/>
+        </designable>
+        <designable name="Q8I-25-dip">
+            <size key="intrinsicContentSize" width="37" height="15.5"/>
+        </designable>
+        <designable name="tVf-Y4-TNx">
+            <size key="intrinsicContentSize" width="26" height="15.5"/>
+        </designable>
+        <designable name="w8m-AR-ykL">
+            <size key="intrinsicContentSize" width="54" height="15.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="hide_view_rectangle_button" width="36" height="4"/>
+    </resources>
+</document>

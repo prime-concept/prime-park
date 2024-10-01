@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kDU-xu-x33" customClass="ValetModalTimeView" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="354"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hide_view_rectangle_button" translatesAutoresizingMaskIntoConstraints="NO" id="snA-lA-h8u">
+                    <rect key="frame" x="189" y="54" width="36" height="4"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время подачи" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aS-LV-CS8">
+                    <rect key="frame" x="154" y="67" width="106.5" height="19"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="711-BM-MXU" userLabel="Divide View">
+                    <rect key="frame" x="0.0" y="120" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="wl9-ZF-AVk"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXo-av-Xe5" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="15" y="295" width="384" height="45"/>
+                    <color key="backgroundColor" name="Gold"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="13" maxX="0.0" maxY="13"/>
+                    <state key="normal" title="Подать машину">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="Подать машину"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="serveCar:" destination="kDU-xu-x33" eventType="touchUpInside" id="bCW-j0-FKD"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Минимальное время подачи 09 минут" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dF-9H-qlW">
+                    <rect key="frame" x="100.5" y="91" width="213.5" height="14"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RA6-Re-qig" userLabel="Back View">
+                    <rect key="frame" x="23" y="73" width="50" height="30"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_button" translatesAutoresizingMaskIntoConstraints="NO" id="M2K-gd-dzh">
+                            <rect key="frame" x="0.0" y="5" width="11.5" height="20"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="M2K-gd-dzh" firstAttribute="top" secondItem="RA6-Re-qig" secondAttribute="top" constant="5" id="Lhq-jh-Ovs"/>
+                        <constraint firstItem="M2K-gd-dzh" firstAttribute="leading" secondItem="RA6-Re-qig" secondAttribute="leading" id="PKh-Ln-oz6"/>
+                        <constraint firstAttribute="width" constant="50" id="PoR-Zf-fUT"/>
+                        <constraint firstAttribute="bottom" secondItem="M2K-gd-dzh" secondAttribute="bottom" constant="5" id="yX9-6A-SDv"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="tXJ-qj-mso" appends="YES" id="Qxm-qb-XxT"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jy6-PX-fgc" userLabel="Choose Strart Time Service View">
+                    <rect key="frame" x="0.0" y="222" width="414" height="52"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Время" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQn-xr-drX">
+                            <rect key="frame" x="15" y="21" width="43" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CeQ-Od-2u5" userLabel="Divide View">
+                            <rect key="frame" x="15" y="48" width="384" height="1"/>
+                            <color key="backgroundColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="lzN-op-d4i"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accessory_right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="o3K-LE-HpO">
+                            <rect key="frame" x="378" y="21.5" width="15" height="15"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="CeQ-Od-2u5" firstAttribute="leading" secondItem="jy6-PX-fgc" secondAttribute="leading" constant="15" id="5Mf-4l-ibr"/>
+                        <constraint firstAttribute="trailing" secondItem="o3K-LE-HpO" secondAttribute="trailing" constant="21" id="7tF-kz-Z9c"/>
+                        <constraint firstItem="CeQ-Od-2u5" firstAttribute="top" secondItem="nQn-xr-drX" secondAttribute="bottom" constant="11" id="HzZ-oL-fVM"/>
+                        <constraint firstAttribute="height" constant="52" id="LgL-5v-mLI"/>
+                        <constraint firstItem="nQn-xr-drX" firstAttribute="leading" secondItem="jy6-PX-fgc" secondAttribute="leading" constant="15" id="QFw-tV-QaG"/>
+                        <constraint firstItem="nQn-xr-drX" firstAttribute="top" secondItem="jy6-PX-fgc" secondAttribute="top" constant="21" id="VYd-mQ-lFa"/>
+                        <constraint firstItem="o3K-LE-HpO" firstAttribute="centerY" secondItem="nQn-xr-drX" secondAttribute="centerY" id="ggU-nt-1bQ"/>
+                        <constraint firstAttribute="trailing" secondItem="CeQ-Od-2u5" secondAttribute="trailing" constant="15" id="mmh-Ua-NgX"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="tal-60-SR4" appends="YES" id="FQX-Ts-TFc"/>
+                    </connections>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vDd-Zt-rwU">
+                    <rect key="frame" x="0.0" y="135" width="414" height="85"/>
+                    <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="85" id="Daj-g1-RHs"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bYB-Z3-3Dq">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="wJJ-SR-J0o"/>
+            <color key="backgroundColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="snA-lA-h8u" firstAttribute="centerX" secondItem="kDU-xu-x33" secondAttribute="centerX" id="15t-W0-vRN"/>
+                <constraint firstItem="2dF-9H-qlW" firstAttribute="centerX" secondItem="9aS-LV-CS8" secondAttribute="centerX" id="1FT-fa-9S0"/>
+                <constraint firstItem="vDd-Zt-rwU" firstAttribute="leading" secondItem="wJJ-SR-J0o" secondAttribute="leading" id="1bt-sE-vb9"/>
+                <constraint firstItem="nXo-av-Xe5" firstAttribute="top" secondItem="jy6-PX-fgc" secondAttribute="bottom" constant="21" id="4Mk-W6-f09"/>
+                <constraint firstAttribute="trailing" secondItem="711-BM-MXU" secondAttribute="trailing" id="5l9-5d-XGT"/>
+                <constraint firstItem="jy6-PX-fgc" firstAttribute="top" secondItem="vDd-Zt-rwU" secondAttribute="bottom" constant="2" id="66m-6Y-toy"/>
+                <constraint firstItem="9aS-LV-CS8" firstAttribute="top" secondItem="snA-lA-h8u" secondAttribute="bottom" constant="9" id="6dF-nQ-aH7"/>
+                <constraint firstItem="2dF-9H-qlW" firstAttribute="top" secondItem="9aS-LV-CS8" secondAttribute="bottom" constant="5" id="7Z4-VT-kog"/>
+                <constraint firstItem="711-BM-MXU" firstAttribute="top" secondItem="2dF-9H-qlW" secondAttribute="bottom" constant="15" id="91X-bz-vnL"/>
+                <constraint firstItem="jy6-PX-fgc" firstAttribute="trailing" secondItem="wJJ-SR-J0o" secondAttribute="trailing" id="J9e-pK-bCt"/>
+                <constraint firstItem="wJJ-SR-J0o" firstAttribute="trailing" secondItem="vDd-Zt-rwU" secondAttribute="trailing" id="N7q-7X-p0R"/>
+                <constraint firstItem="711-BM-MXU" firstAttribute="leading" secondItem="kDU-xu-x33" secondAttribute="leading" id="R2N-3V-jZx"/>
+                <constraint firstItem="vDd-Zt-rwU" firstAttribute="top" secondItem="711-BM-MXU" secondAttribute="bottom" constant="14" id="XwM-yo-VoL"/>
+                <constraint firstItem="jy6-PX-fgc" firstAttribute="leading" secondItem="wJJ-SR-J0o" secondAttribute="leading" id="Zii-f7-JJQ"/>
+                <constraint firstItem="9aS-LV-CS8" firstAttribute="centerX" secondItem="kDU-xu-x33" secondAttribute="centerX" id="fmZ-hu-GgK"/>
+                <constraint firstItem="RA6-Re-qig" firstAttribute="leading" secondItem="wJJ-SR-J0o" secondAttribute="leading" constant="23" id="ldY-Dx-zbF"/>
+                <constraint firstItem="snA-lA-h8u" firstAttribute="top" secondItem="wJJ-SR-J0o" secondAttribute="top" constant="10" id="lfu-TB-KK2"/>
+                <constraint firstItem="RA6-Re-qig" firstAttribute="top" secondItem="wJJ-SR-J0o" secondAttribute="top" constant="29" id="o3j-GZ-B2D"/>
+                <constraint firstItem="wJJ-SR-J0o" firstAttribute="trailing" secondItem="nXo-av-Xe5" secondAttribute="trailing" constant="15" id="pcJ-4z-IXq"/>
+                <constraint firstItem="nXo-av-Xe5" firstAttribute="leading" secondItem="wJJ-SR-J0o" secondAttribute="leading" constant="15" id="tVp-LN-QL7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dayPickerCollection" destination="vDd-Zt-rwU" id="yyI-KM-wGV"/>
+                <outlet property="timeLabel" destination="nQn-xr-drX" id="J9V-3c-xyI"/>
+            </connections>
+            <point key="canvasLocation" x="-2236.231884057971" y="-16.071428571428569"/>
+        </view>
+        <tapGestureRecognizer id="tXJ-qj-mso" userLabel="back tap">
+            <connections>
+                <action selector="backTap:" destination="kDU-xu-x33" id="2Nf-FL-CgY"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="tal-60-SR4" userLabel="Time tap">
+            <connections>
+                <action selector="timeTap:" destination="kDU-xu-x33" id="gBV-ta-jRY"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="accessory_right_arrow" width="15" height="15"/>
+        <image name="back_button" width="11.5" height="20"/>
+        <image name="hide_view_rectangle_button" width="36" height="4"/>
+        <namedColor name="Gold">
+            <color red="0.68627450980392157" green="0.59607843137254901" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

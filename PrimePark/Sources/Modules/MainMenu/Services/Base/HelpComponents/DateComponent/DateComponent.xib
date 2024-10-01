@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DateComponent" customModule="PrimePark" customModuleProvider="target">
+            <connections>
+                <outlet property="dateLabel" destination="f4g-0b-U1P" id="eGZ-1H-e8t"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nfn-LB-CJ8" userLabel="Choose Date Service View">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="1000" text="Дата" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2bI-he-fhq" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="15" y="1" width="384" height="14"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="dryCleaning.serviceDate.dateTitle"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="21.10.2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4g-0b-U1P">
+                    <rect key="frame" x="15" y="21" width="384" height="18"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6d-ay-TI4" userLabel="Divide View">
+                    <rect key="frame" x="15" y="49" width="384" height="1"/>
+                    <color key="backgroundColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="iD9-2g-e3i"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accessory_right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="SDj-Nd-r0q">
+                    <rect key="frame" x="378" y="22.5" width="15" height="15"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Oj6-tL-0h3"/>
+            <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="G6d-ay-TI4" secondAttribute="bottom" constant="1" id="2du-Gh-ixg"/>
+                <constraint firstAttribute="trailing" secondItem="2bI-he-fhq" secondAttribute="trailing" constant="15" id="V2B-SV-hyQ"/>
+                <constraint firstAttribute="trailing" secondItem="f4g-0b-U1P" secondAttribute="trailing" constant="15" id="V9S-Oa-oCv"/>
+                <constraint firstItem="f4g-0b-U1P" firstAttribute="leading" secondItem="nfn-LB-CJ8" secondAttribute="leading" constant="15" id="VYg-El-37L"/>
+                <constraint firstAttribute="bottom" secondItem="f4g-0b-U1P" secondAttribute="bottom" constant="12" id="YgU-eY-17L"/>
+                <constraint firstItem="G6d-ay-TI4" firstAttribute="leading" secondItem="nfn-LB-CJ8" secondAttribute="leading" constant="15" id="hoW-JN-8PJ"/>
+                <constraint firstItem="SDj-Nd-r0q" firstAttribute="centerY" secondItem="f4g-0b-U1P" secondAttribute="centerY" id="i7O-5S-6tU"/>
+                <constraint firstAttribute="trailing" secondItem="SDj-Nd-r0q" secondAttribute="trailing" constant="21" id="k9y-Q3-Srp"/>
+                <constraint firstItem="2bI-he-fhq" firstAttribute="leading" secondItem="nfn-LB-CJ8" secondAttribute="leading" constant="15" id="o6A-g4-uOs"/>
+                <constraint firstAttribute="trailing" secondItem="G6d-ay-TI4" secondAttribute="trailing" constant="15" id="p1F-tB-hqB"/>
+                <constraint firstItem="2bI-he-fhq" firstAttribute="top" secondItem="nfn-LB-CJ8" secondAttribute="top" constant="1" id="tn2-1K-lw6"/>
+                <constraint firstItem="f4g-0b-U1P" firstAttribute="top" secondItem="2bI-he-fhq" secondAttribute="bottom" constant="6" id="twL-2S-WgA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="eYT-23-2Hk" appends="YES" id="aOt-Yx-Lma"/>
+            </connections>
+            <point key="canvasLocation" x="-328.98550724637681" y="-19.754464285714285"/>
+        </view>
+        <tapGestureRecognizer id="eYT-23-2Hk">
+            <connections>
+                <action selector="didTap:" destination="-1" id="Tgb-mb-Yud"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <designables>
+        <designable name="2bI-he-fhq">
+            <size key="intrinsicContentSize" width="27.5" height="14"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="accessory_right_arrow" width="15" height="15"/>
+    </resources>
+</document>

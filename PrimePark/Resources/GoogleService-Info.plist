@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>142645781527-0a3ec9b92f2arqhp31vrb6qlbg6m540o.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.142645781527-0a3ec9b92f2arqhp31vrb6qlbg6m540o</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA9SJ1XWqZpG7iDeY1Dg7QUSFLiYzt0voI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>142645781527</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ru.com.technolab.primepark</string>
+	<key>PROJECT_ID</key>
+	<string>prime-park</string>
+	<key>STORAGE_BUCKET</key>
+	<string>prime-park.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:142645781527:ios:3ad2b6e1847d20db2d6852</string>
+</dict>
+</plist>

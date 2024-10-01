@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CreatePassView" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QxJ-W3-lzh" userLabel="Navigation View">
+                    <rect key="frame" x="0.0" y="48" width="414" height="68"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Новый пропуск" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebL-hK-q2y" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="149.5" y="24.5" width="115.5" height="19"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.title"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Giv-6q-SoV" userLabel="Back View">
+                            <rect key="frame" x="15" y="19" width="50" height="30"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_button" translatesAutoresizingMaskIntoConstraints="NO" id="bQ5-b4-aPL">
+                                    <rect key="frame" x="0.0" y="5" width="11.5" height="20"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="CoK-sG-oXe"/>
+                                <constraint firstAttribute="bottom" secondItem="bQ5-b4-aPL" secondAttribute="bottom" constant="5" id="Hde-Vc-ia9"/>
+                                <constraint firstItem="bQ5-b4-aPL" firstAttribute="leading" secondItem="Giv-6q-SoV" secondAttribute="leading" id="fUL-Yg-Jcl"/>
+                                <constraint firstItem="bQ5-b4-aPL" firstAttribute="top" secondItem="Giv-6q-SoV" secondAttribute="top" constant="5" id="gIA-f4-uid"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="0ZU-Cw-rVF" appends="YES" id="VUC-8Q-rxZ"/>
+                            </connections>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oth-1H-zqk">
+                            <rect key="frame" x="379" y="23" width="20" height="22"/>
+                            <state key="normal" image="info_icon"/>
+                            <connections>
+                                <action selector="info:" destination="iN0-l3-epB" eventType="touchUpInside" id="W3T-bb-yW4"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="Oth-1H-zqk" firstAttribute="centerY" secondItem="ebL-hK-q2y" secondAttribute="centerY" id="F3C-GM-wx4"/>
+                        <constraint firstItem="ebL-hK-q2y" firstAttribute="centerY" secondItem="QxJ-W3-lzh" secondAttribute="centerY" id="Rxu-81-uP9"/>
+                        <constraint firstItem="Giv-6q-SoV" firstAttribute="leading" secondItem="QxJ-W3-lzh" secondAttribute="leading" constant="15" id="T6A-gz-XGi"/>
+                        <constraint firstItem="Giv-6q-SoV" firstAttribute="centerY" secondItem="ebL-hK-q2y" secondAttribute="centerY" id="U4h-Dd-6QP"/>
+                        <constraint firstAttribute="height" constant="68" id="eaF-gu-0Tc"/>
+                        <constraint firstAttribute="trailing" secondItem="Oth-1H-zqk" secondAttribute="trailing" constant="15" id="mZQ-Uc-e8k"/>
+                        <constraint firstItem="ebL-hK-q2y" firstAttribute="centerX" secondItem="QxJ-W3-lzh" secondAttribute="centerX" id="mvH-0i-asy"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UzQ-nk-l3J" userLabel="Choose Type View">
+                    <rect key="frame" x="0.0" y="116" width="414" height="71"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип услуги" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2m-bG-YZg" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="27" width="61" height="14"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                            <color key="textColor" red="0.50980392156862742" green="0.50196078431372548" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.passType.title"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dph-f0-N1X">
+                            <rect key="frame" x="0.0" y="46" width="414" height="20"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="U4R-se-PIY">
+                                    <rect key="frame" x="15" y="0.0" width="352" height="20"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29K-zK-JGt" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="69" height="20"/>
+                                            <color key="backgroundColor" name="Gold"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                            <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                            <state key="normal" title="Разовый">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="9"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.passType.oneTime"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="oneTimeType:" destination="iN0-l3-epB" eventType="touchUpInside" id="4EZ-04-tPC"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyz-yo-yct" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="74" y="0.0" width="99" height="20"/>
+                                            <color key="backgroundColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                            <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                            <state key="normal" title="Однодневный">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.passType.oneDay"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="9"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="oneDayType:" destination="iN0-l3-epB" eventType="touchUpInside" id="STL-Ip-dbC"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnM-A4-ZFF" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="178" y="0.0" width="79" height="20"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                            <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                            <state key="normal" title="Врменный">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.passType.temporary"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="9"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="temporaryType:" destination="iN0-l3-epB" eventType="touchUpInside" id="7qI-Oi-C3L"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cI1-hp-Zu7" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="262" y="0.0" width="90" height="20"/>
+                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                            <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                            <state key="normal" title="Постоянный">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.passType.permanent"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="9"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="permanentType:" destination="iN0-l3-epB" eventType="touchUpInside" id="6KV-py-sWC"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="U4R-se-PIY" secondAttribute="bottom" id="1p7-3F-ILC"/>
+                                <constraint firstAttribute="trailing" secondItem="U4R-se-PIY" secondAttribute="trailing" constant="15" id="8FO-b4-7Mo"/>
+                                <constraint firstItem="U4R-se-PIY" firstAttribute="top" secondItem="dph-f0-N1X" secondAttribute="top" id="8X6-fd-Ulz"/>
+                                <constraint firstItem="U4R-se-PIY" firstAttribute="leading" secondItem="dph-f0-N1X" secondAttribute="leading" constant="15" id="Bpd-u2-TKs"/>
+                                <constraint firstItem="U4R-se-PIY" firstAttribute="height" secondItem="dph-f0-N1X" secondAttribute="height" id="imO-lj-ehH"/>
+                                <constraint firstAttribute="height" constant="20" id="ujM-ox-Nba"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dph-f0-N1X" firstAttribute="leading" secondItem="UzQ-nk-l3J" secondAttribute="leading" id="IlL-dD-f9H"/>
+                        <constraint firstAttribute="bottom" secondItem="dph-f0-N1X" secondAttribute="bottom" constant="5" id="J6G-LO-sMJ"/>
+                        <constraint firstAttribute="trailing" secondItem="dph-f0-N1X" secondAttribute="trailing" id="Yhy-gz-B0v"/>
+                        <constraint firstItem="dph-f0-N1X" firstAttribute="top" secondItem="X2m-bG-YZg" secondAttribute="bottom" constant="5" id="k9V-lj-adx"/>
+                        <constraint firstItem="X2m-bG-YZg" firstAttribute="leading" secondItem="UzQ-nk-l3J" secondAttribute="leading" constant="15" id="lGi-de-f0S"/>
+                        <constraint firstItem="X2m-bG-YZg" firstAttribute="top" secondItem="UzQ-nk-l3J" secondAttribute="top" constant="27" id="qfC-vL-UMz"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="mH7-hx-Qgc">
+                    <rect key="frame" x="0.0" y="187" width="414" height="675"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfJ-w1-8sx" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="848.5"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tb6-k3-Zf1" userLabel="Need Parking View">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Требуется паркинг" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ik1-M4-ScX" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="22.5" width="142.5" height="19"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.needParking.title"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YpB-af-kFd" userLabel="Divide View">
+                                            <rect key="frame" x="15" y="63" width="384" height="1"/>
+                                            <color key="backgroundColor" red="0.50980392156862742" green="0.50196078431372548" blue="0.50980392156862742" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="1ae-Xy-pzt"/>
+                                            </constraints>
+                                        </view>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wjq-c6-X8W">
+                                            <rect key="frame" x="350" y="16.5" width="51" height="31"/>
+                                            <color key="onTintColor" red="0.70196078429999997" green="0.59607843140000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="needParkingDidChange:" destination="iN0-l3-epB" eventType="valueChanged" id="gQz-DI-47F"/>
+                                            </connections>
+                                        </switch>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="Ik1-M4-ScX" firstAttribute="leading" secondItem="Tb6-k3-Zf1" secondAttribute="leading" constant="15" id="87U-sw-Kcv"/>
+                                        <constraint firstAttribute="bottom" secondItem="YpB-af-kFd" secondAttribute="bottom" id="SEj-jg-0ox"/>
+                                        <constraint firstAttribute="trailing" secondItem="YpB-af-kFd" secondAttribute="trailing" constant="15" id="Ved-fc-A1P"/>
+                                        <constraint firstAttribute="trailing" secondItem="Wjq-c6-X8W" secondAttribute="trailing" constant="15" id="ZTx-HI-voZ"/>
+                                        <constraint firstItem="Wjq-c6-X8W" firstAttribute="centerY" secondItem="Tb6-k3-Zf1" secondAttribute="centerY" id="dmR-nz-FN6"/>
+                                        <constraint firstItem="Ik1-M4-ScX" firstAttribute="centerY" secondItem="Tb6-k3-Zf1" secondAttribute="centerY" id="leu-J0-pTG"/>
+                                        <constraint firstAttribute="height" constant="64" id="otO-T4-Pwt"/>
+                                        <constraint firstItem="YpB-af-kFd" firstAttribute="leading" secondItem="Tb6-k3-Zf1" secondAttribute="leading" constant="15" id="rrg-lL-lJa"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeB-K1-sCG" userLabel="Parking View">
+                                    <rect key="frame" x="0.0" y="64" width="414" height="152"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Slf-ex-yb3" userLabel="Car Number View">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите номер машины" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyY-tw-dy7" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="20" width="135.5" height="14"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" red="0.50980392156862742" green="0.50196078431372548" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.enterCarNumber"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите номер машины" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uzp-49-L9g" customClass="TextFieldWithCustomPlaceholder" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="40" width="384" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="RH6-Yx-dNu"/>
+                                                    </constraints>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceholderKey" value="C065MK77"/>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                            <color key="value" red="0.50980392156862742" green="0.50196078431372548" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QbJ-ZZ-TZA" userLabel="Divide View">
+                                                    <rect key="frame" x="15" y="68" width="384" height="1"/>
+                                                    <color key="backgroundColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="hxx-XZ-LNm"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="uzp-49-L9g" firstAttribute="top" secondItem="uyY-tw-dy7" secondAttribute="bottom" constant="6" id="Cyg-Gh-umN"/>
+                                                <constraint firstAttribute="trailing" secondItem="QbJ-ZZ-TZA" secondAttribute="trailing" constant="15" id="H4S-cH-6JA"/>
+                                                <constraint firstAttribute="trailing" secondItem="uzp-49-L9g" secondAttribute="trailing" constant="15" id="aNL-Ii-Qgw"/>
+                                                <constraint firstItem="uyY-tw-dy7" firstAttribute="top" secondItem="Slf-ex-yb3" secondAttribute="top" constant="20" id="eeh-7Y-gZn"/>
+                                                <constraint firstItem="uzp-49-L9g" firstAttribute="leading" secondItem="Slf-ex-yb3" secondAttribute="leading" constant="15" id="guq-Iu-RgV"/>
+                                                <constraint firstItem="QbJ-ZZ-TZA" firstAttribute="leading" secondItem="Slf-ex-yb3" secondAttribute="leading" constant="15" id="jd7-PR-kkv"/>
+                                                <constraint firstItem="uyY-tw-dy7" firstAttribute="leading" secondItem="Slf-ex-yb3" secondAttribute="leading" constant="15" id="nSe-U2-j8w"/>
+                                                <constraint firstAttribute="bottom" secondItem="QbJ-ZZ-TZA" secondAttribute="bottom" id="oKS-m9-qbs"/>
+                                                <constraint firstAttribute="height" constant="69" id="v6E-so-glJ"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oif-kL-pj3" userLabel="Parking Payment View">
+                                            <rect key="frame" x="0.0" y="69" width="414" height="83"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Оплата паркинга" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQP-DD-EHO" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="15" width="96" height="14"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.parkingPayment"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a63-jk-GlJ" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="34" width="73" height="24"/>
+                                                    <color key="backgroundColor" name="Gold"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                                    <state key="normal" title="Жителем">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.parkingPaymentResident"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="residentPayment:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ip6-sS-PQO"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6a-Jt-KcM" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="93" y="34" width="61" height="24"/>
+                                                    <color key="backgroundColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                    <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                                    <state key="normal" title="Гостем">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.parkingPaymentGuest"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="guestPayment:" destination="iN0-l3-epB" eventType="touchUpInside" id="fKJ-WY-nhf"/>
+                                                    </connections>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ouq-cV-4ix" userLabel="Divide View">
+                                                    <rect key="frame" x="15" y="82" width="384" height="1"/>
+                                                    <color key="backgroundColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="knf-Mv-03l"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ouq-cV-4ix" secondAttribute="bottom" id="7GZ-gL-r7x"/>
+                                                <constraint firstItem="u6a-Jt-KcM" firstAttribute="centerY" secondItem="a63-jk-GlJ" secondAttribute="centerY" id="FTr-5x-PYN"/>
+                                                <constraint firstItem="a63-jk-GlJ" firstAttribute="leading" secondItem="oif-kL-pj3" secondAttribute="leading" constant="15" id="LGf-rw-4wZ"/>
+                                                <constraint firstItem="ouq-cV-4ix" firstAttribute="leading" secondItem="oif-kL-pj3" secondAttribute="leading" constant="15" id="MBd-Ub-RVq"/>
+                                                <constraint firstItem="BQP-DD-EHO" firstAttribute="top" secondItem="oif-kL-pj3" secondAttribute="top" constant="15" id="VKX-KO-dUm"/>
+                                                <constraint firstItem="a63-jk-GlJ" firstAttribute="top" secondItem="BQP-DD-EHO" secondAttribute="bottom" constant="5" id="VQN-hc-aBp"/>
+                                                <constraint firstItem="BQP-DD-EHO" firstAttribute="leading" secondItem="oif-kL-pj3" secondAttribute="leading" constant="15" id="hI1-Ke-bNK"/>
+                                                <constraint firstAttribute="trailing" secondItem="ouq-cV-4ix" secondAttribute="trailing" constant="15" id="kQr-M2-KpT"/>
+                                                <constraint firstAttribute="height" constant="83" id="m7x-xp-Bso"/>
+                                                <constraint firstItem="u6a-Jt-KcM" firstAttribute="leading" secondItem="a63-jk-GlJ" secondAttribute="trailing" constant="5" id="zl6-Pj-uTU"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="oif-kL-pj3" firstAttribute="top" secondItem="Slf-ex-yb3" secondAttribute="bottom" id="6PE-Gt-cFw"/>
+                                        <constraint firstAttribute="trailing" secondItem="oif-kL-pj3" secondAttribute="trailing" id="MTm-4q-D8D"/>
+                                        <constraint firstAttribute="bottom" secondItem="oif-kL-pj3" secondAttribute="bottom" id="O8y-kT-zAw"/>
+                                        <constraint firstAttribute="trailing" secondItem="Slf-ex-yb3" secondAttribute="trailing" id="PK3-qf-FLI"/>
+                                        <constraint firstItem="Slf-ex-yb3" firstAttribute="top" secondItem="zeB-K1-sCG" secondAttribute="top" id="QIg-MC-6KB"/>
+                                        <constraint firstItem="oif-kL-pj3" firstAttribute="leading" secondItem="zeB-K1-sCG" secondAttribute="leading" id="W9q-Gt-gv3"/>
+                                        <constraint firstItem="Slf-ex-yb3" firstAttribute="leading" secondItem="zeB-K1-sCG" secondAttribute="leading" id="Yea-HD-IR9"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wt-9N-MKz" userLabel="Choose Date View">
+                                    <rect key="frame" x="0.0" y="216" width="414" height="64"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="1000" text="Дата посещения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4x-NK-whJ" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="15" width="384" height="14"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                            <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.dateOfVisit.title"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="21.10.2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUQ-Sg-SvL">
+                                            <rect key="frame" x="15" y="35" width="384" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ctm-Yw-3SF" userLabel="Divide View">
+                                            <rect key="frame" x="15" y="62" width="384" height="1"/>
+                                            <color key="backgroundColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="LMq-GH-Dyq"/>
+                                            </constraints>
+                                        </view>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accessory_right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="brl-aQ-rqR">
+                                            <rect key="frame" x="378" y="36" width="15" height="15"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstItem="brl-aQ-rqR" firstAttribute="centerY" secondItem="eUQ-Sg-SvL" secondAttribute="centerY" id="3SF-ho-Vof"/>
+                                        <constraint firstItem="eUQ-Sg-SvL" firstAttribute="top" secondItem="Y4x-NK-whJ" secondAttribute="bottom" constant="6" id="7hi-T1-NFw"/>
+                                        <constraint firstItem="Y4x-NK-whJ" firstAttribute="top" secondItem="2wt-9N-MKz" secondAttribute="top" constant="15" id="Pp8-f3-P8J"/>
+                                        <constraint firstItem="Y4x-NK-whJ" firstAttribute="leading" secondItem="2wt-9N-MKz" secondAttribute="leading" constant="15" id="Rhd-9f-8co"/>
+                                        <constraint firstItem="Ctm-Yw-3SF" firstAttribute="leading" secondItem="2wt-9N-MKz" secondAttribute="leading" constant="15" id="TSl-o8-iOo"/>
+                                        <constraint firstAttribute="trailing" secondItem="brl-aQ-rqR" secondAttribute="trailing" constant="21" id="YJj-Cr-F0F"/>
+                                        <constraint firstAttribute="trailing" secondItem="eUQ-Sg-SvL" secondAttribute="trailing" constant="15" id="ZCX-2x-m25"/>
+                                        <constraint firstAttribute="bottom" secondItem="Ctm-Yw-3SF" secondAttribute="bottom" constant="1" id="aJ0-5h-Rrq"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ctm-Yw-3SF" secondAttribute="trailing" constant="15" id="cgr-AU-9qP"/>
+                                        <constraint firstItem="eUQ-Sg-SvL" firstAttribute="leading" secondItem="2wt-9N-MKz" secondAttribute="leading" constant="15" id="fTV-lF-OnC"/>
+                                        <constraint firstAttribute="height" constant="64" id="tem-3e-Pj6"/>
+                                        <constraint firstAttribute="trailing" secondItem="Y4x-NK-whJ" secondAttribute="trailing" constant="15" id="zx5-uA-pIa"/>
+                                    </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="61b-UJ-VOW" appends="YES" id="w85-7O-Ilc"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBn-QS-ZEe" userLabel="Choose Entrance View">
+                                    <rect key="frame" x="0.0" y="280" width="414" height="64"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="1000" text="Вход" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8D-sj-dNT" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="15" width="384" height="14"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                            <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.entrance.title"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Парадный" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gto-LO-7tX" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="35" width="384" height="16.5"/>
+                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.entrance.front"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOA-2I-BJ8" userLabel="Divide View">
+                                            <rect key="frame" x="15" y="62" width="384" height="1"/>
+                                            <color key="backgroundColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="OAd-CU-bvv"/>
+                                            </constraints>
+                                        </view>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accessory_right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="hoX-eo-1n4">
+                                            <rect key="frame" x="378" y="36" width="15" height="15"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstItem="Gto-LO-7tX" firstAttribute="leading" secondItem="bBn-QS-ZEe" secondAttribute="leading" constant="15" id="2di-cD-WiX"/>
+                                        <constraint firstAttribute="trailing" secondItem="HOA-2I-BJ8" secondAttribute="trailing" constant="15" id="70H-BI-fmP"/>
+                                        <constraint firstAttribute="height" constant="64" id="B77-pW-dsM"/>
+                                        <constraint firstAttribute="trailing" secondItem="Gto-LO-7tX" secondAttribute="trailing" constant="15" id="FJt-zl-01p"/>
+                                        <constraint firstItem="hoX-eo-1n4" firstAttribute="centerY" secondItem="Gto-LO-7tX" secondAttribute="centerY" id="Q5U-EH-M90"/>
+                                        <constraint firstItem="V8D-sj-dNT" firstAttribute="leading" secondItem="bBn-QS-ZEe" secondAttribute="leading" constant="15" id="Qyb-8T-TLO"/>
+                                        <constraint firstAttribute="bottom" secondItem="HOA-2I-BJ8" secondAttribute="bottom" constant="1" id="RON-Af-Olb"/>
+                                        <constraint firstAttribute="trailing" secondItem="hoX-eo-1n4" secondAttribute="trailing" constant="21" id="YGY-Mi-11t"/>
+                                        <constraint firstAttribute="trailing" secondItem="V8D-sj-dNT" secondAttribute="trailing" constant="15" id="b7g-Bv-h4m"/>
+                                        <constraint firstItem="V8D-sj-dNT" firstAttribute="top" secondItem="bBn-QS-ZEe" secondAttribute="top" constant="15" id="eeF-U7-cqS"/>
+                                        <constraint firstItem="HOA-2I-BJ8" firstAttribute="leading" secondItem="bBn-QS-ZEe" secondAttribute="leading" constant="15" id="lqB-cY-GvW"/>
+                                        <constraint firstItem="Gto-LO-7tX" firstAttribute="top" secondItem="V8D-sj-dNT" secondAttribute="bottom" constant="6" id="xKS-ue-fu6"/>
+                                    </constraints>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="uP8-55-0eC" appends="YES" id="62N-oZ-0lG"/>
+                                    </connections>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xf-Ss-VRQ" userLabel="Comment View">
+                                    <rect key="frame" x="0.0" y="344" width="414" height="64"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Комментарий" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dtQ-aB-uTl" customClass="TextFieldWithCustomPlaceholder" customModule="PrimePark" customModuleProvider="target">
+                                            <rect key="frame" x="15" y="17" width="384" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="gWg-BG-nOP"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                    <color key="value" red="0.50980392156862742" green="0.50196078431372548" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedPlaceholderKey" value="createPass.comment.placeholder"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="64" id="0ur-eT-HxH"/>
+                                        <constraint firstAttribute="trailing" secondItem="dtQ-aB-uTl" secondAttribute="trailing" constant="15" id="AcD-L4-ZYL"/>
+                                        <constraint firstItem="dtQ-aB-uTl" firstAttribute="centerY" secondItem="8xf-Ss-VRQ" secondAttribute="centerY" id="Oq5-1u-D8x"/>
+                                        <constraint firstItem="dtQ-aB-uTl" firstAttribute="leading" secondItem="8xf-Ss-VRQ" secondAttribute="leading" constant="15" id="VHq-ZW-eQ3"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIa-ZZ-Of4" userLabel="Guests View">
+                                    <rect key="frame" x="0.0" y="408" width="414" height="440.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gh0-Zu-LFa" userLabel="Title View">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="78.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="1000" text="Гости" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Gp-VS-OLu" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="50" width="54" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.guests.title"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjc-bY-w72">
+                                                    <rect key="frame" x="375" y="50" width="24" height="24"/>
+                                                    <state key="normal" backgroundImage="add_guest"/>
+                                                    <connections>
+                                                        <action selector="addGuest:" destination="iN0-l3-epB" eventType="touchUpInside" id="acy-rj-iSE"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="1Gp-VS-OLu" firstAttribute="top" secondItem="Gh0-Zu-LFa" secondAttribute="top" constant="50" id="7ni-PB-eh1"/>
+                                                <constraint firstItem="pjc-bY-w72" firstAttribute="centerY" secondItem="1Gp-VS-OLu" secondAttribute="centerY" id="GMB-Ys-D0r"/>
+                                                <constraint firstItem="1Gp-VS-OLu" firstAttribute="leading" secondItem="Gh0-Zu-LFa" secondAttribute="leading" constant="15" id="Skm-Hh-qVR"/>
+                                                <constraint firstAttribute="trailing" secondItem="pjc-bY-w72" secondAttribute="trailing" constant="15" id="UqV-5d-hvR"/>
+                                                <constraint firstAttribute="bottom" secondItem="1Gp-VS-OLu" secondAttribute="bottom" constant="5" id="vjv-cl-Jy1"/>
+                                            </constraints>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="IPK-9h-E2O" appends="YES" id="MmF-4X-5oY"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxJ-YF-vz1">
+                                            <rect key="frame" x="0.0" y="78.5" width="414" height="362"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lxo-2P-nEu" userLabel="No guest View" customClass="RoundedView" customModule="PrimePark" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="5" width="384" height="67"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_pass" translatesAutoresizingMaskIntoConstraints="NO" id="tp7-gK-YMd">
+                                                            <rect key="frame" x="15" y="11" width="44" height="45"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Гость 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUt-Bi-GCk" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                                            <rect key="frame" x="69" y="24" width="56" height="19"/>
+                                                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.addGuest.title"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p84-yn-58A" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                                                            <rect key="frame" x="287" y="18.5" width="82" height="30"/>
+                                                            <color key="backgroundColor" name="Gold"/>
+                                                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                                                            <inset key="contentEdgeInsets" minX="10" minY="6" maxX="10" maxY="6"/>
+                                                            <state key="normal" title="Выбрать">
+                                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </state>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="14"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.choodeGuestButton.title"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <action selector="addGuest:" destination="iN0-l3-epB" eventType="touchUpInside" id="llx-oM-GO0"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="tp7-gK-YMd" firstAttribute="leading" secondItem="Lxo-2P-nEu" secondAttribute="leading" constant="15" id="AZd-gB-pcv"/>
+                                                        <constraint firstItem="p84-yn-58A" firstAttribute="centerY" secondItem="Lxo-2P-nEu" secondAttribute="centerY" id="Ba5-Gt-dMk"/>
+                                                        <constraint firstItem="tp7-gK-YMd" firstAttribute="centerY" secondItem="Lxo-2P-nEu" secondAttribute="centerY" id="MRJ-2I-yzs"/>
+                                                        <constraint firstAttribute="height" constant="67" id="OmM-Ep-Ge0"/>
+                                                        <constraint firstAttribute="trailing" secondItem="p84-yn-58A" secondAttribute="trailing" constant="15" id="PgK-uh-hid"/>
+                                                        <constraint firstItem="PUt-Bi-GCk" firstAttribute="leading" secondItem="tp7-gK-YMd" secondAttribute="trailing" constant="10" id="UuO-O4-uS1"/>
+                                                        <constraint firstItem="PUt-Bi-GCk" firstAttribute="centerY" secondItem="Lxo-2P-nEu" secondAttribute="centerY" id="tAe-Ww-yPU"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="M0x-rd-YK9">
+                                                    <rect key="frame" x="15" y="0.0" width="384" height="357"/>
+                                                    <subviews>
+                                                        <view hidden="YES" tag="200" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6o-yD-JmW" userLabel="Guest1 View" customClass="RoundedView" customModule="PrimePark" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="0.0"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" image="chat_pass" translatesAutoresizingMaskIntoConstraints="NO" id="QrI-G3-PHy">
+                                                                    <rect key="frame" x="15" y="-22.5" width="44" height="45"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="210" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Иванов И.И." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cT-Sd-gJy">
+                                                                    <rect key="frame" x="69" y="15" width="92.5" height="19"/>
+                                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="220" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+7 999 999 99 92" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPN-8v-LYv">
+                                                                    <rect key="frame" x="74" y="39" width="94" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" tag="230" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ri6-ac-Kdx">
+                                                                    <rect key="frame" x="306" y="-12" width="24" height="24"/>
+                                                                    <state key="normal" backgroundImage="delete_guest"/>
+                                                                    <connections>
+                                                                        <action selector="deleteGuest:" destination="iN0-l3-epB" eventType="touchUpInside" id="02l-fw-HTL"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstItem="Ri6-ac-Kdx" firstAttribute="centerY" secondItem="r6o-yD-JmW" secondAttribute="centerY" id="0DJ-lj-aev"/>
+                                                                <constraint firstItem="4cT-Sd-gJy" firstAttribute="leading" secondItem="QrI-G3-PHy" secondAttribute="trailing" constant="10" id="6qD-aB-3sR"/>
+                                                                <constraint firstItem="SPN-8v-LYv" firstAttribute="leading" secondItem="QrI-G3-PHy" secondAttribute="trailing" constant="15" id="8yw-pX-1zf"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Ri6-ac-Kdx" secondAttribute="trailing" constant="15" id="KsW-UX-etr"/>
+                                                                <constraint firstItem="4cT-Sd-gJy" firstAttribute="top" secondItem="r6o-yD-JmW" secondAttribute="top" constant="15" id="Oaw-wK-pVN"/>
+                                                                <constraint firstItem="SPN-8v-LYv" firstAttribute="top" secondItem="4cT-Sd-gJy" secondAttribute="bottom" constant="5" id="gAe-HI-N7M"/>
+                                                                <constraint firstItem="QrI-G3-PHy" firstAttribute="leading" secondItem="r6o-yD-JmW" secondAttribute="leading" constant="15" id="hCP-jb-551"/>
+                                                                <constraint firstItem="QrI-G3-PHy" firstAttribute="centerY" secondItem="r6o-yD-JmW" secondAttribute="centerY" id="lwd-UA-Ode"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <view hidden="YES" tag="201" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWu-ij-sMg" userLabel="Guest2 View" customClass="RoundedView" customModule="PrimePark" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="0.0"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_pass" translatesAutoresizingMaskIntoConstraints="NO" id="66i-lu-T1s">
+                                                                    <rect key="frame" x="15" y="-22.5" width="44" height="45"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="211" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Иванов И.И." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GV6-yP-GCk">
+                                                                    <rect key="frame" x="69" y="15" width="92.5" height="19"/>
+                                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="221" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+7 999 999 99 92" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paC-aV-4Sv">
+                                                                    <rect key="frame" x="74" y="39" width="94" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" tag="231" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGv-SS-dOP">
+                                                                    <rect key="frame" x="306" y="-12" width="24" height="24"/>
+                                                                    <state key="normal" backgroundImage="delete_guest"/>
+                                                                    <connections>
+                                                                        <action selector="deleteGuest:" destination="iN0-l3-epB" eventType="touchUpInside" id="UbS-ks-UZx"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstItem="GV6-yP-GCk" firstAttribute="top" secondItem="oWu-ij-sMg" secondAttribute="top" constant="15" id="0U0-rp-ZhC"/>
+                                                                <constraint firstItem="66i-lu-T1s" firstAttribute="leading" secondItem="oWu-ij-sMg" secondAttribute="leading" constant="15" id="GR8-xB-vdY"/>
+                                                                <constraint firstItem="bGv-SS-dOP" firstAttribute="centerY" secondItem="oWu-ij-sMg" secondAttribute="centerY" id="cS1-b0-Lw0"/>
+                                                                <constraint firstItem="GV6-yP-GCk" firstAttribute="leading" secondItem="66i-lu-T1s" secondAttribute="trailing" constant="10" id="eSx-5d-kym"/>
+                                                                <constraint firstItem="66i-lu-T1s" firstAttribute="centerY" secondItem="oWu-ij-sMg" secondAttribute="centerY" id="hQ8-5P-dce"/>
+                                                                <constraint firstAttribute="trailing" secondItem="bGv-SS-dOP" secondAttribute="trailing" constant="15" id="iNB-u6-f1E"/>
+                                                                <constraint firstItem="paC-aV-4Sv" firstAttribute="top" secondItem="GV6-yP-GCk" secondAttribute="bottom" constant="5" id="tg2-sD-F2X"/>
+                                                                <constraint firstItem="paC-aV-4Sv" firstAttribute="leading" secondItem="66i-lu-T1s" secondAttribute="trailing" constant="15" id="yYL-9K-UwZ"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <view hidden="YES" tag="202" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zo4-YL-QEL" userLabel="Guest3 View" customClass="RoundedView" customModule="PrimePark" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="0.0"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_pass" translatesAutoresizingMaskIntoConstraints="NO" id="r9b-hQ-K5l">
+                                                                    <rect key="frame" x="15" y="-22.5" width="44" height="45"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="212" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Иванов И.И." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETb-ls-MZq">
+                                                                    <rect key="frame" x="69" y="15" width="92.5" height="19"/>
+                                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="222" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+7 999 999 99 92" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yai-9w-qGB">
+                                                                    <rect key="frame" x="74" y="39" width="94" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" tag="232" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7W-ky-Myc">
+                                                                    <rect key="frame" x="306" y="-12" width="24" height="24"/>
+                                                                    <state key="normal" backgroundImage="delete_guest"/>
+                                                                    <connections>
+                                                                        <action selector="deleteGuest:" destination="iN0-l3-epB" eventType="touchUpInside" id="N5m-Xj-nk5"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstItem="I7W-ky-Myc" firstAttribute="centerY" secondItem="Zo4-YL-QEL" secondAttribute="centerY" id="9N6-Hb-H4O"/>
+                                                                <constraint firstItem="yai-9w-qGB" firstAttribute="top" secondItem="ETb-ls-MZq" secondAttribute="bottom" constant="5" id="9PZ-eB-CQ3"/>
+                                                                <constraint firstItem="r9b-hQ-K5l" firstAttribute="centerY" secondItem="Zo4-YL-QEL" secondAttribute="centerY" id="DoI-TT-9AP"/>
+                                                                <constraint firstItem="ETb-ls-MZq" firstAttribute="top" secondItem="Zo4-YL-QEL" secondAttribute="top" constant="15" id="Uqa-9T-u0u"/>
+                                                                <constraint firstAttribute="trailing" secondItem="I7W-ky-Myc" secondAttribute="trailing" constant="15" id="W1v-PU-AvH"/>
+                                                                <constraint firstItem="yai-9w-qGB" firstAttribute="leading" secondItem="r9b-hQ-K5l" secondAttribute="trailing" constant="15" id="Wmq-2r-v1d"/>
+                                                                <constraint firstItem="ETb-ls-MZq" firstAttribute="leading" secondItem="r9b-hQ-K5l" secondAttribute="trailing" constant="10" id="m2a-yD-Yl1"/>
+                                                                <constraint firstItem="r9b-hQ-K5l" firstAttribute="leading" secondItem="Zo4-YL-QEL" secondAttribute="leading" constant="15" id="p4x-pa-LhZ"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <view hidden="YES" tag="203" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7HS-sJ-h9F" userLabel="Guest4 View" customClass="RoundedView" customModule="PrimePark" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="0.0"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_pass" translatesAutoresizingMaskIntoConstraints="NO" id="dTJ-wF-uoq">
+                                                                    <rect key="frame" x="15" y="-22.5" width="44" height="45"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="213" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Иванов И.И." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bw-vC-xTi">
+                                                                    <rect key="frame" x="69" y="15" width="92.5" height="19"/>
+                                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="223" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+7 999 999 99 92" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNd-CF-w16">
+                                                                    <rect key="frame" x="74" y="39" width="94" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" tag="233" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vn7-dz-1r7">
+                                                                    <rect key="frame" x="306" y="-12" width="24" height="24"/>
+                                                                    <state key="normal" backgroundImage="delete_guest"/>
+                                                                    <connections>
+                                                                        <action selector="deleteGuest:" destination="iN0-l3-epB" eventType="touchUpInside" id="oVJ-GG-zMe"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstItem="dTJ-wF-uoq" firstAttribute="leading" secondItem="7HS-sJ-h9F" secondAttribute="leading" constant="15" id="5oz-Mt-GBh"/>
+                                                                <constraint firstItem="9bw-vC-xTi" firstAttribute="leading" secondItem="dTJ-wF-uoq" secondAttribute="trailing" constant="10" id="BDE-vH-Ltd"/>
+                                                                <constraint firstItem="eNd-CF-w16" firstAttribute="top" secondItem="9bw-vC-xTi" secondAttribute="bottom" constant="5" id="CAe-cP-avw"/>
+                                                                <constraint firstItem="Vn7-dz-1r7" firstAttribute="centerY" secondItem="7HS-sJ-h9F" secondAttribute="centerY" id="GEP-7O-9x5"/>
+                                                                <constraint firstItem="eNd-CF-w16" firstAttribute="leading" secondItem="dTJ-wF-uoq" secondAttribute="trailing" constant="15" id="UM6-az-Jdh"/>
+                                                                <constraint firstItem="dTJ-wF-uoq" firstAttribute="centerY" secondItem="7HS-sJ-h9F" secondAttribute="centerY" id="bNI-yn-GxC"/>
+                                                                <constraint firstItem="9bw-vC-xTi" firstAttribute="top" secondItem="7HS-sJ-h9F" secondAttribute="top" constant="15" id="oNg-P2-oSZ"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Vn7-dz-1r7" secondAttribute="trailing" constant="15" id="ryu-5L-MY1"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <view hidden="YES" tag="204" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54J-4e-MQ4" userLabel="Guest5 View" customClass="RoundedView" customModule="PrimePark" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="0.0"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_pass" translatesAutoresizingMaskIntoConstraints="NO" id="MCr-yH-TPW">
+                                                                    <rect key="frame" x="15" y="-22.5" width="44" height="45"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="214" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Иванов И.И." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkr-0B-HH0">
+                                                                    <rect key="frame" x="69" y="15" width="92.5" height="19"/>
+                                                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" tag="224" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+7 999 999 99 92" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9H-cO-VRp">
+                                                                    <rect key="frame" x="74" y="39" width="94" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                                                                    <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <button opaque="NO" tag="234" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzh-o0-leb">
+                                                                    <rect key="frame" x="306" y="-12" width="24" height="24"/>
+                                                                    <state key="normal" backgroundImage="delete_guest"/>
+                                                                    <connections>
+                                                                        <action selector="deleteGuest:" destination="iN0-l3-epB" eventType="touchUpInside" id="IqB-IJ-u3P"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstItem="O9H-cO-VRp" firstAttribute="leading" secondItem="MCr-yH-TPW" secondAttribute="trailing" constant="15" id="0pH-t8-EjF"/>
+                                                                <constraint firstItem="fkr-0B-HH0" firstAttribute="top" secondItem="54J-4e-MQ4" secondAttribute="top" constant="15" id="2OM-vn-9GF"/>
+                                                                <constraint firstItem="MCr-yH-TPW" firstAttribute="leading" secondItem="54J-4e-MQ4" secondAttribute="leading" constant="15" id="7wY-fy-Ugr"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Xzh-o0-leb" secondAttribute="trailing" constant="15" id="9Tx-jg-48u"/>
+                                                                <constraint firstItem="fkr-0B-HH0" firstAttribute="leading" secondItem="MCr-yH-TPW" secondAttribute="trailing" constant="10" id="UMo-Sr-pvN"/>
+                                                                <constraint firstItem="O9H-cO-VRp" firstAttribute="top" secondItem="fkr-0B-HH0" secondAttribute="bottom" constant="5" id="jFa-Dx-oO9"/>
+                                                                <constraint firstItem="Xzh-o0-leb" firstAttribute="centerY" secondItem="54J-4e-MQ4" secondAttribute="centerY" id="oxA-LM-G8u"/>
+                                                                <constraint firstItem="MCr-yH-TPW" firstAttribute="centerY" secondItem="54J-4e-MQ4" secondAttribute="centerY" id="sI7-UY-J62"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="10"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="M0x-rd-YK9" secondAttribute="trailing" constant="15" id="3V0-CE-cLt"/>
+                                                <constraint firstItem="M0x-rd-YK9" firstAttribute="top" secondItem="gxJ-YF-vz1" secondAttribute="top" id="AWa-1x-rpE"/>
+                                                <constraint firstAttribute="height" constant="362" id="FLH-xI-57v"/>
+                                                <constraint firstItem="Lxo-2P-nEu" firstAttribute="top" secondItem="gxJ-YF-vz1" secondAttribute="top" constant="5" id="FsN-us-MAO"/>
+                                                <constraint firstAttribute="trailing" secondItem="Lxo-2P-nEu" secondAttribute="trailing" constant="15" id="JjX-XN-ei0"/>
+                                                <constraint firstItem="Lxo-2P-nEu" firstAttribute="leading" secondItem="gxJ-YF-vz1" secondAttribute="leading" constant="15" id="NYQ-Mb-cdK"/>
+                                                <constraint firstAttribute="bottom" secondItem="M0x-rd-YK9" secondAttribute="bottom" constant="5" id="lQ7-9H-tjb"/>
+                                                <constraint firstItem="M0x-rd-YK9" firstAttribute="leading" secondItem="gxJ-YF-vz1" secondAttribute="leading" constant="15" id="pD2-42-256"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Gh0-Zu-LFa" secondAttribute="trailing" id="4Tx-Rm-8sG"/>
+                                        <constraint firstItem="Gh0-Zu-LFa" firstAttribute="top" secondItem="zIa-ZZ-Of4" secondAttribute="top" id="Qa7-Yc-Xl7"/>
+                                        <constraint firstItem="gxJ-YF-vz1" firstAttribute="leading" secondItem="zIa-ZZ-Of4" secondAttribute="leading" id="gwR-5a-wwl"/>
+                                        <constraint firstAttribute="bottom" secondItem="gxJ-YF-vz1" secondAttribute="bottom" id="sff-d6-iR3"/>
+                                        <constraint firstItem="Gh0-Zu-LFa" firstAttribute="leading" secondItem="zIa-ZZ-Of4" secondAttribute="leading" id="tKG-lb-dCk"/>
+                                        <constraint firstItem="gxJ-YF-vz1" firstAttribute="top" secondItem="Gh0-Zu-LFa" secondAttribute="bottom" id="vMa-tk-H1r"/>
+                                        <constraint firstAttribute="trailing" secondItem="gxJ-YF-vz1" secondAttribute="trailing" id="xn9-q5-0Y7"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="2wt-9N-MKz" firstAttribute="top" secondItem="Slf-ex-yb3" secondAttribute="bottom" priority="999" id="2OG-DB-fMB"/>
+                                <constraint firstAttribute="trailing" secondItem="8xf-Ss-VRQ" secondAttribute="trailing" id="Aw6-2d-d6R"/>
+                                <constraint firstAttribute="trailing" secondItem="2wt-9N-MKz" secondAttribute="trailing" id="Bcd-Bm-0H6"/>
+                                <constraint firstItem="2wt-9N-MKz" firstAttribute="leading" secondItem="vfJ-w1-8sx" secondAttribute="leading" id="Gk4-S9-oId"/>
+                                <constraint firstItem="2wt-9N-MKz" firstAttribute="top" secondItem="zeB-K1-sCG" secondAttribute="bottom" id="Hex-v1-CUO"/>
+                                <constraint firstItem="zIa-ZZ-Of4" firstAttribute="leading" secondItem="vfJ-w1-8sx" secondAttribute="leading" id="Jpu-93-DXE"/>
+                                <constraint firstItem="zeB-K1-sCG" firstAttribute="top" secondItem="Tb6-k3-Zf1" secondAttribute="bottom" id="Nop-Sr-GOJ"/>
+                                <constraint firstItem="8xf-Ss-VRQ" firstAttribute="top" secondItem="bBn-QS-ZEe" secondAttribute="bottom" id="O0f-QF-Sv4"/>
+                                <constraint firstItem="Tb6-k3-Zf1" firstAttribute="leading" secondItem="vfJ-w1-8sx" secondAttribute="leading" id="OqI-R8-3BX"/>
+                                <constraint firstItem="Tb6-k3-Zf1" firstAttribute="top" secondItem="vfJ-w1-8sx" secondAttribute="top" id="QSt-2A-BLi"/>
+                                <constraint firstAttribute="bottom" secondItem="zIa-ZZ-Of4" secondAttribute="bottom" id="RQp-ll-pHy"/>
+                                <constraint firstItem="bBn-QS-ZEe" firstAttribute="leading" secondItem="vfJ-w1-8sx" secondAttribute="leading" id="Svn-aX-IXd"/>
+                                <constraint firstItem="2wt-9N-MKz" firstAttribute="top" secondItem="vfJ-w1-8sx" secondAttribute="top" priority="998" id="ZlN-rd-zts"/>
+                                <constraint firstAttribute="trailing" secondItem="zeB-K1-sCG" secondAttribute="trailing" id="c15-7y-mzf"/>
+                                <constraint firstAttribute="trailing" secondItem="Tb6-k3-Zf1" secondAttribute="trailing" id="cUu-Wc-UTR"/>
+                                <constraint firstAttribute="trailing" secondItem="zIa-ZZ-Of4" secondAttribute="trailing" id="gHS-IV-3iz"/>
+                                <constraint firstItem="bBn-QS-ZEe" firstAttribute="top" secondItem="2wt-9N-MKz" secondAttribute="bottom" id="mYd-eC-Sa4"/>
+                                <constraint firstItem="bBn-QS-ZEe" firstAttribute="top" secondItem="vfJ-w1-8sx" secondAttribute="top" priority="999" id="msv-4A-6Oo"/>
+                                <constraint firstAttribute="trailing" secondItem="bBn-QS-ZEe" secondAttribute="trailing" id="r8W-p5-KtU"/>
+                                <constraint firstItem="zIa-ZZ-Of4" firstAttribute="top" secondItem="8xf-Ss-VRQ" secondAttribute="bottom" id="rDe-Ft-G1Q"/>
+                                <constraint firstItem="zeB-K1-sCG" firstAttribute="leading" secondItem="vfJ-w1-8sx" secondAttribute="leading" id="v4k-3j-j8J"/>
+                                <constraint firstItem="2wt-9N-MKz" firstAttribute="top" secondItem="Tb6-k3-Zf1" secondAttribute="bottom" priority="999" id="wr7-rD-cHR"/>
+                                <constraint firstItem="8xf-Ss-VRQ" firstAttribute="leading" secondItem="vfJ-w1-8sx" secondAttribute="leading" id="xed-fV-Pz8"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="vfJ-w1-8sx" firstAttribute="width" secondItem="mH7-hx-Qgc" secondAttribute="width" id="25v-c4-Cnc"/>
+                        <constraint firstAttribute="trailing" secondItem="vfJ-w1-8sx" secondAttribute="trailing" id="7Lq-BN-8bH"/>
+                        <constraint firstAttribute="bottom" secondItem="vfJ-w1-8sx" secondAttribute="bottom" id="FdU-rY-GTa"/>
+                        <constraint firstItem="vfJ-w1-8sx" firstAttribute="top" secondItem="mH7-hx-Qgc" secondAttribute="top" id="Rqp-wv-e3g"/>
+                        <constraint firstItem="vfJ-w1-8sx" firstAttribute="leading" secondItem="mH7-hx-Qgc" secondAttribute="leading" id="z7M-y6-eah"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNj-v5-IWi" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="15" y="787" width="384" height="45"/>
+                    <color key="backgroundColor" name="Gold"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="13" maxX="0.0" maxY="13"/>
+                    <state key="normal" title="Заказать пропуск">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="createPass.passOrderButton.title"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="orderThePass:" destination="iN0-l3-epB" eventType="touchUpInside" id="CTM-WF-PkD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mH7-hx-Qgc" secondAttribute="bottom" id="0kN-2B-nf9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UzQ-nk-l3J" secondAttribute="trailing" id="Fa8-VP-1lg"/>
+                <constraint firstItem="QxJ-W3-lzh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Qcs-HO-FVr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MNj-v5-IWi" secondAttribute="trailing" constant="15" id="XAe-xU-0Ou"/>
+                <constraint firstItem="UzQ-nk-l3J" firstAttribute="top" secondItem="QxJ-W3-lzh" secondAttribute="bottom" id="Xfn-sM-Iek"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QxJ-W3-lzh" secondAttribute="trailing" id="Zpl-IA-Af9"/>
+                <constraint firstItem="QxJ-W3-lzh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eHD-pN-w4K"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="MNj-v5-IWi" secondAttribute="bottom" constant="30" id="g5o-Zb-oE1"/>
+                <constraint firstItem="UzQ-nk-l3J" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gik-mo-Sbc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mH7-hx-Qgc" secondAttribute="trailing" id="k91-QX-XK6"/>
+                <constraint firstItem="MNj-v5-IWi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="nFc-Zh-mxu"/>
+                <constraint firstItem="mH7-hx-Qgc" firstAttribute="top" secondItem="UzQ-nk-l3J" secondAttribute="bottom" id="r0o-jj-nMf"/>
+                <constraint firstItem="mH7-hx-Qgc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="wQH-Dw-hzP"/>
+            </constraints>
+            <connections>
+                <outlet property="carNumberBottomToTopDate" destination="2OG-DB-fMB" id="eGw-Zi-dhB"/>
+                <outlet property="carNumberTextField" destination="uzp-49-L9g" id="sdE-MD-4ro"/>
+                <outlet property="chooseDateView" destination="2wt-9N-MKz" id="gCA-1j-Rb9"/>
+                <outlet property="commentTextField" destination="dtQ-aB-uTl" id="wfx-rY-2q8"/>
+                <outlet property="createPassButton" destination="MNj-v5-IWi" id="VM6-Ne-t5r"/>
+                <outlet property="dateLabel" destination="eUQ-Sg-SvL" id="hjz-xN-H43"/>
+                <outlet property="dateTitleLabel" destination="Y4x-NK-whJ" id="fss-Pp-V0F"/>
+                <outlet property="dateToNeedParkingConstraint" destination="wr7-rD-cHR" id="apM-g0-BfX"/>
+                <outlet property="dateToParkingDetailTopConstraint" destination="Hex-v1-CUO" id="hc8-yv-iTe"/>
+                <outlet property="dateToTypeConstraint" destination="ZlN-rd-zts" id="OTR-mn-39R"/>
+                <outlet property="entranceLabel" destination="Gto-LO-7tX" id="UyW-CP-WYJ"/>
+                <outlet property="entranceToDateTopConstraint" destination="mYd-eC-Sa4" id="Eoi-DN-CpV"/>
+                <outlet property="entranceToTypeTopConstraint" destination="msv-4A-6Oo" id="HqT-vg-T7c"/>
+                <outlet property="guestButton" destination="u6a-Jt-KcM" id="O4I-Pe-pDn"/>
+                <outlet property="guestsStackView" destination="M0x-rd-YK9" id="dmw-bW-AWG"/>
+                <outlet property="guestsViewHeightConstraint" destination="FLH-xI-57v" id="rHg-ej-dmU"/>
+                <outlet property="needParkingSwitch" destination="Wjq-c6-X8W" id="2Sv-Ha-pRP"/>
+                <outlet property="needParkingView" destination="Tb6-k3-Zf1" id="5WZ-Ny-Mdw"/>
+                <outlet property="noGuestView" destination="Lxo-2P-nEu" id="aju-gW-oxe"/>
+                <outlet property="oneDayButton" destination="pyz-yo-yct" id="D1f-ol-M0X"/>
+                <outlet property="oneTimeButton" destination="29K-zK-JGt" id="xrs-On-mq2"/>
+                <outlet property="parkingBottomToDateTop" destination="Hex-v1-CUO" id="xgq-2K-oIE"/>
+                <outlet property="parkingDetailView" destination="zeB-K1-sCG" id="ZPY-q3-fGh"/>
+                <outlet property="permanentButton" destination="cI1-hp-Zu7" id="IE4-eQ-oYJ"/>
+                <outlet property="residentButton" destination="a63-jk-GlJ" id="h4M-BL-5Yy"/>
+                <outlet property="scrollView" destination="mH7-hx-Qgc" id="PT7-Lb-3B0"/>
+                <outlet property="temporaryButton" destination="xnM-A4-ZFF" id="yYl-wR-rD5"/>
+                <outletCollection property="guestViews" destination="r6o-yD-JmW" collectionClass="NSMutableArray" id="Ayf-rX-d1G"/>
+                <outletCollection property="nameLabels" destination="4cT-Sd-gJy" collectionClass="NSMutableArray" id="cFU-Tf-7wo"/>
+                <outletCollection property="phoneLabels" destination="SPN-8v-LYv" collectionClass="NSMutableArray" id="RiC-lo-4ng"/>
+                <outletCollection property="guestViews" destination="oWu-ij-sMg" collectionClass="NSMutableArray" id="0wS-51-xCZ"/>
+                <outletCollection property="nameLabels" destination="GV6-yP-GCk" collectionClass="NSMutableArray" id="zYX-Qf-Mck"/>
+                <outletCollection property="guestViews" destination="Zo4-YL-QEL" collectionClass="NSMutableArray" id="SsI-rv-4y6"/>
+                <outletCollection property="nameLabels" destination="ETb-ls-MZq" collectionClass="NSMutableArray" id="4ea-Cr-7vj"/>
+                <outletCollection property="guestViews" destination="7HS-sJ-h9F" collectionClass="NSMutableArray" id="5fy-Pq-1M7"/>
+                <outletCollection property="nameLabels" destination="9bw-vC-xTi" collectionClass="NSMutableArray" id="b9t-5u-393"/>
+                <outletCollection property="guestViews" destination="54J-4e-MQ4" collectionClass="NSMutableArray" id="j8D-Y5-xbQ"/>
+                <outletCollection property="nameLabels" destination="fkr-0B-HH0" collectionClass="NSMutableArray" id="x6s-4i-YkA"/>
+                <outletCollection property="phoneLabels" destination="paC-aV-4Sv" collectionClass="NSMutableArray" id="EfN-nh-ZtC"/>
+                <outletCollection property="phoneLabels" destination="yai-9w-qGB" collectionClass="NSMutableArray" id="tVK-sb-zLX"/>
+                <outletCollection property="phoneLabels" destination="eNd-CF-w16" collectionClass="NSMutableArray" id="KhG-ZM-MNs"/>
+                <outletCollection property="phoneLabels" destination="O9H-cO-VRp" collectionClass="NSMutableArray" id="6c8-ZA-532"/>
+            </connections>
+            <point key="canvasLocation" x="130.40000000000001" y="152.21674876847291"/>
+        </view>
+        <tapGestureRecognizer id="0ZU-Cw-rVF">
+            <connections>
+                <action selector="back:" destination="iN0-l3-epB" id="Xlk-QD-HZJ"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="61b-UJ-VOW">
+            <connections>
+                <action selector="chooseDate:" destination="iN0-l3-epB" id="Uyr-jh-fFx"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="uP8-55-0eC">
+            <connections>
+                <action selector="chooseEntrance:" destination="iN0-l3-epB" id="M1m-0S-QgI"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="IPK-9h-E2O">
+            <connections>
+                <action selector="tapGuests:" destination="iN0-l3-epB" id="NtR-hs-M7R"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <designables>
+        <designable name="1Gp-VS-OLu">
+            <size key="intrinsicContentSize" width="54" height="23.5"/>
+        </designable>
+        <designable name="BQP-DD-EHO">
+            <size key="intrinsicContentSize" width="96" height="14"/>
+        </designable>
+        <designable name="Gto-LO-7tX">
+            <size key="intrinsicContentSize" width="67.5" height="16.5"/>
+        </designable>
+        <designable name="Ik1-M4-ScX">
+            <size key="intrinsicContentSize" width="142.5" height="19"/>
+        </designable>
+        <designable name="PUt-Bi-GCk">
+            <size key="intrinsicContentSize" width="56" height="19"/>
+        </designable>
+        <designable name="V8D-sj-dNT">
+            <size key="intrinsicContentSize" width="28.5" height="14"/>
+        </designable>
+        <designable name="X2m-bG-YZg">
+            <size key="intrinsicContentSize" width="61" height="14"/>
+        </designable>
+        <designable name="Y4x-NK-whJ">
+            <size key="intrinsicContentSize" width="93.5" height="14"/>
+        </designable>
+        <designable name="ebL-hK-q2y">
+            <size key="intrinsicContentSize" width="115.5" height="19"/>
+        </designable>
+        <designable name="uyY-tw-dy7">
+            <size key="intrinsicContentSize" width="135.5" height="14"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="accessory_right_arrow" width="15" height="15"/>
+        <image name="add_guest" width="24" height="24"/>
+        <image name="back_button" width="11.5" height="20"/>
+        <image name="chat_pass" width="44" height="45"/>
+        <image name="delete_guest" width="24" height="24"/>
+        <image name="info_icon" width="20" height="20"/>
+        <namedColor name="Gold">
+            <color red="0.68599998950958252" green="0.59600001573562622" blue="0.49399998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

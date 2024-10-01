@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ValetTimerView" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKj-Az-8ec" userLabel="Timer View" customClass="ProgressTimeBar" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="25" y="188" width="364" height="364.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pt9-mX-T1W">
+                            <rect key="frame" x="112" y="151" width="140" height="62"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="55"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.054901960784313725" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="pt9-mX-T1W" firstAttribute="centerX" secondItem="fKj-Az-8ec" secondAttribute="centerX" id="ZI0-3r-Fnm"/>
+                        <constraint firstAttribute="width" secondItem="fKj-Az-8ec" secondAttribute="height" multiplier="1:1" id="oGp-wJ-oTP"/>
+                        <constraint firstItem="pt9-mX-T1W" firstAttribute="centerY" secondItem="fKj-Az-8ec" secondAttribute="centerY" id="veU-Ur-qof"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="timeLabel" destination="pt9-mX-T1W" id="J7z-wi-3fk"/>
+                    </connections>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время подачи машины" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYR-86-9OR">
+                    <rect key="frame" x="117" y="140" width="180" height="18"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                    <color key="textColor" red="0.50980392156862742" green="0.50196078431372548" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VKY-Cd-QBh" userLabel="Navigation View">
+                    <rect key="frame" x="0.0" y="44" width="414" height="55"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заявка на пропуск" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psB-l2-obS" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="136" y="17" width="142" height="18"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="Valet Order"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j5e-0W-fsg" userLabel="Back View">
+                            <rect key="frame" x="15" y="11" width="50" height="30"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_button" translatesAutoresizingMaskIntoConstraints="NO" id="Zou-cD-Pn9">
+                                    <rect key="frame" x="0.0" y="5" width="11.5" height="20"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstItem="Zou-cD-Pn9" firstAttribute="leading" secondItem="j5e-0W-fsg" secondAttribute="leading" id="8yZ-hx-DQ8"/>
+                                <constraint firstAttribute="bottom" secondItem="Zou-cD-Pn9" secondAttribute="bottom" constant="5" id="Ff4-4w-Wce"/>
+                                <constraint firstAttribute="width" constant="50" id="TVR-6M-P4X"/>
+                                <constraint firstItem="Zou-cD-Pn9" firstAttribute="top" secondItem="j5e-0W-fsg" secondAttribute="top" constant="5" id="clm-GX-pFz"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="hmw-KC-37a" appends="YES" id="3eq-E6-wfR"/>
+                            </connections>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOt-wD-duH">
+                            <rect key="frame" x="379" y="15" width="20" height="22"/>
+                            <state key="normal" image="info_icon"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PT2-6U-OWY">
+                            <rect key="frame" x="331" y="15" width="18" height="22"/>
+                            <state key="normal" image="call_concierge"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="IOt-wD-duH" firstAttribute="leading" secondItem="PT2-6U-OWY" secondAttribute="trailing" constant="30" id="0D0-pP-hMB"/>
+                        <constraint firstItem="psB-l2-obS" firstAttribute="top" secondItem="VKY-Cd-QBh" secondAttribute="top" constant="17" id="6W0-QD-4M1"/>
+                        <constraint firstItem="PT2-6U-OWY" firstAttribute="top" secondItem="IOt-wD-duH" secondAttribute="top" id="DW9-yl-dOJ"/>
+                        <constraint firstItem="j5e-0W-fsg" firstAttribute="centerY" secondItem="psB-l2-obS" secondAttribute="centerY" id="Dus-ut-FFT"/>
+                        <constraint firstItem="j5e-0W-fsg" firstAttribute="leading" secondItem="VKY-Cd-QBh" secondAttribute="leading" constant="15" id="U2V-gz-0Ga"/>
+                        <constraint firstItem="psB-l2-obS" firstAttribute="centerX" secondItem="VKY-Cd-QBh" secondAttribute="centerX" id="UJK-do-xob"/>
+                        <constraint firstAttribute="height" constant="55" id="ZD3-Eu-0n8"/>
+                        <constraint firstItem="IOt-wD-duH" firstAttribute="centerY" secondItem="psB-l2-obS" secondAttribute="centerY" id="ttg-2A-Ppe"/>
+                        <constraint firstAttribute="trailing" secondItem="IOt-wD-duH" secondAttribute="trailing" constant="15" id="u52-gg-cCi"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Md-lE-uD9" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="15" y="788" width="384" height="44"/>
+                    <color key="backgroundColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="13" maxX="0.0" maxY="13"/>
+                    <state key="normal" title="Остановить подачу">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="Остановить подачу"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="stopServe:" destination="iN0-l3-epB" eventType="touchUpInside" id="mw8-5v-ExH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkT-ME-Ikw" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="15" y="734" width="384" height="44"/>
+                    <color key="backgroundColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="13" maxX="0.0" maxY="13"/>
+                    <state key="normal" title="Изменить время">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="22"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="Изменить время"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="changeTime:" destination="iN0-l3-epB" eventType="touchUpInside" id="V8m-gZ-w6t"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.054902657870000003" green="0.05490069836" blue="0.054902039469999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0Md-lE-uD9" secondAttribute="trailing" constant="15" id="4s6-9M-dTl"/>
+                <constraint firstItem="VKY-Cd-QBh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ACx-OH-eRI"/>
+                <constraint firstItem="AYR-86-9OR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ALf-Ld-hi3"/>
+                <constraint firstItem="0Md-lE-uD9" firstAttribute="top" secondItem="lkT-ME-Ikw" secondAttribute="bottom" constant="10" id="Fk5-4H-dRP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lkT-ME-Ikw" secondAttribute="trailing" constant="15" id="NFw-L7-n49"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0Md-lE-uD9" secondAttribute="bottom" constant="30" id="Ne4-4N-6l2"/>
+                <constraint firstItem="fKj-Az-8ec" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.88" id="OBi-xc-B4b"/>
+                <constraint firstItem="fKj-Az-8ec" firstAttribute="top" secondItem="AYR-86-9OR" secondAttribute="bottom" constant="30" id="Zdv-LL-Zrt"/>
+                <constraint firstItem="fKj-Az-8ec" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dgZ-Wy-tv9"/>
+                <constraint firstItem="VKY-Cd-QBh" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="nsP-Dd-QRA"/>
+                <constraint firstItem="0Md-lE-uD9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="p77-DP-Al7"/>
+                <constraint firstItem="lkT-ME-Ikw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="par-Me-1KF"/>
+                <constraint firstItem="AYR-86-9OR" firstAttribute="top" secondItem="VKY-Cd-QBh" secondAttribute="bottom" constant="41" id="r6O-aJ-vFx"/>
+                <constraint firstItem="VKY-Cd-QBh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="uLt-s9-GhY"/>
+            </constraints>
+            <connections>
+                <outlet property="timerProgressBar" destination="fKj-Az-8ec" id="uMY-La-iPP"/>
+            </connections>
+            <point key="canvasLocation" x="-162.31884057971016" y="85.714285714285708"/>
+        </view>
+        <tapGestureRecognizer id="hmw-KC-37a" userLabel="tap back">
+            <connections>
+                <action selector="back:" destination="iN0-l3-epB" id="zbB-wl-Sxd"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <designables>
+        <designable name="psB-l2-obS">
+            <size key="intrinsicContentSize" width="142" height="18"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="back_button" width="11.5" height="20"/>
+        <image name="call_concierge" width="18" height="18"/>
+        <image name="info_icon" width="20" height="20"/>
+    </resources>
+</document>

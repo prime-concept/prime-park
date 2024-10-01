@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CounterView" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiz-s3-iNe" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="121" y="776" width="172" height="42"/>
+                    <color key="backgroundColor" red="0.70196078429999997" green="0.59607843140000005" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="25" minY="12" maxX="25" maxY="12"/>
+                    <state key="normal" title="Показать график">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7LL-eN-Rm0" userLabel="Navigation View">
+                    <rect key="frame" x="0.0" y="44" width="414" height="55"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заявка на пропуск" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jdd-sk-egG" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="136" y="17" width="142" height="19"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="Valet Order"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHA-rh-PFY" userLabel="Back View">
+                            <rect key="frame" x="15" y="11.5" width="50" height="30"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_button" translatesAutoresizingMaskIntoConstraints="NO" id="Xcc-fm-kj0">
+                                    <rect key="frame" x="0.0" y="5" width="11.5" height="20"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="3qj-MY-7pq"/>
+                                <constraint firstAttribute="bottom" secondItem="Xcc-fm-kj0" secondAttribute="bottom" constant="5" id="BFX-IX-4ZY"/>
+                                <constraint firstItem="Xcc-fm-kj0" firstAttribute="leading" secondItem="uHA-rh-PFY" secondAttribute="leading" id="MHF-D6-csB"/>
+                                <constraint firstItem="Xcc-fm-kj0" firstAttribute="top" secondItem="uHA-rh-PFY" secondAttribute="top" constant="5" id="fqX-RW-dZ2"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="T3u-Eq-wxd" appends="YES" id="ccx-He-Bvw"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="Ige-7J-xab"/>
+                        <constraint firstItem="Jdd-sk-egG" firstAttribute="top" secondItem="7LL-eN-Rm0" secondAttribute="top" constant="17" id="SDU-Gy-ZfB"/>
+                        <constraint firstItem="uHA-rh-PFY" firstAttribute="centerY" secondItem="Jdd-sk-egG" secondAttribute="centerY" id="SwA-Ch-FFk"/>
+                        <constraint firstItem="uHA-rh-PFY" firstAttribute="leading" secondItem="7LL-eN-Rm0" secondAttribute="leading" constant="15" id="oKo-4Z-6HJ"/>
+                        <constraint firstAttribute="height" constant="55" id="ro3-PH-1Vn"/>
+                        <constraint firstItem="Jdd-sk-egG" firstAttribute="centerX" secondItem="7LL-eN-Rm0" secondAttribute="centerX" id="scn-uG-wzj"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="9BT-Nu-K44">
+                    <rect key="frame" x="0.0" y="99" width="414" height="763"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7LL-eN-Rm0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="98f-KI-vGB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eiz-s3-iNe" secondAttribute="bottom" constant="44" id="AxI-Pq-rvo"/>
+                <constraint firstItem="7LL-eN-Rm0" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Jzj-mf-zNt"/>
+                <constraint firstItem="7LL-eN-Rm0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="U13-dg-rQJ"/>
+                <constraint firstItem="9BT-Nu-K44" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="b4s-Hf-5hq"/>
+                <constraint firstItem="7LL-eN-Rm0" firstAttribute="leading" secondItem="9BT-Nu-K44" secondAttribute="leading" id="bqH-jZ-bNf"/>
+                <constraint firstItem="7LL-eN-Rm0" firstAttribute="trailing" secondItem="9BT-Nu-K44" secondAttribute="trailing" id="hcD-2q-KRB"/>
+                <constraint firstItem="eiz-s3-iNe" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rA5-N6-Voe"/>
+                <constraint firstItem="9BT-Nu-K44" firstAttribute="top" secondItem="7LL-eN-Rm0" secondAttribute="bottom" id="tuj-j1-SaX"/>
+            </constraints>
+            <connections>
+                <outlet property="tableView" destination="9BT-Nu-K44" id="PIs-Ji-1g1"/>
+                <outlet property="titleLabel" destination="Jdd-sk-egG" id="UDh-nA-6fD"/>
+            </connections>
+            <point key="canvasLocation" x="66.666666666666671" y="87.723214285714278"/>
+        </view>
+        <tapGestureRecognizer id="T3u-Eq-wxd" userLabel="backTap">
+            <connections>
+                <action selector="back:" destination="iN0-l3-epB" id="RFn-eL-pQJ"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <designables>
+        <designable name="Jdd-sk-egG">
+            <size key="intrinsicContentSize" width="141.5" height="19"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="back_button" width="11.5" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

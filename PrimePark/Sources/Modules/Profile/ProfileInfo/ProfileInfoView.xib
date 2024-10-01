@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileInfoView" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hide_view_rectangle_button" translatesAutoresizingMaskIntoConstraints="NO" id="Bv8-vi-OQ8">
+                    <rect key="frame" x="189" y="54" width="36" height="4"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Информация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPK-9u-9hB" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="158" y="67" width="98.5" height="19"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kez-OC-8lF" userLabel="Divide View">
+                    <rect key="frame" x="0.0" y="101" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Tuu-3P-9XQ"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBU-rp-bBf">
+                    <rect key="frame" x="0.0" y="102" width="414" height="745"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CYJ-Uc-hLe" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="417"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Владелец" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QaC-Rd-i5E" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                    <rect key="frame" x="15" y="25" width="73.5" height="19"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jd9-QQ-Naw" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                    <rect key="frame" x="15" y="54" width="384" height="49"/>
+                                    <string key="text">Краткое описание роли из нескольких строчек. Например, владелец - это основной житель квартиры, которому принадлежат права на собственность.</string>
+                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                    <color key="textColor" red="0.79607843137254897" green="0.78823529411764703" blue="0.7803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Житель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbA-LC-bce" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                    <rect key="frame" x="15" y="128" width="59" height="19"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4E5-wQ-udb" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                    <rect key="frame" x="15" y="157" width="384" height="49"/>
+                                    <string key="text">Краткое описание роли из нескольких строчек. Например, владелец - это основной житель квартиры, которому принадлежат права на собственность.</string>
+                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                    <color key="textColor" red="0.79607843140000001" green="0.78823529410000004" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Гость" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aET-hX-G3N" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                    <rect key="frame" x="15" y="231" width="43" height="19"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRk-mQ-Qwa" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                    <rect key="frame" x="15" y="260" width="384" height="49"/>
+                                    <string key="text">Краткое описание роли из нескольких строчек. Например, владелец - это основной житель квартиры, которому принадлежат права на собственность.</string>
+                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                    <color key="textColor" red="0.79607843140000001" green="0.78823529410000004" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Бригадир" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUH-G3-25N" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                    <rect key="frame" x="15" y="334" width="73" height="19"/>
+                                    <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1G-ED-Z0Q" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                                    <rect key="frame" x="15" y="363" width="384" height="49"/>
+                                    <string key="text">Краткое описание роли из нескольких строчек. Например, владелец - это основной житель квартиры, которому принадлежат права на собственность.</string>
+                                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                                    <color key="textColor" red="0.79607843140000001" green="0.78823529410000004" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="Jd9-QQ-Naw" firstAttribute="top" secondItem="QaC-Rd-i5E" secondAttribute="bottom" constant="10" id="01Z-0g-Uk4"/>
+                                <constraint firstItem="SRk-mQ-Qwa" firstAttribute="top" secondItem="aET-hX-G3N" secondAttribute="bottom" constant="10" id="0KS-7i-pOn"/>
+                                <constraint firstItem="q1G-ED-Z0Q" firstAttribute="leading" secondItem="CYJ-Uc-hLe" secondAttribute="leading" constant="15" id="2hB-yV-thX"/>
+                                <constraint firstItem="4E5-wQ-udb" firstAttribute="leading" secondItem="CYJ-Uc-hLe" secondAttribute="leading" constant="15" id="4Q0-UV-RYw"/>
+                                <constraint firstItem="QaC-Rd-i5E" firstAttribute="top" secondItem="CYJ-Uc-hLe" secondAttribute="top" constant="25" id="5m2-pe-zRf"/>
+                                <constraint firstAttribute="trailing" secondItem="SRk-mQ-Qwa" secondAttribute="trailing" constant="15" id="Bsl-Jy-dau"/>
+                                <constraint firstAttribute="trailing" secondItem="Jd9-QQ-Naw" secondAttribute="trailing" constant="15" id="FeU-Xb-A0D"/>
+                                <constraint firstAttribute="bottom" secondItem="q1G-ED-Z0Q" secondAttribute="bottom" constant="5" id="KVH-Sp-DQL"/>
+                                <constraint firstItem="aET-hX-G3N" firstAttribute="leading" secondItem="CYJ-Uc-hLe" secondAttribute="leading" constant="15" id="OHz-8R-l0z"/>
+                                <constraint firstItem="q1G-ED-Z0Q" firstAttribute="top" secondItem="WUH-G3-25N" secondAttribute="bottom" constant="10" id="V55-cP-44c"/>
+                                <constraint firstItem="aET-hX-G3N" firstAttribute="top" secondItem="4E5-wQ-udb" secondAttribute="bottom" constant="25" id="WPo-An-b4G"/>
+                                <constraint firstItem="WUH-G3-25N" firstAttribute="leading" secondItem="CYJ-Uc-hLe" secondAttribute="leading" constant="15" id="WTe-XJ-aDm"/>
+                                <constraint firstItem="kbA-LC-bce" firstAttribute="top" secondItem="Jd9-QQ-Naw" secondAttribute="bottom" constant="25" id="aBd-4u-l3y"/>
+                                <constraint firstItem="SRk-mQ-Qwa" firstAttribute="leading" secondItem="CYJ-Uc-hLe" secondAttribute="leading" constant="15" id="esZ-qK-rp0"/>
+                                <constraint firstAttribute="trailing" secondItem="4E5-wQ-udb" secondAttribute="trailing" constant="15" id="jZv-sH-lWy"/>
+                                <constraint firstItem="4E5-wQ-udb" firstAttribute="top" secondItem="kbA-LC-bce" secondAttribute="bottom" constant="10" id="kVY-QZ-f80"/>
+                                <constraint firstAttribute="trailing" secondItem="q1G-ED-Z0Q" secondAttribute="trailing" constant="15" id="pBz-PR-mKI"/>
+                                <constraint firstItem="QaC-Rd-i5E" firstAttribute="leading" secondItem="CYJ-Uc-hLe" secondAttribute="leading" constant="15" id="pqB-jb-g6J"/>
+                                <constraint firstItem="Jd9-QQ-Naw" firstAttribute="leading" secondItem="CYJ-Uc-hLe" secondAttribute="leading" constant="15" id="qhW-FG-hkf"/>
+                                <constraint firstItem="kbA-LC-bce" firstAttribute="leading" secondItem="CYJ-Uc-hLe" secondAttribute="leading" constant="15" id="r3T-jV-vxR"/>
+                                <constraint firstItem="WUH-G3-25N" firstAttribute="top" secondItem="SRk-mQ-Qwa" secondAttribute="bottom" constant="25" id="xLx-ma-iJM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="CYJ-Uc-hLe" firstAttribute="leading" secondItem="f2B-GY-1G6" secondAttribute="leading" id="0HZ-zC-cW0"/>
+                        <constraint firstItem="f2B-GY-1G6" firstAttribute="trailing" secondItem="CYJ-Uc-hLe" secondAttribute="trailing" id="BrN-ml-9gb"/>
+                        <constraint firstItem="CYJ-Uc-hLe" firstAttribute="top" secondItem="f2B-GY-1G6" secondAttribute="top" id="Df0-Vg-Jig"/>
+                        <constraint firstItem="CYJ-Uc-hLe" firstAttribute="width" secondItem="IBU-rp-bBf" secondAttribute="width" id="bv2-Bq-gAg"/>
+                        <constraint firstItem="CYJ-Uc-hLe" firstAttribute="bottom" secondItem="f2B-GY-1G6" secondAttribute="bottom" id="xzU-Of-uPE"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="f2B-GY-1G6"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="T3S-Zd-0ku"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="kez-OC-8lF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ey1-If-voz"/>
+                <constraint firstItem="Bv8-vi-OQ8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GNz-8P-2AQ"/>
+                <constraint firstItem="kez-OC-8lF" firstAttribute="top" secondItem="VPK-9u-9hB" secondAttribute="bottom" constant="15" id="MpS-Gb-Ja3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="IBU-rp-bBf" secondAttribute="bottom" constant="15" id="NEW-7J-fca"/>
+                <constraint firstItem="VPK-9u-9hB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OEx-kL-Fxg"/>
+                <constraint firstItem="IBU-rp-bBf" firstAttribute="top" secondItem="kez-OC-8lF" secondAttribute="bottom" id="Ro0-4a-6bS"/>
+                <constraint firstItem="Bv8-vi-OQ8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="VjR-8h-uYz"/>
+                <constraint firstItem="IBU-rp-bBf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WvD-55-QxF"/>
+                <constraint firstItem="VPK-9u-9hB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="23" id="f4p-kt-9n6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IBU-rp-bBf" secondAttribute="trailing" id="hZU-0D-eRv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kez-OC-8lF" secondAttribute="trailing" id="yff-Qb-b1m"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="4E5-wQ-udb">
+            <size key="intrinsicContentSize" width="1008" height="16.5"/>
+        </designable>
+        <designable name="Jd9-QQ-Naw">
+            <size key="intrinsicContentSize" width="1008" height="16.5"/>
+        </designable>
+        <designable name="QaC-Rd-i5E">
+            <size key="intrinsicContentSize" width="73.5" height="19"/>
+        </designable>
+        <designable name="SRk-mQ-Qwa">
+            <size key="intrinsicContentSize" width="1008" height="16.5"/>
+        </designable>
+        <designable name="VPK-9u-9hB">
+            <size key="intrinsicContentSize" width="98.5" height="19"/>
+        </designable>
+        <designable name="WUH-G3-25N">
+            <size key="intrinsicContentSize" width="73" height="19"/>
+        </designable>
+        <designable name="aET-hX-G3N">
+            <size key="intrinsicContentSize" width="43" height="19"/>
+        </designable>
+        <designable name="kbA-LC-bce">
+            <size key="intrinsicContentSize" width="59" height="19"/>
+        </designable>
+        <designable name="q1G-ED-Z0Q">
+            <size key="intrinsicContentSize" width="1008" height="16.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="hide_view_rectangle_button" width="36" height="4"/>
+    </resources>
+</document>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChargesView" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="0qG-ys-cRw" userLabel="Counters">
+                    <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                    <color key="sectionIndexBackgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="9Ml-sz-X2Y" userLabel="UDP">
+                    <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                    <color key="sectionIndexBackgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtT-rQ-8w2" userLabel="Navigation View">
+                    <rect key="frame" x="0.0" y="48" width="414" height="92"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Начисления" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6or-cx-RgO" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="160" y="17" width="94" height="18"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="charges.title"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRY-lB-Aph" userLabel="Back View">
+                            <rect key="frame" x="15" y="11" width="50" height="30"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_button" translatesAutoresizingMaskIntoConstraints="NO" id="t2t-bB-vIG">
+                                    <rect key="frame" x="0.0" y="5" width="11.5" height="20"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="2vf-PB-j9v"/>
+                                <constraint firstItem="t2t-bB-vIG" firstAttribute="leading" secondItem="DRY-lB-Aph" secondAttribute="leading" id="95W-Zq-gnP"/>
+                                <constraint firstAttribute="bottom" secondItem="t2t-bB-vIG" secondAttribute="bottom" constant="5" id="Rsw-kp-6hj"/>
+                                <constraint firstItem="t2t-bB-vIG" firstAttribute="top" secondItem="DRY-lB-Aph" secondAttribute="top" constant="5" id="VHJ-TY-bKp"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="Tt2-tz-qoc" appends="YES" id="haQ-YE-s1f"/>
+                            </connections>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qa1-5U-VcP">
+                            <rect key="frame" x="379" y="15" width="20" height="22"/>
+                            <state key="normal" image="info_icon"/>
+                            <connections>
+                                <action selector="info:" destination="iN0-l3-epB" eventType="touchUpInside" id="oEs-Tq-tFh"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lgE-Se-DU2" customClass="PrimeSegmentControl" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="50" width="384" height="37"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="37" id="OR9-l5-I1u"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="segmentTitles" value="charges.upd.title,charges.counter.title"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="DRY-lB-Aph" firstAttribute="centerY" secondItem="6or-cx-RgO" secondAttribute="centerY" id="33w-q5-SJk"/>
+                        <constraint firstAttribute="bottom" secondItem="lgE-Se-DU2" secondAttribute="bottom" constant="5" id="ISE-oc-dPD"/>
+                        <constraint firstAttribute="trailing" secondItem="lgE-Se-DU2" secondAttribute="trailing" constant="15" id="Jxh-AV-3OV"/>
+                        <constraint firstItem="Qa1-5U-VcP" firstAttribute="centerY" secondItem="6or-cx-RgO" secondAttribute="centerY" id="POy-uu-7fs"/>
+                        <constraint firstAttribute="trailing" secondItem="Qa1-5U-VcP" secondAttribute="trailing" constant="15" id="SNC-IN-Rga"/>
+                        <constraint firstAttribute="height" constant="92" id="Z1B-IP-SfR"/>
+                        <constraint firstItem="DRY-lB-Aph" firstAttribute="leading" secondItem="gtT-rQ-8w2" secondAttribute="leading" constant="15" id="dgo-x5-93N"/>
+                        <constraint firstItem="6or-cx-RgO" firstAttribute="top" secondItem="gtT-rQ-8w2" secondAttribute="top" constant="17" id="k2U-ed-0FP"/>
+                        <constraint firstItem="lgE-Se-DU2" firstAttribute="leading" secondItem="gtT-rQ-8w2" secondAttribute="leading" constant="15" id="nBM-Eb-KaY"/>
+                        <constraint firstItem="6or-cx-RgO" firstAttribute="centerX" secondItem="gtT-rQ-8w2" secondAttribute="centerX" id="t5N-aZ-8ZK"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kKD-dw-Rm7">
+                    <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="№ лицевого счета:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3H-Rf-asJ" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="20" y="24" width="106" height="14"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="12"/>
+                            <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="charges.accountNumber.title"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3PO-M2-ZnB">
+                            <rect key="frame" x="129" y="24" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="12"/>
+                            <color key="textColor" red="0.96079081300000002" green="0.96077281240000001" blue="0.96078497169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Создайте первую заявку" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwg-cl-cc7" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="126" y="200" width="162.5" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                            <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="charges.empty.title"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Создайте первую заявку" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmh-7J-pS8" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="126" y="240" width="162.5" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                            <color key="textColor" red="0.50980392159999999" green="0.50196078430000002" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="charges.empty.subtitle"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="3PO-M2-ZnB" firstAttribute="top" secondItem="d3H-Rf-asJ" secondAttribute="top" id="5f3-QE-eU2"/>
+                        <constraint firstItem="Hwg-cl-cc7" firstAttribute="centerX" secondItem="kKD-dw-Rm7" secondAttribute="centerX" id="MWC-2j-aaM"/>
+                        <constraint firstItem="3PO-M2-ZnB" firstAttribute="leading" secondItem="d3H-Rf-asJ" secondAttribute="trailing" constant="3" id="Oqk-m7-9b5"/>
+                        <constraint firstItem="d3H-Rf-asJ" firstAttribute="top" secondItem="kKD-dw-Rm7" secondAttribute="top" constant="24" id="STC-4c-Ns7"/>
+                        <constraint firstItem="Kmh-7J-pS8" firstAttribute="top" secondItem="Hwg-cl-cc7" secondAttribute="bottom" constant="24" id="iti-0Q-WFW"/>
+                        <constraint firstItem="Hwg-cl-cc7" firstAttribute="top" secondItem="kKD-dw-Rm7" secondAttribute="top" constant="200" id="lcE-MS-IAI"/>
+                        <constraint firstItem="Kmh-7J-pS8" firstAttribute="centerX" secondItem="kKD-dw-Rm7" secondAttribute="centerX" id="r3x-hC-Y4O"/>
+                        <constraint firstItem="d3H-Rf-asJ" firstAttribute="leading" secondItem="kKD-dw-Rm7" secondAttribute="leading" constant="20" id="vY6-V4-Zu9"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dep-ot-YOl" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="125.5" y="777" width="163" height="41"/>
+                    <color key="backgroundColor" name="Gold"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="25" minY="12" maxX="25" maxY="12"/>
+                    <state key="normal" title="Пополнить счет">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="charges.refill.title"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="deposit:" destination="iN0-l3-epB" eventType="touchUpInside" id="9gX-Dv-lwh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dep-ot-YOl" secondAttribute="bottom" constant="44" id="9pV-Mj-NUa"/>
+                <constraint firstItem="9Ml-sz-X2Y" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="AZC-2g-3ak"/>
+                <constraint firstItem="kKD-dw-Rm7" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="CcA-hC-Pj4"/>
+                <constraint firstItem="dep-ot-YOl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DE0-Th-KDw"/>
+                <constraint firstItem="0qG-ys-cRw" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="FaU-da-Z0a"/>
+                <constraint firstItem="9Ml-sz-X2Y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="LcA-iH-9Ec"/>
+                <constraint firstItem="9Ml-sz-X2Y" firstAttribute="top" secondItem="gtT-rQ-8w2" secondAttribute="bottom" id="UiE-PT-76N"/>
+                <constraint firstItem="9Ml-sz-X2Y" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="UuT-JY-yAj"/>
+                <constraint firstItem="0qG-ys-cRw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ams-Af-l2d"/>
+                <constraint firstItem="kKD-dw-Rm7" firstAttribute="top" secondItem="gtT-rQ-8w2" secondAttribute="bottom" id="bbE-8S-sdV"/>
+                <constraint firstItem="gtT-rQ-8w2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cb9-hs-PPq"/>
+                <constraint firstItem="gtT-rQ-8w2" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="d7u-ap-nja"/>
+                <constraint firstItem="0qG-ys-cRw" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="fJ6-uP-ieV"/>
+                <constraint firstItem="kKD-dw-Rm7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gVL-Rc-ryX"/>
+                <constraint firstItem="kKD-dw-Rm7" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="mon-S8-SIY"/>
+                <constraint firstItem="gtT-rQ-8w2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="oV9-na-Rdw"/>
+                <constraint firstItem="0qG-ys-cRw" firstAttribute="top" secondItem="gtT-rQ-8w2" secondAttribute="bottom" id="yTg-7o-htP"/>
+            </constraints>
+            <connections>
+                <outlet property="balanceLabel" destination="3PO-M2-ZnB" id="fa6-VL-U8a"/>
+                <outlet property="countersTableView" destination="0qG-ys-cRw" id="mfh-Ne-3og"/>
+                <outlet property="emptyUdpView" destination="kKD-dw-Rm7" id="fJV-in-JJ8"/>
+                <outlet property="orderButton" destination="dep-ot-YOl" id="8Lp-ok-J21"/>
+                <outlet property="segmentControl" destination="lgE-Se-DU2" id="5Ya-wO-wKk"/>
+                <outlet property="updTableView" destination="9Ml-sz-X2Y" id="6Wg-0U-VCq"/>
+            </connections>
+            <point key="canvasLocation" x="76.811594202898561" y="87.723214285714278"/>
+        </view>
+        <tapGestureRecognizer id="Tt2-tz-qoc" userLabel="Back Gesture">
+            <connections>
+                <action selector="back:" destination="iN0-l3-epB" id="UlV-Vi-esa"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <designables>
+        <designable name="6or-cx-RgO">
+            <size key="intrinsicContentSize" width="94" height="18"/>
+        </designable>
+        <designable name="Hwg-cl-cc7">
+            <size key="intrinsicContentSize" width="162.5" height="16"/>
+        </designable>
+        <designable name="Kmh-7J-pS8">
+            <size key="intrinsicContentSize" width="162.5" height="16"/>
+        </designable>
+        <designable name="d3H-Rf-asJ">
+            <size key="intrinsicContentSize" width="106.5" height="13.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="back_button" width="11.5" height="20"/>
+        <image name="info_icon" width="20" height="20"/>
+        <namedColor name="Gold">
+            <color red="0.68599998950958252" green="0.59600001573562622" blue="0.49399998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

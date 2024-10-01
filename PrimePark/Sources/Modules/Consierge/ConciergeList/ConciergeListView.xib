@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Medium.ttf">
+            <string>Ubuntu-Medium</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ConciergeListView" customModule="PrimePark" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zaj-TS-3zK" userLabel="Navigation View">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fuI-tZ-CE4" customClass="PrimeSegmentControl" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="15" y="2" width="384" height="37"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="37" id="Gmr-1o-btH"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="segmentTitles" value="concierge.segmentedControl.inWork.title,concierge.segmentedControl.completed.title"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isShadowClear" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isBasicStyle" value="NO"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.21176470588235294" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="NxX-rb-Psv"/>
+                        <constraint firstAttribute="trailing" secondItem="fuI-tZ-CE4" secondAttribute="trailing" constant="15" id="OwJ-yP-Ay5"/>
+                        <constraint firstItem="fuI-tZ-CE4" firstAttribute="top" secondItem="Zaj-TS-3zK" secondAttribute="top" constant="2" id="Qtl-ef-1ug"/>
+                        <constraint firstItem="fuI-tZ-CE4" firstAttribute="leading" secondItem="Zaj-TS-3zK" secondAttribute="leading" constant="15" id="cFx-bW-YJG"/>
+                    </constraints>
+                </view>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="1" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bAP-95-re0" userLabel="doneTable">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="1" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="haZ-6v-tSg" userLabel="inWorkTable">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYZ-09-10i" userLabel="No Data View">
+                    <rect key="frame" x="0.0" y="88" width="414" height="722"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_data_concierge" translatesAutoresizingMaskIntoConstraints="NO" id="WlZ-iF-Iov">
+                            <rect key="frame" x="166" y="284.5" width="82" height="73"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="У Вас пока нет запросов" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9o-l4-cO3" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="114" y="389.5" width="186" height="19"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Medium" family="Ubuntu Medium" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="concierge.noData.title"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Создайте первый и мы с радостью поможем" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8FI-ip-Cf4" customClass="LocalizableLabel" customModule="PrimePark" customModuleProvider="target">
+                            <rect key="frame" x="59" y="413.5" width="296.5" height="16"/>
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="14"/>
+                            <color key="textColor" red="0.50980392156862742" green="0.50196078431372548" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="concierge.noData.subtitle"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="8FI-ip-Cf4" firstAttribute="top" secondItem="W9o-l4-cO3" secondAttribute="bottom" constant="5" id="2Iy-2W-a5k"/>
+                        <constraint firstItem="W9o-l4-cO3" firstAttribute="top" secondItem="WlZ-iF-Iov" secondAttribute="bottom" constant="32" id="31d-5N-9bD"/>
+                        <constraint firstItem="W9o-l4-cO3" firstAttribute="centerX" secondItem="eYZ-09-10i" secondAttribute="centerX" id="OJX-hB-gcO"/>
+                        <constraint firstItem="WlZ-iF-Iov" firstAttribute="centerY" secondItem="eYZ-09-10i" secondAttribute="centerY" constant="-40" id="nKZ-Yk-pWA"/>
+                        <constraint firstItem="8FI-ip-Cf4" firstAttribute="centerX" secondItem="eYZ-09-10i" secondAttribute="centerX" id="nSj-X9-xz1"/>
+                        <constraint firstItem="WlZ-iF-Iov" firstAttribute="centerX" secondItem="eYZ-09-10i" secondAttribute="centerX" id="sFX-hl-NzP"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qde-uE-FTk" customClass="LocalizableButton" customModule="PrimePark" customModuleProvider="target">
+                    <rect key="frame" x="131.5" y="810" width="151" height="42"/>
+                    <color key="backgroundColor" name="Gold"/>
+                    <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="25" minY="12" maxX="25" maxY="12"/>
+                    <state key="normal" title="Новый запрос">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="localizedKey" value="concierge.newRequestButton.title"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="createNewRequest:" destination="iN0-l3-epB" eventType="touchUpInside" id="KWj-0a-duU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Qde-uE-FTk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2cp-Qn-jMQ"/>
+                <constraint firstItem="Zaj-TS-3zK" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="AVz-0i-DjY"/>
+                <constraint firstItem="bAP-95-re0" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Cl0-OM-eUW"/>
+                <constraint firstItem="Zaj-TS-3zK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DKo-AX-APM"/>
+                <constraint firstAttribute="trailing" secondItem="haZ-6v-tSg" secondAttribute="trailing" id="Hfw-MS-jJG"/>
+                <constraint firstItem="bAP-95-re0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Hvc-UF-I6h"/>
+                <constraint firstItem="Qde-uE-FTk" firstAttribute="top" secondItem="eYZ-09-10i" secondAttribute="bottom" id="NRS-KE-7Ug"/>
+                <constraint firstItem="bAP-95-re0" firstAttribute="top" secondItem="Zaj-TS-3zK" secondAttribute="bottom" id="TZF-UG-A0C"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="haZ-6v-tSg" secondAttribute="bottom" id="Uf5-lH-Wna"/>
+                <constraint firstItem="haZ-6v-tSg" firstAttribute="top" secondItem="Zaj-TS-3zK" secondAttribute="bottom" id="V1C-Al-1TX"/>
+                <constraint firstAttribute="trailing" secondItem="Zaj-TS-3zK" secondAttribute="trailing" id="WQo-sB-Y4f"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Qde-uE-FTk" secondAttribute="bottom" constant="10" id="bxh-Dx-rnI"/>
+                <constraint firstItem="eYZ-09-10i" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="heC-rv-4Y7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="eYZ-09-10i" secondAttribute="trailing" id="kh0-wh-8NC"/>
+                <constraint firstItem="bAP-95-re0" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="tmP-nH-s8i"/>
+                <constraint firstItem="haZ-6v-tSg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="u65-wv-u4S"/>
+                <constraint firstItem="eYZ-09-10i" firstAttribute="top" secondItem="Zaj-TS-3zK" secondAttribute="bottom" id="wum-Fx-JPU"/>
+            </constraints>
+            <connections>
+                <outlet property="doneTable" destination="bAP-95-re0" id="4ml-4E-eVm"/>
+                <outlet property="inWorkTable" destination="haZ-6v-tSg" id="KT2-ib-yjz"/>
+                <outlet property="noDataView" destination="eYZ-09-10i" id="age-FK-Gxq"/>
+                <outlet property="requestButton" destination="Qde-uE-FTk" id="IhK-R9-Xst"/>
+                <outlet property="segmentedControl" destination="fuI-tZ-CE4" id="VeW-n6-X02"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="8FI-ip-Cf4">
+            <size key="intrinsicContentSize" width="296.5" height="16.5"/>
+        </designable>
+        <designable name="W9o-l4-cO3">
+            <size key="intrinsicContentSize" width="186.5" height="19"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="no_data_concierge" width="82" height="73"/>
+        <namedColor name="Gold">
+            <color red="0.68599998950958252" green="0.59600001573562622" blue="0.49399998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
